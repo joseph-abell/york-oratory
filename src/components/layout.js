@@ -63,9 +63,7 @@ class Layout extends React.Component {
         <header>{header}</header>
         <main>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          © {new Date().getFullYear()}, Built by <a href="http://abelldesign.co.uk">Abell Design</a> and <a href="https://josephabell.co.uk">Joseph Abell</a>
         </footer>
       </div>
     )
