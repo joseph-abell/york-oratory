@@ -1,12 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    title: `York Oratory`,
+    author: `York Oratory`,
+    description: `News, Events, and Mass Times for St Joseph's and St Wilfrid's`,
+    siteUrl: `https://york-oratory.netlify.com/`,
   },
   plugins: [
     {
