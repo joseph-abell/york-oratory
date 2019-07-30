@@ -20,6 +20,7 @@ class Layout extends React.Component {
         padding: ${rhythm(1.5)} ${rhythm(3 / 4)}
       `}>
         <Header title={title} />
+        <Sidebar />
         <main css={css`
           width: 75%;
           float: left;
@@ -28,7 +29,6 @@ class Layout extends React.Component {
         `}>
           {children}
         </main>
-        <Sidebar />
         <Clearfix />
         <Footer />
       </div>

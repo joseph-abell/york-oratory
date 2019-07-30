@@ -4,7 +4,7 @@ import { css, jsx } from '@emotion/core'
 import { useStaticQuery, graphql } from 'gatsby';
 
 const MenuItem = ({ title, url, newTab = false }) => (
-    <li>
+    <li css={css`list-style: none; margin-right: 20px; justify-content: space-evenly; flex: auto;`}>
         <a href={url} target={newTab ? '_blank' : '_self'}>{title}</a>
     </li>
 )
@@ -31,16 +31,8 @@ const Sidebar = () => {
     const menu = data && data.menu.edges[0].node.frontmatter.items;
 
     return (
-        <div css={css`
-            width: 25%;
-            float: right;
-
-            @media (max-width: 990px) {
-                width: auto;
-                float: none;
-            }
-        `}>
-            <ul>
+        <div>
+            <ul css={css`margin: 0 0 20px; padding: 0; display: flex; max-width: 35vw;`}>
                 {menu.map(({ title, url, newTab }) => (
                     <MenuItem key={url} title={title} url={url} newTab={newTab} />
                 ))}
