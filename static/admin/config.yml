@@ -59,8 +59,9 @@ collections:
             name: "items"
             widget: list
             fields:
-              - { label: "URL", name: "url", widget: "string" }
               - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Open in New Tab", name: "newTab", widget: "boolean", default: false}
   - name: "footer"
     label: "Footer"
     editor:
