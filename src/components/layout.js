@@ -22,9 +22,6 @@ class Layout extends React.Component {
         <Header title={title} />
         <Menu />
         <main css={css`
-          width: 75%;
-          float: left;
-          padding-right: ${rhythm(1.5)};
           min-height: 60vh;
         `}>
           {children}
