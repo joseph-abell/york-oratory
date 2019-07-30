@@ -2,8 +2,10 @@ const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 const setupData = async (graphql, createPage, type, component) => {
-  const result = await graphql(
-    `
+  let result;
+  if (type) {
+    result = await graphql(
+      `
       {
         allMarkdownRemark(
           filter: { frontmatter: { type: { eq: "${type}" }}}
@@ -23,7 +25,29 @@ const setupData = async (graphql, createPage, type, component) => {
         }
       }
     `
-  )
+    )
+  } else {
+    result = await graphql(
+      `
+      {
+        allMarkdownRemark(
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 1000
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+              }
+            }
+          }
+        }
+      }
+    `);
+  }
 
   if (result.errors) {
     throw result.errors
@@ -53,6 +77,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   setupData(graphql, createPage, "news", path.resolve(`./src/templates/news-post.js`));
   setupData(graphql, createPage, "events", path.resolve(`./src/templates/events-post.js`));
+  setupData(graphql, createPage, "", path.resolve(`./src/templates/page.js`))
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -61,10 +86,19 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
 
-    createNodeField({
-      name: `slug`,
-      node,
-      value: `${node.frontmatter.type}${value}`,
-    })
+    if (node.frontmatter.type) {
+      createNodeField({
+        name: `slug`,
+        node,
+        value: `${node.frontmatter.type}${value}`,
+      })
+    }
+    else {
+      createNodeField({
+        name: `slug`,
+        node,
+        value: `${value}`,
+      })
+    }
   }
 }
