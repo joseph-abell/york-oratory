@@ -3,7 +3,7 @@ title: Menu
 type: hidden
 items:
   - title: Newsletter
-    url: /static/img/newsletter.pdf
+    url: /img/newsletter.pdf
   - title: Mass Times
     url: /mass-times
   - title: Sacraments
