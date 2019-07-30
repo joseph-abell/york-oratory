@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core'
 import React from "react"
 import { Link, graphql } from "gatsby"
 
@@ -18,37 +20,32 @@ class EventsPostTemplate extends React.Component {
                     description={post.frontmatter.description || post.excerpt}
                 />
                 <h1
-                    style={{
-                        marginTop: rhythm(1),
-                        marginBottom: 0,
-                    }}
+                    css={css`
+                        margin-top: ${rhythm(1)};
+                        margin-bottom: 0;
+                    `}
                 >
                     {post.frontmatter.title}
                 </h1>
                 <p
-                    style={{
-                        ...scale(-1 / 5),
-                        display: `block`,
-                        marginBottom: rhythm(1),
-                    }}
+                    css={css`
+                        ${scale(-1 / 5)}
+                        display: block;
+                        margin-bottom: ${rhythm(1)}
+                    `}
                 >
                     {post.frontmatter.date}
                 </p>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
-                <hr
-                    style={{
-                        marginBottom: rhythm(1),
-                    }}
-                />
 
                 <ul
-                    style={{
-                        display: `flex`,
-                        flexWrap: `wrap`,
-                        justifyContent: `space-between`,
-                        listStyle: `none`,
+                    css={css`
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        list-style: none;
                         padding: 0,
-                    }}
+                    `}
                 >
                     <li>
                         {previous && (
@@ -73,22 +70,22 @@ class EventsPostTemplate extends React.Component {
 export default EventsPostTemplate
 
 export const pageQuery = graphql`
-  query EventsPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
+    query EventsPostBySlug($slug: String!) {
+        site {
+            siteMetadata {
+                title
+                author
+            }
+        }
+        markdownRemark(fields: { slug: { eq: $slug } }) {
+            id
+            excerpt(pruneLength: 160)
+            html
+            frontmatter {
+                title
+                date(formatString: "MMMM DD, YYYY")
+                description
+            }
+        }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        description
-      }
-    }
-  }
 `

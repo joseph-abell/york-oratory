@@ -41,6 +41,7 @@ const setupData = async (graphql, createPage, type, component) => {
               }
               frontmatter {
                 title
+                type
               }
             }
           }
@@ -56,9 +57,23 @@ const setupData = async (graphql, createPage, type, component) => {
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges
 
-  posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
+  posts.forEach((post) => {
+    if (!post.node.frontmatter.type) {
+      return createPage({
+        path: post.node.fields.slug,
+        component,
+        context: {
+          slug: post.node.fields.slug,
+        },
+      })
+    }
+
+    if (post.node.frontmatter.type === "hidden") return;
+
+    const filteredPosts = posts.filter(p => post.node.frontmatter.type === p.node.frontmatter.type);
+    const filteredIndex = filteredPosts.findIndex(p => p.node.frontmatter.title === post.node.frontmatter.title);
+    const previous = filteredIndex === filteredPosts.length - 1 ? null : filteredPosts[filteredIndex + 1].node
+    const next = filteredIndex === 0 ? null : filteredPosts[filteredIndex - 1].node;
 
     createPage({
       path: post.node.fields.slug,

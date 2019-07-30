@@ -1,9 +1,11 @@
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core'
 import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 class PageTemplate extends React.Component {
     render() {
@@ -18,28 +20,23 @@ class PageTemplate extends React.Component {
                     description={post.frontmatter.description || post.excerpt}
                 />
                 <h1
-                    style={{
-                        marginTop: rhythm(1),
-                        marginBottom: rhythm(1),
-                    }}
+                    css={css`
+                        margin-top: ${rhythm(1)};
+                        margin-bottom: ${rhythm(1)};
+                    `}
                 >
                     {post.frontmatter.title}
                 </h1>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
-                <hr
-                    style={{
-                        marginBottom: rhythm(1),
-                    }}
-                />
 
                 <ul
-                    style={{
-                        display: `flex`,
-                        flexWrap: `wrap`,
-                        justifyContent: `space-between`,
-                        listStyle: `none`,
-                        padding: 0,
-                    }}
+                    css={css`
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        list-style: none;
+                        padding: 0;
+                    `}
                 >
                     <li>
                         {previous && (

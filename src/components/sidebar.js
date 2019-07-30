@@ -9,28 +9,16 @@ const MenuItem = ({ title, url }) => (
     </li>
 )
 
-const MenuGroup = ({ title, items }) => (
-    <div>
-        {title && (<h3>{title}</h3>)}
-        <ul>
-            {items && items.map(item => (<MenuItem title={item.title} key={item.url} url={item.url} />))}
-        </ul>
-    </div>
-);
-
 const Sidebar = () => {
     const data = useStaticQuery(graphql`
         query {
-            menu: allMarkdownRemark(filter: {frontmatter: {type: {eq: "menu"}}}) {
+            menu: allMarkdownRemark(filter: {frontmatter: {type: {eq: "hidden"}, title: { eq: "Menu" }}}) {
                 edges {
                     node {
                         frontmatter {
-                            groups {
+                            items {
                                 title
-                                items {
-                                    title
-                                    url
-                                }
+                                url
                             }
                         }
                     }
@@ -39,7 +27,7 @@ const Sidebar = () => {
         }
     `);
 
-    const menu = data && data.menu.edges[0].node.frontmatter.groups;
+    const menu = data && data.menu.edges[0].node.frontmatter.items;
 
     return (
         <div css={css`
@@ -51,9 +39,11 @@ const Sidebar = () => {
                 float: none;
             }
         `}>
-            {menu.map(({ title, items }) => (
-                <MenuGroup key={JSON.stringify(items)} title={title} items={items} />
-            ))}
+            <ul>
+                {menu.map(({ title, url }) => (
+                    <MenuItem key={url} title={title} url={url} />
+                ))}
+            </ul>
         </div>
     );
 };
