@@ -45,6 +45,20 @@ const EventsItem = ({ node, title }) => (
   </div>
 );
 
+const MenuItem = ({ title, url }) => (
+  <li>
+    <a href={url}>{title}</a>
+  </li>
+)
+
+const MenuGroup = ({ title, items }) => (
+  <div>
+    {title && (<h3>{title}</h3>)}
+    <ul>
+      {items && items.map(item => (<MenuItem title={item.title} key={item.url} url={item.url} />))}
+    </ul>
+  </div>
+);
 
 class BlogIndex extends React.Component {
   render() {
@@ -52,6 +66,7 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const news = data.news.edges
     const events = data.events.edges
+    const menu = data.menu.edges[0].node.frontmatter.groups;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -75,6 +90,11 @@ class BlogIndex extends React.Component {
               <EventsItem node={node} key={node.fields.slug} title={title} />
             )
           })}
+        </div>
+        <div>
+          {menu.map(({ title, items }) => (
+            <MenuGroup key={JSON.stringify(items)} title={title} items={items} />
+          ))}
         </div>
       </Layout>
     )
@@ -118,6 +138,21 @@ export const pageQuery = graphql`
             title
             description
             type
+          }
+        }
+      }
+    }
+    menu: allMarkdownRemark(filter: {frontmatter: {type: {eq: "menu"}}}) {
+      edges {
+        node {
+          frontmatter {
+            groups {
+              title
+              items {
+                title
+                url
+              }
+            }
           }
         }
       }
