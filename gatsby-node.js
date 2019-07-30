@@ -16,6 +16,7 @@ const setupPage = async (graphql, createPage, component) => {
             }
             frontmatter {
               title
+              type
             }
           }
         }
@@ -28,9 +29,17 @@ const setupPage = async (graphql, createPage, component) => {
     throw result.errors
   }
 
-  const pages = result.data.pages.edges.map(p => p.node);
+  const pages = result.data.pages.edges.map(p => p.node).filter(node => !node.frontmatter.type);
 
-  console.log("pages", pages);
+  pages.forEach((page) => {
+    createPage({
+      path: page.fields.slug,
+      component,
+      context: {
+        slug: page.fields.slug
+      },
+    })
+  })
 }
 
 const setupData = async (graphql, createPage, type, component) => {
@@ -49,6 +58,7 @@ const setupData = async (graphql, createPage, type, component) => {
             }
             frontmatter {
               title
+              type
             }
           }
         }
@@ -65,18 +75,6 @@ const setupData = async (graphql, createPage, type, component) => {
   const posts = result.data.allMarkdownRemark.edges;
 
   posts.forEach((post) => {
-    if (post.node.frontmatter.type === "hidden") return;
-
-    if (!post.node.frontmatter.type) {
-      return createPage({
-        path: post.node.fields.slug,
-        component,
-        context: {
-          slug: post.node.fields.slug,
-        },
-      })
-    }
-
     const filteredPosts = posts.filter(p => post.node.frontmatter.type === p.node.frontmatter.type);
     const filteredIndex = filteredPosts.findIndex(p => p.node.frontmatter.title === post.node.frontmatter.title);
     const previous = filteredIndex === filteredPosts.length - 1 ? null : filteredPosts[filteredIndex + 1].node
