@@ -3,9 +3,7 @@ title: Sacraments
 date: 2019-07-30T13:09:37.787Z
 description: Sacrament Information for St Wilfrid's and St Joseph's
 ---
-## Sacraments
-
-**Baptisms**
+## Baptisms
 
 If you would like to arrange for your child to be baptised, please contact the Parish Priest. He will want to meet you to get to know you, talk about baptism, and make sure you are familiar with the rite. An important point to bear in mind is that you will need at least one Catholic godparent (ideally two) for the baptism.
 
@@ -17,9 +15,7 @@ If you are an adult who has not been baptised, and are interested in learning mo
 
 The full text of the Baptism Rite can be found here together with a selection of readings suitable for a baptism. You might want to choose one or two of them.
 
-
-
-**Weddings**
+## **Weddings**
 
 If you are thinking of getting married, it is nearly always necessary to give at least six months' notice, and preferably more. This is to make sure that all the civil formalities and spiritual preparations can be completed in good time.
 
@@ -61,17 +57,13 @@ Professional Videos
 
 We can recommend a professional videographer, Mark Fairbairn, who sings in our choir and is familiar with St Wilfrid's Church.  If you would like to see examples of his work please take a look at his website.
 
-
-
-**First Holy Communion and Confirmation**
+## **First Holy Communion and Confirmation**
 
 Courses are run each year to prepare children and young people to make their First Confession and First Holy Communion (at about age seven) or to receive the Sacrament of Confirmation (at about age thirteen). The courses usually begin in September and continue until the early summer. For more information please contact the Parish Priest.
 
 For an application form for Confirmation preparation please click here.
 
-****
-
-**Interested in becoming a Catholic?**
+## Interested in becoming a Catholic?
 
 Each year we receive a number of people into the Catholic Church. Some of them are Christians who have already been baptised and now wish to enter into full communion with the Church; others have never been baptised.
 
@@ -81,29 +73,25 @@ From September to Pentecost we run a course for those interested in becoming Cat
 
 If you would like to know more, please contact the Parish Priest.
 
+## Hospitals and visits to the sick
 
-
-**Hospitals and visits to the sick**
-
-Home visits for the sick
+**Home visits for the sick**
 
 If you are ill and housebound, or have a relative or friend who is, please contact the Parish Priest who will arrange for a visit. Holy Communion can be brought regularly to those who are ill and housebound in our parish who are unable to attend Mass.
 
-Going into hospital?
+**Going into hospital?**
 
 If you are going into hospital, please contact the Parish Priest in order to receive the Sacrament of Anointing of the Sick before you go in. He can also let the Hospital Chaplain know so that you will be visited while you are there.
 
-In an emergency
+**In an emergency**
 
 If a relative is in imminent danger of death and would like to see a priest please call 01904 624767
 
-The seriously sick and the dying
+**The seriously sick and the dying**
 
 At times we have to face the anxiety of serious illness, either for ourselves or for those we love. The Catholic Bishops of England and Wales have a helpful and understanding website. The priests, brothers and parish visitors at St Joseph's and St Wilfrid's are here to offer help and consolation in any way we can so please do not hesitate to get in touch.
 
-
-
-**Funerals**
+## Funerals
 
 Please contact the Parish Priest if you need to arrange a funeral. The funeral director will make all the arrangements on your behalf including payments for the church and the music.
 
