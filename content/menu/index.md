@@ -1,4 +1,6 @@
 ---
+type: "menu"
+title: "Menu"
 groups:
   - items:
       - title: Newsletter
