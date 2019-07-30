@@ -51,7 +51,6 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const news = data.news.edges
     const events = data.events.edges
-    const menu = data.menu.edges[0].node.frontmatter.groups;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -118,21 +117,6 @@ export const pageQuery = graphql`
             title
             description
             type
-          }
-        }
-      }
-    }
-    menu: allMarkdownRemark(filter: {frontmatter: {type: {eq: "menu"}}}) {
-      edges {
-        node {
-          frontmatter {
-            groups {
-              title
-              items {
-                title
-                url
-              }
-            }
           }
         }
       }

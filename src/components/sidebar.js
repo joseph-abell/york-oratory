@@ -1,4 +1,6 @@
-import React from 'react';
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core'
+
 import { useStaticQuery, graphql } from 'gatsby';
 
 const MenuItem = ({ title, url }) => (
@@ -36,10 +38,19 @@ const Sidebar = () => {
             }
         }
     `);
+
     const menu = data && data.menu.edges[0].node.frontmatter.groups;
 
     return (
-        <div>
+        <div css={css`
+            width: 25%;
+            float: right;
+
+            @media (max-width: 990px) {
+                width: auto;
+                float: none;
+            }
+        `}>
             {menu.map(({ title, items }) => (
                 <MenuGroup key={JSON.stringify(items)} title={title} items={items} />
             ))}
