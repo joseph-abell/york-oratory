@@ -45,21 +45,6 @@ const EventsItem = ({ node, title }) => (
   </div>
 );
 
-const MenuItem = ({ title, url }) => (
-  <li>
-    <a href={url}>{title}</a>
-  </li>
-)
-
-const MenuGroup = ({ title, items }) => (
-  <div>
-    {title && (<h3>{title}</h3>)}
-    <ul>
-      {items && items.map(item => (<MenuItem title={item.title} key={item.url} url={item.url} />))}
-    </ul>
-  </div>
-);
-
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -90,11 +75,6 @@ class BlogIndex extends React.Component {
               <EventsItem node={node} key={node.fields.slug} title={title} />
             )
           })}
-        </div>
-        <div>
-          {menu.map(({ title, items }) => (
-            <MenuGroup key={JSON.stringify(items)} title={title} items={items} />
-          ))}
         </div>
       </Layout>
     )
