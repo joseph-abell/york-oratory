@@ -4,7 +4,7 @@ type: "hidden"
 items:
   - newTab: true
     title: Newsletter
-    url: /newsletter.pdf
+    url: /media/newsletter.pdf
   - newTab: false
     title: Mass Times
     url: /mass-times
