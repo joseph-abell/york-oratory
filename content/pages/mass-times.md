@@ -1,5 +1,5 @@
 ---
-type: news
+type: pages
 title: Mass Times
 date: 2019-07-30T12:11:39.267Z
 description: Mass Times for St Joseph's and St Wilfrid's
