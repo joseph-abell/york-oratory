@@ -23,7 +23,8 @@ class Layout extends React.Component {
         <main css={css`
           width: 75%;
           float: left;
-          padding-right: ${rhythm(1.5)}
+          padding-right: ${rhythm(1.5)};
+          min-height: 60vh;
         `}>
           {children}
         </main>

@@ -1,3 +1,5 @@
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core'
 import React from "react"
 import { Link, graphql } from "gatsby"
 
@@ -16,7 +18,12 @@ const NewsItem = ({ node, title }) => (
         {title}
       </Link>
     </h3>
-    <small>{node.frontmatter.date}</small>
+    <small
+      css={css`
+        margin-bottom: ${rhythm(1 / 4)};
+        display: block;
+      `}
+    >{node.frontmatter.date}</small>
     <p
       dangerouslySetInnerHTML={{
         __html: node.frontmatter.description || node.excerpt,
@@ -28,15 +35,20 @@ const NewsItem = ({ node, title }) => (
 const EventsItem = ({ node, title }) => (
   <div>
     <h3
-      style={{
-        marginBottom: rhythm(1 / 4),
-      }}
+      css={css`
+        margin-bottom: ${rhythm(1 / 4)};
+      `}
     >
       <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
         {title}
       </Link>
     </h3>
-    <small>{node.frontmatter.date}</small>
+    <small
+      css={css`
+        margin-bottom: ${rhythm(1 / 4)};
+        display: block;
+      `}
+    >{node.frontmatter.eventDate}</small>
     <p
       dangerouslySetInnerHTML={{
         __html: node.frontmatter.description || node.excerpt,
@@ -55,7 +67,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="News and Events" />
-        <div>
+        <div css={css`margin-bottom: ${rhythm(2)};`}>
           <h2>News</h2>
           {news.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
@@ -64,9 +76,10 @@ class BlogIndex extends React.Component {
               <NewsItem node={node} key={node.fields.slug} title={title} />
             )
           })}
+          <Link to='/news'>View More News</Link>
         </div>
         <div>
-          <h3>Events</h3>
+          <h2>Events</h2>
           {events.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
 
@@ -74,6 +87,7 @@ class BlogIndex extends React.Component {
               <EventsItem node={node} key={node.fields.slug} title={title} />
             )
           })}
+          <Link to='/events'>View More Events</Link>
         </div>
       </Layout>
     )
@@ -89,7 +103,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    news: allMarkdownRemark(filter: { frontmatter: { type: { eq: "news" } } }, sort: { fields: [frontmatter___date], order: DESC }) {
+    news: allMarkdownRemark(limit: 3, filter: { frontmatter: { type: { eq: "news" } } }, sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
@@ -105,7 +119,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    events: allMarkdownRemark(filter: { frontmatter: { type: { eq: "events" } } }, sort: { fields: [frontmatter___date], order: DESC }) {
+    events: allMarkdownRemark(limit: 3, filter: { frontmatter: { type: { eq: "events" } } }, sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           excerpt
@@ -113,7 +127,7 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            eventDate(formatString: "MMMM DD, YYYY")
             title
             description
             type
