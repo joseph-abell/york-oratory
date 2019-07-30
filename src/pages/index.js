@@ -68,17 +68,6 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="News and Events" />
         <div css={css`margin-bottom: ${rhythm(2)};`}>
-          <h2>News</h2>
-          {news.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug;
-
-            return (
-              <NewsItem node={node} key={node.fields.slug} title={title} />
-            )
-          })}
-          <Link to='/news'>View More News</Link>
-        </div>
-        <div>
           <h2>Events</h2>
           {events.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
@@ -88,6 +77,17 @@ class BlogIndex extends React.Component {
             )
           })}
           <Link to='/events'>View More Events</Link>
+        </div>
+        <div css={css`margin-bottom: ${rhythm(2)};`}>
+          <h2>News</h2>
+          {news.map(({ node }) => {
+            const title = node.frontmatter.title || node.fields.slug;
+
+            return (
+              <NewsItem node={node} key={node.fields.slug} title={title} />
+            )
+          })}
+          <Link to='/news'>View More News</Link>
         </div>
       </Layout>
     )
