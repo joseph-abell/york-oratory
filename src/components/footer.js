@@ -1,26 +1,36 @@
-import React from 'react';
+/** @jsx jsx */
+import { css, jsx } from '@emotion/core';
 import { useStaticQuery, graphql } from 'gatsby';
+import { rhythm, scale } from "../utils/typography"
 
 const Footer = () => {
     const data = useStaticQuery(graphql`
         query {
-            allMarkdownRemark {
-                edges {
-                    node {
-                        frontmatter {
-                            title
-                        }
-                    }
+            markdownRemark(frontmatter: {title: {eq: "Footer"}}) {
+                frontmatter {
+                    copyright
+                    oxfordCharityNumber
+                    middlesboroughCharityNumber
+			        credits
                 }
             }
         }
     `);
 
-    console.log(data);
+    const { copyright, oxfordCharityNumber, middlesboroughCharityNumber, credits } = data.markdownRemark.frontmatter;
 
     return (
-        <footer>
-            Footer
+        <footer css={css`
+            text-align: center;
+            border-top: 1px solid #f4f4f4;
+            padding-top: ${rhythm(1.5)};
+            ${scale(-0.3)}
+            line-height: ${rhythm(0.5)};
+        `}>
+            {copyright && (<p>{copyright}</p>)}
+            {oxfordCharityNumber && (<p>{oxfordCharityNumber}</p>)}
+            {middlesboroughCharityNumber && (<p>{middlesboroughCharityNumber}</p>)}
+            {credits && (<p>{credits}</p>)}
         </footer>
     );
 };
