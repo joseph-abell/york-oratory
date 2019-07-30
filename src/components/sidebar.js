@@ -41,8 +41,8 @@ const Sidebar = () => {
             }
         `}>
             <ul>
-                {menu.map(({ title, url }) => (
-                    <MenuItem key={url} title={title} url={url} />
+                {menu.map(({ title, url, newTab }) => (
+                    <MenuItem key={url} title={title} url={url} newTab={newTab} />
                 ))}
             </ul>
         </div>
