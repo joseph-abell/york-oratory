@@ -10,6 +10,8 @@ groups:
         url: /mass-times
       - title: Sacraments
         url: /sacraments
+      - title: Church Opening Times
+        url: /church-opening-times
     title: News
 ---
 
