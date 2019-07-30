@@ -26,7 +26,7 @@ module.exports = {
         path: `${__dirname}/content/menu`,
         name: `menu`
       }
-    }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
