@@ -1,6 +1,6 @@
 ---
 title: 'Hello, World'
-date: 2019-07-29T21:02:52.041Z
+eventDate: 2019-08-05T21:00:00.000Z
 description: This is a test blog
 type: 'events'
 ---

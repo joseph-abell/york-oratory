@@ -34,7 +34,7 @@ class EventsPostTemplate extends React.Component {
                         margin-bottom: ${rhythm(1)}
                     `}
                 >
-                    {post.frontmatter.date}
+                    {post.frontmatter.eventDate}
                 </p>
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
@@ -83,7 +83,7 @@ export const pageQuery = graphql`
             html
             frontmatter {
                 title
-                date(formatString: "MMMM DD, YYYY")
+                eventDate(formatString: "MMMM DD, YYYY")
                 description
             }
         }
