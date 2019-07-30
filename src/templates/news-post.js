@@ -39,7 +39,7 @@ class NewsPostTemplate extends React.Component {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
         <ul
-          css={`
+          css={css`
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;

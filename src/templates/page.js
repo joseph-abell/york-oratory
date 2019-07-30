@@ -27,6 +27,7 @@ class PageTemplate extends React.Component {
                 >
                     {post.frontmatter.title}
                 </h1>
+                Page
                 <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
                 <ul
