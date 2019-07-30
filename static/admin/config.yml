@@ -66,3 +66,17 @@ collections:
                 fields:
                   - { label: "URL", name: "url", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
+  - name: "footer"
+    label: "Footer"
+    editor:
+      preview: false
+    files:
+      - label: "Footer"
+        name: "footer"
+        file: "content/footer/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "hidden", default: "Footer"}
+          - { label: "Copyright", name: "copyright", widget: "string"}
+          - { label: "Oxford Charity Number", name: "oxfordCharityNumber", widget: "string"}
+          - { label: "Middlesborough Charity Number", name: "middlesboroughCharityNumber", widget: "string"}
+          - { label: "Credits", name: "credits", widget: "string"}

@@ -1,9 +1,28 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-const Footer = () => (
-    <footer>
-        © {new Date().getFullYear()}, Built by <a href="http://abelldesign.co.uk">Abell Design</a> and <a href="https://josephabell.co.uk">Joseph Abell</a>
-    </footer>
-)
+const Footer = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            allMarkdownRemark {
+                edges {
+                    node {
+                        frontmatter {
+                            title
+                        }
+                    }
+                }
+            }
+        }
+    `);
+
+    console.log(data);
+
+    return (
+        <footer>
+            Footer
+        </footer>
+    );
+};
 
 export default Footer;
