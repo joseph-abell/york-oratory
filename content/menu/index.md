@@ -1,6 +1,6 @@
 ---
 title: Menu
-type: hidden
+type: "hidden"
 items:
   - newTab: true
     title: Newsletter

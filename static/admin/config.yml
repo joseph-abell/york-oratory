@@ -46,7 +46,6 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "menu"
     label: "Menu"
-    slug: "{{slug}}"
     editor:
       preview: false
     files:
@@ -65,7 +64,6 @@ collections:
               - { label: "Open in New Tab", name: "newTab", widget: "boolean", default: false, required: false}
   - name: "footer"
     label: "Footer"
-    slug: "{{slug}}"
     editor:
       preview: false
     files:

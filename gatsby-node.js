@@ -6,6 +6,7 @@ const setupPage = async (graphql, createPage, component) => {
     `
     {
       pages: allMarkdownRemark(
+        filter: { frontmatter: { type: { eq: null }}}
         sort: { fields: [frontmatter___date], order: DESC }
         limit: 1000
       ) {
@@ -29,14 +30,12 @@ const setupPage = async (graphql, createPage, component) => {
     throw result.errors
   }
 
-  const pages = result.data.pages.edges.map(p => p.node).filter(node => !node.frontmatter.type);
-
-  pages.forEach((page) => {
+  result.data.pages.edges.forEach((page) => {
     createPage({
-      path: page.fields.slug,
+      path: page.node.fields.slug,
       component,
       context: {
-        slug: page.fields.slug
+        slug: page.node.fields.slug
       },
     })
   })
@@ -95,9 +94,9 @@ const setupData = async (graphql, createPage, type, component) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
+  setupPage(graphql, createPage, path.resolve(`./src/templates/page.js`));
   setupData(graphql, createPage, "news", path.resolve(`./src/templates/news-post.js`));
   setupData(graphql, createPage, "events", path.resolve(`./src/templates/events-post.js`));
-  setupPage(graphql, createPage, path.resolve(`./src/templates/page.js`));
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
