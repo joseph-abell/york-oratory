@@ -9,7 +9,7 @@ const MenuItem = ({ title, url, newTab = false }) => (
     </li>
 )
 
-const Sidebar = () => {
+const Menu = () => {
     const data = useStaticQuery(graphql`
         query {
             menu: allMarkdownRemark(filter: {frontmatter: {type: {eq: "hidden"}, title: { eq: "Menu" }}}) {
@@ -41,4 +41,4 @@ const Sidebar = () => {
     );
 };
 
-export default Sidebar;
+export default Menu;

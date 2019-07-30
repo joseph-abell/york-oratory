@@ -5,7 +5,7 @@ import React from "react"
 import { rhythm } from "../utils/typography"
 import Header from './header';
 import Footer from './footer';
-import Sidebar from './sidebar';
+import Menu from './menu';
 import Clearfix from './clearfix';
 
 
@@ -20,7 +20,7 @@ class Layout extends React.Component {
         padding: ${rhythm(1.5)} ${rhythm(3 / 4)}
       `}>
         <Header title={title} />
-        <Sidebar />
+        <Menu />
         <main css={css`
           width: 75%;
           float: left;
