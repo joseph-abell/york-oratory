@@ -8,4 +8,3 @@ groups:
         url: /mass-times
     title: News
 ---
-

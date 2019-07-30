@@ -39,7 +39,7 @@ collections:
     files:
       - label: "Menu"
         name: "menu"
-        file: "content/menu.md"
+        file: "content/menu/index.md"
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Menu"}
           - { label: "Type", name: "type", widget: "hidden", default: "menu"}
@@ -54,4 +54,3 @@ collections:
                 fields:
                   - { label: "URL", name: "url", widget: "string" }
                   - { label: "Title", name: "title", widget: "string" }
-          
