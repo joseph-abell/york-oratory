@@ -40,6 +40,15 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "URL", name: "url", widget: "string" }
-      - { label: "Title", name: "title", widget: "string" }
+      - label: "Groups"
+        name: "groups"
+        widget: list
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: false}
+          - label: "Items"
+            name: "items"
+            widget: list
+            fields:
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
       
