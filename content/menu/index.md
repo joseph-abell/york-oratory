@@ -2,13 +2,17 @@
 title: Menu
 type: hidden
 items:
-  - title: Newsletter
+  - newTab: true
+    title: Newsletter
     url: /img/newsletter.pdf
-  - title: Mass Times
+  - newTab: false
+    title: Mass Times
     url: /mass-times
-  - title: Sacraments
+  - newTab: false
+    title: Sacraments
     url: /sacraments
-  - title: Church Opening Times
+  - newTab: false
+    title: Church Opening Times
     url: /church-opening-times
 ---
 
