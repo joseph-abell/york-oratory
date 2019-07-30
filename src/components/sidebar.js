@@ -3,9 +3,9 @@ import { css, jsx } from '@emotion/core'
 
 import { useStaticQuery, graphql } from 'gatsby';
 
-const MenuItem = ({ title, url }) => (
+const MenuItem = ({ title, url, newTab = false }) => (
     <li>
-        <a href={url}>{title}</a>
+        <a href={url} target={newTab ? '_blank' : '_self'}>{title}</a>
     </li>
 )
 
@@ -19,6 +19,7 @@ const Sidebar = () => {
                             items {
                                 title
                                 url
+                                newTab
                             }
                         }
                     }
