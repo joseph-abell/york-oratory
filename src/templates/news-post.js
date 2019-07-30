@@ -22,7 +22,7 @@ class NewsPostTemplate extends React.Component {
         <h1
           css={css`
             margin-top: ${rhythm(1)};
-            margin-bottom: 0;
+            margin-bottom: ${rhythm(0.8)};
           `}
         >
           {post.frontmatter.title}
