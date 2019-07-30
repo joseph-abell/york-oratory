@@ -1,5 +1,5 @@
 ---
-type: news
+type: events
 title: Canonisation Events
 eventDate: 2019-10-13T11:00:00.000Z
 description: >-
