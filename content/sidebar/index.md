@@ -1,9 +1,11 @@
 ---
+title: Sidebar
+type: hidden
 groups:
-  - items:
+  - title: test
+    items:
       - newTab: true
         text: Newsletter
         url: /media/newsletter.pdf
-    title: Thing
 ---
 

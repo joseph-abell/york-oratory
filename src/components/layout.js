@@ -6,6 +6,7 @@ import { rhythm } from "../utils/typography"
 import Header from './header';
 import Footer from './footer';
 import Menu from './menu';
+import Sidebar from './sidebar';
 import Clearfix from './clearfix';
 
 
@@ -26,6 +27,7 @@ class Layout extends React.Component {
         `}>
           {children}
         </main>
+        <Sidebar />
         <Clearfix />
         <Footer />
       </div>
