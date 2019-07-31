@@ -19,7 +19,7 @@ const Header = ({ title }) => {
             <div css={css`
                 position: absolute;
                 right: 20px;
-                top: 20px;
+                top: 24px;
                 display: block;
 
                 @media (min-width: 767px) {
