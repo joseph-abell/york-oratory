@@ -77,14 +77,14 @@ collections:
             name: "groups"
             widget: "list"
             fields:
-              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Title", name: "title", widget: "string", required: false, default: "" }
               - label: "Items"
                 name: "items"
                 widget: "list"
                 fields:
                   - { label: "Url", name: "url", widget: "string" }
                   - { label: "Text", name: "text", widget: "string" }
-                  - { label: "Show on New Tab", name: "newTab", widget: "boolean", default: false }
+                  - { label: "Show on New Tab", name: "newTab", widget: "boolean", default: false, required: false }
 
   - name: "footer"
     label: "Footer"
