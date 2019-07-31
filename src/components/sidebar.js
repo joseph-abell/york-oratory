@@ -45,8 +45,6 @@ const Sidebar = () => {
 
     const sidebar = data && data.sidebar.edges[0].node.frontmatter.groups;
 
-    console.log(sidebar);
-
     return (
         <div>
             <ul css={css`margin: 0 0 20px; padding: 0;`}>
