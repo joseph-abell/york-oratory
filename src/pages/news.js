@@ -20,9 +20,9 @@ const NewsItem = ({ node, title }) => (
         </h3>
         <small
             css={css`
-        margin-bottom: ${rhythm(1 / 4)};
-        display: block;
-      `}
+                margin-bottom: ${rhythm(1 / 4)};
+                display: block;
+            `}
         >{node.frontmatter.date}</small>
         <p
             dangerouslySetInnerHTML={{
