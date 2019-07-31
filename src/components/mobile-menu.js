@@ -44,7 +44,7 @@ const MobileMenu = ({ visible = false, onMenuCloseClick = () => { } }) => {
         }
     `);
     const sidebarStructured = data.sidebar.edges[0].node.frontmatter.groups;
-    const sidebarFlattened = sidebarStructured.map(i => i.items).flat();
+    const sidebarFlattened = sidebarStructured.map(i => i.items).reduce((acc, val) => acc.concat(val), []);
     const menu = [
         ...data.menu.edges[0].node.frontmatter.items,
         ...sidebarFlattened
