@@ -47,8 +47,9 @@ const Sidebar = () => {
 
     return (
         <div css={css`
-            @media (min-width: 500px) {
+            @media (min-width: 700px) {
                 float: right;
+                width: 30%;
             }
         `}>
             <ul
