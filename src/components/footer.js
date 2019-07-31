@@ -26,6 +26,10 @@ const Footer = () => {
             padding-top: ${rhythm(1.5)};
             ${scale(-0.3)}
             line-height: ${rhythm(0.5)};
+
+            p {
+                line-height: 1.5em;
+            }
         `}>
             {copyright && (<p>{copyright}</p>)}
             {oxfordCharityNumber && (<p>{oxfordCharityNumber}</p>)}

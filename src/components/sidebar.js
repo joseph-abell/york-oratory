@@ -46,8 +46,17 @@ const Sidebar = () => {
     const sidebar = data && data.sidebar.edges[0].node.frontmatter.groups;
 
     return (
-        <div css={css` float: right;`}>
-            <ul css={css`margin: 0 0 20px; padding: 0;`}>
+        <div css={css`
+            @media (min-width: 500px) {
+                float: right;
+            }
+        `}>
+            <ul
+                css={css`
+                    margin: 0 0 20px; 
+                    padding: 0;
+                `}
+            >
                 {sidebar.map(({ title, items }) => <SidebarGroup key={JSON.stringify(items)} title={title} items={items} />)}
             </ul>
         </div>
