@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core'
-
 import { useStaticQuery, graphql } from 'gatsby';
 
 const MenuItem = ({ title, url, newTab = false }) => (
@@ -24,14 +23,20 @@ const Menu = () => {
                         }
                     }
                 }
-            }
+            },
         }
     `);
 
     const menu = data && data.menu.edges[0].node.frontmatter.items;
 
     return (
-        <div>
+        <div css={css`
+            display: none;
+
+            @media (min-width: 767px) {
+                display: block;
+            }
+        `}>
             <ul css={css`margin: 0 0 20px; padding: 0;`}>
                 {menu.map(({ title, url, newTab }) => (
                     <MenuItem key={url} title={title} url={url} newTab={newTab} />

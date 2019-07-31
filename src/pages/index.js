@@ -14,7 +14,7 @@ const NewsItem = ({ node, title }) => (
         marginBottom: rhythm(1 / 4),
       }}
     >
-      <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+      <Link style={{ boxShadow: `none` }} to={`/${node.fields.slug}`}>
         {title}
       </Link>
     </h3>
@@ -39,7 +39,7 @@ const EventsItem = ({ node, title }) => (
         margin-bottom: ${rhythm(1 / 4)};
       `}
     >
-      <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+      <Link style={{ boxShadow: `none` }} to={`/${node.fields.slug}`}>
         {title}
       </Link>
     </h3>

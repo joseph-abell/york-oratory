@@ -23,7 +23,7 @@ class Layout extends React.Component {
         <Header title={title} />
         <Menu />
         <main css={css`
-          @media (min-width: 700px) {
+          @media (min-width: 767px) {
             min-height: 60vh;
             float: left;
             width: 65%;

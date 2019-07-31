@@ -47,9 +47,12 @@ const Sidebar = () => {
 
     return (
         <div css={css`
-            @media (min-width: 700px) {
-                float: right;
-                width: 30%;
+            display: none;
+            float: right;
+            width: 30%;
+            
+            @media (min-width: 767px) {
+                display: block;
             }
         `}>
             <ul
