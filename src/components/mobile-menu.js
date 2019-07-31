@@ -74,11 +74,20 @@ const MobileMenu = ({ visible = false, onMenuCloseClick = () => { } }) => {
             }`}
         >
             <Boring active={true} onClick={onMenuCloseClick} lineHeight={6} color='#a00' />
-            <ul>
-                {uniqueMenu.map(({ text, url, newTab }) => (
-                    <MobileMenuItem key={url} text={text} url={url} newTab={newTab} />
-                ))}
-            </ul>
+
+            <div css={css`
+                padding: 0 0 0 20px;
+                margin: 0;
+                max-height: calc(100vh - 80px);
+                position: relative;
+                overflow-y: auto;
+            `}>
+                <ul>
+                    {uniqueMenu.map(({ text, url, newTab }) => (
+                        <MobileMenuItem key={url} text={text} url={url} newTab={newTab} />
+                    ))}
+                </ul>
+            </div>
         </div>
 
     );
