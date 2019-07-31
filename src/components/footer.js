@@ -30,7 +30,9 @@ const Footer = () => {
             {copyright && (<p>{copyright}</p>)}
             {oxfordCharityNumber && (<p>{oxfordCharityNumber}</p>)}
             {middlesboroughCharityNumber && (<p>{middlesboroughCharityNumber}</p>)}
-            {credits && (<p>{credits}</p>)}
+            {credits && (
+                <div dangerouslySetInnerHTML={{ __html: credits }} />
+            )}
         </footer>
     );
 };
