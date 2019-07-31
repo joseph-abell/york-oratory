@@ -40,7 +40,7 @@ class Events extends React.Component {
 
         return (
             <Layout location={this.props.location} title={siteTitle}>
-                <SEO title="News and Events" />
+                <SEO title="Events" />
                 <div css={css`margin-bottom: ${rhythm(2)};`}>
                     <h2>Events</h2>
                     {events.map(({ node }) => {

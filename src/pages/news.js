@@ -32,32 +32,7 @@ const NewsItem = ({ node, title }) => (
     </div>
 );
 
-const EventsItem = ({ node, title }) => (
-    <div>
-        <h3
-            css={css`
-        margin-bottom: ${rhythm(1 / 4)};
-      `}
-        >
-            <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                {title}
-            </Link>
-        </h3>
-        <small
-            css={css`
-        margin-bottom: ${rhythm(1 / 4)};
-        display: block;
-      `}
-        >{node.frontmatter.eventDate}</small>
-        <p
-            dangerouslySetInnerHTML={{
-                __html: node.frontmatter.description || node.excerpt,
-            }}
-        />
-    </div>
-);
-
-class BlogIndex extends React.Component {
+class News extends React.Component {
     render() {
         const { data } = this.props
         const siteTitle = data.site.siteMetadata.title
@@ -65,7 +40,7 @@ class BlogIndex extends React.Component {
 
         return (
             <Layout location={this.props.location} title={siteTitle}>
-                <SEO title="News and Events" />
+                <SEO title="News" />
                 <div css={css`margin-bottom: ${rhythm(2)};`}>
                     <h2>News</h2>
                     {news.map(({ node }) => {
@@ -82,7 +57,7 @@ class BlogIndex extends React.Component {
     }
 }
 
-export default BlogIndex
+export default News
 
 export const pageQuery = graphql`
   query {
