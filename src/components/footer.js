@@ -27,7 +27,7 @@ const Footer = () => {
             ${scale(-0.3)}
             line-height: ${rhythm(0.5)};
 
-            p {
+            p, div {
                 line-height: 1.5em;
                 margin-bottom: 1em;
             }
