@@ -18,17 +18,17 @@ groups:
         text: Mass Times
         url: /mass-times
       - newTab: false
-        text: Sacraments
-        url: /sacraments
+        text: Church Opening Times
+        url: /church-opening-times
       - newTab: false
         text: Parish Groups
         url: /parish-groups
       - newTab: false
+        text: Sacraments
+        url: /sacraments
+      - newTab: false
         text: Contact
         url: /contact
-      - newTab: false
-        text: Church Opening Times
-        url: /church-opening-times
     title: ''
   - items:
       - newTab: false
