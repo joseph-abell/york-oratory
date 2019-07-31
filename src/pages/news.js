@@ -50,7 +50,6 @@ class News extends React.Component {
                             <NewsItem node={node} key={node.fields.slug} title={title} />
                         )
                     })}
-                    <Link to='/news'>View More News</Link>
                 </div>
             </Layout>
         )
