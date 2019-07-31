@@ -15,6 +15,9 @@ groups:
         text: Events
         url: /events
       - newTab: false
+        text: Mass Times
+        url: /mass-times
+      - newTab: false
         text: Sacraments
         url: /sacraments
       - newTab: false
@@ -23,6 +26,9 @@ groups:
       - newTab: false
         text: Contact
         url: /contact
+      - newTab: false
+        text: Church Opening Times
+        url: /church-opening-times
     title: ''
   - items:
       - newTab: false
