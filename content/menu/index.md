@@ -11,8 +11,5 @@ items:
   - newTab: false
     title: Church Opening Times
     url: /church-opening-times
-  - newTab: false
-    title: Sacraments
-    url: /sacraments
 ---
 
