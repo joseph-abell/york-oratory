@@ -24,6 +24,8 @@ class Layout extends React.Component {
         <Menu />
         <main css={css`
           min-height: 60vh;
+          float: left;
+          width: 70%;
         `}>
           {children}
         </main>
