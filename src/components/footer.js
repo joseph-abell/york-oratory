@@ -29,6 +29,7 @@ const Footer = () => {
 
             p {
                 line-height: 1.5em;
+                margin-bottom: 1em;
             }
         `}>
             {copyright && (<p>{copyright}</p>)}
