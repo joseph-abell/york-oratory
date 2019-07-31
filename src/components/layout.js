@@ -26,7 +26,8 @@ class Layout extends React.Component {
           @media (min-width: 700px) {
             min-height: 60vh;
             float: left;
-            width: 70%;
+            width: 65%;
+            margin-right: 5%;
           }
         `}>
           {children}
