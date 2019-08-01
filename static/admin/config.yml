@@ -6,19 +6,23 @@ media_folder: static/media
 public_folder: /media
 
 collections:
-  - name: "news"
-    label: "News"
-    folder: "content/news"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  - name: "contact"
+    label: "Contact"
     editor:
       preview: false
-    fields:
-      - { label: "Type", name: "type", widget: "hidden", default: "news"}
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+    files:
+      - label: "Contact"
+        name: "contact"
+        file: "content/contact/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "hidden" }
+          - { label: "Type", name: "type", widget: "hidden", default: "hidden" }
+          - { label: "Parish Priest", name: "parishPriest", widget: "string" }
+          - { label: "Address", name: "address", widget: "text" }
+          - { label: "Telephone", name: "telephone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string"}
+          - { label: "Directions", name: "directions", widget: "markdown"}
+          - { label: "Visiting Priests", name: "visitingPriests", widget: "markdown"}
   - name: "events"
     label: "Events"
     folder: "content/events"
@@ -32,59 +36,6 @@ collections:
       - { label: "Event Date", name: "eventDate", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
-  - name: "pages"
-    label: "Pages"
-    folder: "content/pages"
-    create: true
-    slug: "{{slug}}"
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
-  - name: "menu"
-    label: "Menu"
-    editor:
-      preview: false
-    files:
-      - label: "Menu"
-        name: "menu"
-        file: "content/menu/index.md"
-        fields:
-          - { label: "Title", name: "title", widget: "hidden", default: "Menu"}
-          - { label: "Type", name: "type", widget: "hidden", default: "hidden"}
-          - label: "Items"
-            name: "items"
-            widget: list
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
-              - { label: "Open in New Tab", name: "newTab", widget: "boolean", default: false, required: false}
-  - name: "sidebar"
-    label: "Sidebar"
-    editor:
-      preview: false
-    files:
-      - label: "Sidebar"
-        name: "sidebar"
-        file: "content/sidebar/index.md"
-        fields:
-          - { label: "Title", name: "title", widget: "hidden", default: "Sidebar"}
-          - { label: "Type", name: "type", widget: "hidden", default: "hidden"}
-          - label: "Groups"
-            name: "groups"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string", required: false, default: "" }
-              - label: "Items"
-                name: "items"
-                widget: "list"
-                fields:
-                  - { label: "Url", name: "url", widget: "string" }
-                  - { label: "Text", name: "text", widget: "string" }
-                  - { label: "Show on New Tab", name: "newTab", widget: "boolean", default: false, required: false }
   - name: "footer"
     label: "Footer"
     editor:
@@ -112,22 +63,69 @@ collections:
           - { label: "Title", name: "title", widget: "string"}
           - { label: "Type", name: "type", widget: "hidden", default: "hidden"}
           - { label: "Header Image", name: "headerImage", widget: "image"}
-  - name: "contact"
-    label: "Contact"
+  - name: "menu"
+    label: "Menu"
     editor:
       preview: false
     files:
-      - label: "Contact"
-        name: "contact"
-        file: "content/contact/index.md"
+      - label: "Menu"
+        name: "menu"
+        file: "content/menu/index.md"
         fields:
-          - { label: "Title", name: "title", widget: "hidden" }
-          - { label: "Type", name: "type", widget: "hidden", default: "hidden" }
-          - { label: "Parish Priest", name: "parishPriest", widget: "string" }
-          - { label: "Address", name: "address", widget: "text" }
-          - { label: "Telephone", name: "telephone", widget: "string" }
-          - { label: "Email", name: "email", widget: "string"}
-          - { label: "Directions", name: "directions", widget: "markdown"}
-          - { label: "Visiting Priests", name: "visitingPriests", widget: "markdown"}
-
-        
+          - { label: "Title", name: "title", widget: "hidden", default: "Menu"}
+          - { label: "Type", name: "type", widget: "hidden", default: "hidden"}
+          - label: "Items"
+            name: "items"
+            widget: list
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Open in New Tab", name: "newTab", widget: "boolean", default: false, required: false}
+  - name: "news"
+    label: "News"
+    folder: "content/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Type", name: "type", widget: "hidden", default: "news"}
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "pages"
+    label: "Pages"
+    folder: "content/pages"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "sidebar"
+    label: "Sidebar"
+    editor:
+      preview: false
+    files:
+      - label: "Sidebar"
+        name: "sidebar"
+        file: "content/sidebar/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "hidden", default: "Sidebar"}
+          - { label: "Type", name: "type", widget: "hidden", default: "hidden"}
+          - label: "Groups"
+            name: "groups"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string", required: false, default: "" }
+              - label: "Items"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Url", name: "url", widget: "string" }
+                  - { label: "Text", name: "text", widget: "string" }
+                  - { label: "Show on New Tab", name: "newTab", widget: "boolean", default: false, required: false }
