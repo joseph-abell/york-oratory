@@ -12,7 +12,7 @@ import Clearfix from './clearfix';
 
 class Layout extends React.Component {
   render() {
-    const { title, children } = this.props;
+    const { title, image, children } = this.props;
     return (
       <div css={css`
         margin-left: auto;
@@ -20,7 +20,7 @@ class Layout extends React.Component {
         max-width: ${rhythm(40)};
         padding: ${rhythm(1.5)} ${rhythm(3 / 4)}
       `}>
-        <Header title={title} />
+        <Header title={title} image={image} />
         <Menu />
         <main css={css`
           margin-right: 20px;

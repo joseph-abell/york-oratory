@@ -11,7 +11,7 @@ const MobileMenuItem = ({ text, url, newTab = false }) => (
 const MobileMenu = ({ visible = false, onMenuCloseClick = () => { } }) => {
     const data = useStaticQuery(graphql`
         query {
-            menu: allMarkdownRemark(filter: {frontmatter: {type: {eq: "hidden"}, title: { eq: "Menu" }}}) {
+            menu: allMarkdownRemark(filter: {frontmatter: { title: { eq: "Menu" }}}) {
                 edges {
                     node {
                         frontmatter {
@@ -24,7 +24,7 @@ const MobileMenu = ({ visible = false, onMenuCloseClick = () => { } }) => {
                     }
                 }
             },
-            sidebar: allMarkdownRemark(limit: 3, filter: {frontmatter: {type: {eq: "hidden"}, title: {eq: "Sidebar"}}}) {
+            sidebar: allMarkdownRemark(limit: 3, filter: {frontmatter: {title: {eq: "Sidebar"}}}) {
                 edges {
                     node {
                         frontmatter {

@@ -93,7 +93,6 @@ const setupData = async (graphql, createPage, type, component) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
-
   setupPage(graphql, createPage, path.resolve(`./src/templates/page.js`));
   setupData(graphql, createPage, "news", path.resolve(`./src/templates/news-post.js`));
   setupData(graphql, createPage, "events", path.resolve(`./src/templates/events-post.js`));

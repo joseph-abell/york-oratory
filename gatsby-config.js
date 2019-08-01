@@ -16,7 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/contact`,
+        path: `${__dirname}/content/contact.md`,
         name: `contact`,
       },
     },
@@ -37,35 +37,28 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/menu`,
+        path: `${__dirname}/content/menu.md`,
         name: `menu`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/sidebar`,
+        path: `${__dirname}/content/sidebar.md`,
         name: `sidebar`
       }
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/footer`,
+        path: `${__dirname}/content/footer.md`,
         name: `footer`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/header`,
+        path: `${__dirname}/content/header.md`,
         name: `header`,
       },
     },

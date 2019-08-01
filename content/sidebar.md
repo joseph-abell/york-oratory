@@ -1,6 +1,5 @@
 ---
 title: Sidebar
-type: hidden
 groups:
   - items:
       - newTab: true

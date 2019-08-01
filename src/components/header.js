@@ -6,7 +6,7 @@ import { Boring } from 'react-burgers';
 
 import MobileMenu from './mobile-menu';
 
-const Header = ({ title }) => {
+const Header = ({ title, image }) => {
     const [menuActive, setMenuActive] = useState(false);
 
     const onMobileNavClick = () => {
@@ -14,8 +14,26 @@ const Header = ({ title }) => {
     }
 
     return (
-        <header>
-            <p className='header' css={css`font-style: italic; font-size: 2rem; font-weight: bold;`}><Link to="/">{title}</Link></p>
+        <header css={css`
+            background: center no-repeat url(${image}), #ddd;
+            height: 350px;
+        `}>
+            <p className='header' css={css`
+                font-style: italic;
+                font-size: 2rem;
+                font-weight: bold;
+            `}>
+                <Link
+                    css={css`
+                        
+                        background: rgba(255, 255, 255, 0.5);
+                        display: block;
+                        color: black;
+                        text-align: center;
+                        font-size: 4rem;
+                    `}
+                    to="/"
+                >{title}</Link></p>
             <div css={css`
                 position: absolute;
                 right: 20px;

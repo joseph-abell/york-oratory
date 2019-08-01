@@ -13,10 +13,9 @@ collections:
     files:
       - label: "Contact"
         name: "contact"
-        file: "content/contact/index.md"
+        file: "content/contact.md"
         fields:
           - { label: "Title", name: "title", widget: "hidden" }
-          - { label: "Type", name: "type", widget: "hidden", default: "hidden" }
           - { label: "Parish Priest", name: "parishPriest", widget: "string" }
           - { label: "Address", name: "address", widget: "text" }
           - { label: "Telephone", name: "telephone", widget: "string" }
@@ -43,10 +42,9 @@ collections:
     files:
       - label: "Footer"
         name: "footer"
-        file: "content/footer/index.md"
+        file: "content/footer.md"
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Footer"}
-          - { label: "Type", name: "type", widget: "hidden", default: "hidden"}
           - { label: "Copyright", name: "copyright", widget: "string"}
           - { label: "Oxford Charity Number", name: "oxfordCharityNumber", widget: "string"}
           - { label: "Middlesborough Charity Number", name: "middlesboroughCharityNumber", widget: "string"}
@@ -58,10 +56,9 @@ collections:
     files:
       - label: "Header"
         name: "header"
-        file: "content/header/index.md"
+        file: "content/header.md"
         fields:
-          - { label: "Title", name: "title", widget: "string"}
-          - { label: "Type", name: "type", widget: "hidden", default: "hidden"}
+          - { label: "Title", name: "title", widget: "hidden", default: "Header"}
           - { label: "Header Image", name: "headerImage", widget: "image"}
   - name: "menu"
     label: "Menu"
@@ -70,10 +67,9 @@ collections:
     files:
       - label: "Menu"
         name: "menu"
-        file: "content/menu/index.md"
+        file: "content/menu.md"
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Menu"}
-          - { label: "Type", name: "type", widget: "hidden", default: "hidden"}
           - label: "Items"
             name: "items"
             widget: list
@@ -113,10 +109,9 @@ collections:
     files:
       - label: "Sidebar"
         name: "sidebar"
-        file: "content/sidebar/index.md"
+        file: "content/sidebar.md"
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Sidebar"}
-          - { label: "Type", name: "type", widget: "hidden", default: "hidden"}
           - label: "Groups"
             name: "groups"
             widget: "list"

@@ -3,7 +3,11 @@ import { css, jsx } from '@emotion/core'
 import { useStaticQuery, graphql } from 'gatsby';
 
 const MenuItem = ({ title, url, newTab = false }) => (
-    <li css={css`list-style: none; margin-right: 20px; display: inline-block;`}>
+    <li css={css`
+        list-style: none;
+        margin-right: 20px;
+        display: inline-block;
+    `}>
         <a href={url} target={newTab ? '_blank' : '_self'}>{title}</a>
     </li>
 )
@@ -11,7 +15,7 @@ const MenuItem = ({ title, url, newTab = false }) => (
 const Menu = () => {
     const data = useStaticQuery(graphql`
         query {
-            menu: allMarkdownRemark(filter: {frontmatter: {type: {eq: "hidden"}, title: { eq: "Menu" }}}) {
+            menu: allMarkdownRemark(filter: {frontmatter: { title: { eq: "Menu" }}}) {
                 edges {
                     node {
                         frontmatter {
@@ -32,6 +36,7 @@ const Menu = () => {
     return (
         <div css={css`
             display: none;
+            margin-top: 20px;
 
             @media (min-width: 767px) {
                 display: block;

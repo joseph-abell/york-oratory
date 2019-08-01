@@ -23,7 +23,7 @@ const SidebarGroup = ({ title, items }) => (
 const Sidebar = () => {
     const data = useStaticQuery(graphql`
         query {
-            sidebar: allMarkdownRemark(limit: 3, filter: {frontmatter: {type: {eq: "hidden"}, title: {eq: "Sidebar"}}}) {
+            sidebar: allMarkdownRemark(limit: 3, filter: {frontmatter: { title: {eq: "Sidebar"}}}) {
                 edges {
                     node {
                         frontmatter {
