@@ -73,6 +73,7 @@ class BlogIndex extends React.Component {
         <SEO title='Events and News' />
         <div css={css`margin-bottom: ${rhythm(2)};`}>
           <h2 css={css`font-size: 2rem;`}>Events</h2>
+
           {events.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
 

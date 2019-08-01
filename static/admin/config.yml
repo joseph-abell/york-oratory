@@ -21,9 +21,9 @@ collections:
           - { label: "Parish Priest", name: "parishPriest", widget: "string" }
           - { label: "Address", name: "address", widget: "text" }
           - { label: "Telephone", name: "telephone", widget: "string" }
-          - { label: "Email", name: "email", widget: "string"}
-          - { label: "Directions", name: "directions", widget: "markdown"}
-          - { label: "Visiting Priests", name: "visitingPriests", widget: "markdown"}
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Directions", name: "directions", widget: "markdown" }
+          - { label: "Visiting Priests", name: "visitingPriests", widget: "markdown" }
   - name: "events"
     label: "Events"
     folder: "content/events"
@@ -32,8 +32,9 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Type", name: "type", widget: "hidden", default: "events"}
+      - { label: "Type", name: "type", widget: "hidden", default: "events" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Primary Image", name: "primaryImage", widget: "image" }
       - { label: "Event Date", name: "eventDate", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -46,12 +47,12 @@ collections:
         name: "footer"
         file: "content/footer.md"
         fields:
-          - { label: "Title", name: "title", widget: "hidden", default: "Footer"}
+          - { label: "Title", name: "title", widget: "hidden", default: "Footer" }
           - { label: "Type", name: "type", widget: "hidden", default: "/hidden" }
-          - { label: "Copyright", name: "copyright", widget: "string"}
-          - { label: "Oxford Charity Number", name: "oxfordCharityNumber", widget: "string"}
-          - { label: "Middlesborough Charity Number", name: "middlesboroughCharityNumber", widget: "string"}
-          - { label: "Credits", name: "credits", widget: "string"}
+          - { label: "Copyright", name: "copyright", widget: "string" }
+          - { label: "Oxford Charity Number", name: "oxfordCharityNumber", widget: "string" }
+          - { label: "Middlesborough Charity Number", name: "middlesboroughCharityNumber", widget: "string" }
+          - { label: "Credits", name: "credits", widget: "string" }
   - name: "header"
     label: "Header"
     editor:
@@ -61,9 +62,9 @@ collections:
         name: "header"
         file: "content/header.md"
         fields:
-          - { label: "Title", name: "title", widget: "hidden", default: "Header"}
+          - { label: "Title", name: "title", widget: "hidden", default: "Header" }
           - { label: "Type", name: "type", widget: "hidden", default: "/hidden" }
-          - { label: "Header Image", name: "headerImage", widget: "image"}
+          - { label: "Header Image", name: "headerImage", widget: "image" }
   - name: "menu"
     label: "Menu"
     editor:
@@ -73,7 +74,7 @@ collections:
         name: "menu"
         file: "content/menu.md"
         fields:
-          - { label: "Title", name: "title", widget: "hidden", default: "Menu"}
+          - { label: "Title", name: "title", widget: "hidden", default: "Menu" }
           - { label: "Type", name: "type", widget: "hidden", default: "/hidden" }
           - label: "Items"
             name: "items"
@@ -81,7 +82,7 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "URL", name: "url", widget: "string" }
-              - { label: "Open in New Tab", name: "newTab", widget: "boolean", default: false, required: false}
+              - { label: "Open in New Tab", name: "newTab", widget: "boolean", default: false, required: false }
   - name: "news"
     label: "News"
     folder: "content/news"
@@ -90,8 +91,9 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Type", name: "type", widget: "hidden", default: "news"}
+      - { label: "Type", name: "type", widget: "hidden", default: "news" }
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Primary Image", name: "primaryImage", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -116,7 +118,7 @@ collections:
         name: "sidebar"
         file: "content/sidebar.md"
         fields:
-          - { label: "Title", name: "title", widget: "hidden", default: "Sidebar"}
+          - { label: "Title", name: "title", widget: "hidden", default: "Sidebar" }
           - { label: "Type", name: "type", widget: "hidden", default: "/hidden" }
           - label: "Groups"
             name: "groups"
