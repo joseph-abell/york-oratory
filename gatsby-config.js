@@ -95,5 +95,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `York Oratory`,
+        short_name: `York Oratory`,
+        start_url: `/`,
+        background_color: `#fff`,
+        theme_color: `#a00`,
+        display: `standalone`,
+      }
+    }
   ],
 }
