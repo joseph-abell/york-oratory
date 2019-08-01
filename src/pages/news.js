@@ -9,7 +9,7 @@ import { rhythm } from "../utils/typography"
 
 const NewsItem = ({ node, title }) => (
     <div>
-        <h3
+        <h1
             style={{
                 marginBottom: rhythm(1 / 4),
             }}
@@ -17,11 +17,12 @@ const NewsItem = ({ node, title }) => (
             <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                 {title}
             </Link>
-        </h3>
+        </h1>
         <small
             css={css`
                 margin-bottom: ${rhythm(1 / 4)};
                 display: block;
+                color: rgba(0, 0, 0, 0.7);
             `}
         >{node.frontmatter.date}</small>
         <p

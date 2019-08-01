@@ -22,7 +22,7 @@ class EventsPostTemplate extends React.Component {
                 <h1
                     css={css`
                         margin-top: ${rhythm(1)};
-                        margin-bottom: 0;
+                        margin-bottom: ${rhythm(0.7)};
                     `}
                 >
                     {post.frontmatter.title}
@@ -31,7 +31,8 @@ class EventsPostTemplate extends React.Component {
                     css={css`
                         ${scale(-1 / 5)}
                         display: block;
-                        margin-bottom: ${rhythm(1)}
+                        margin-bottom: ${rhythm(0.7)};
+                        color: rgba(0, 0, 0, 0.7);
                     `}
                 >
                     {post.frontmatter.eventDate}

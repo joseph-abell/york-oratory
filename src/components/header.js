@@ -15,7 +15,7 @@ const Header = ({ title }) => {
 
     return (
         <header>
-            <h1><Link to="/">{title}</Link></h1>
+            <p className='header' css={css`font-style: italic; font-size: 2rem; font-weight: bold;`}><Link to="/">{title}</Link></p>
             <div css={css`
                 position: absolute;
                 right: 20px;

@@ -100,3 +100,15 @@ collections:
           - { label: "Oxford Charity Number", name: "oxfordCharityNumber", widget: "string"}
           - { label: "Middlesborough Charity Number", name: "middlesboroughCharityNumber", widget: "string"}
           - { label: "Credits", name: "credits", widget: "string"}
+  - name: "header"
+    label: "Header"
+    editor:
+      preview: false
+    files:
+      - label: "Header"
+        name: "header"
+        file: "content/header/index.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string"}
+          - { label: "Type", name: "type", widget: "hidden", default: "hidden"}
+          - { label: "Header Image", name: "headerImage", widget: "image"}

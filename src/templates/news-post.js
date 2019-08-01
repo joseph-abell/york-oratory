@@ -32,6 +32,7 @@ class NewsPostTemplate extends React.Component {
             ${scale(-1 / 5)}
             display: block;
             margin-bottom: ${rhythm(1)};
+            color: rgba(0, 0, 0, 0.7);
           `}
         >
           {post.frontmatter.date}

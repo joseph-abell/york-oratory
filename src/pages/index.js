@@ -4,7 +4,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
 const NewsItem = ({ node, title }) => (
@@ -22,6 +21,7 @@ const NewsItem = ({ node, title }) => (
       css={css`
         margin-bottom: ${rhythm(1 / 4)};
         display: block;
+        color: rgba(0, 0, 0, 0.7);
       `}
     >{node.frontmatter.date}</small>
     <p
@@ -47,6 +47,7 @@ const EventsItem = ({ node, title }) => (
       css={css`
         margin-bottom: ${rhythm(1 / 4)};
         display: block;
+        color: rgba(0, 0, 0, 0.7);
       `}
     >{node.frontmatter.eventDate}</small>
     <p

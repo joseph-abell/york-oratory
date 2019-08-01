@@ -24,19 +24,19 @@ const Footer = () => {
             text-align: center;
             border-top: 1px solid #f4f4f4;
             padding-top: ${rhythm(1.5)};
-            ${scale(-0.3)}
             line-height: ${rhythm(0.5)};
 
             p, div {
                 line-height: 1.5em;
                 margin-bottom: 1em;
+                color: rgba(0, 0, 0, 0.7);
             }
         `}>
-            {copyright && (<p>{copyright}</p>)}
-            {oxfordCharityNumber && (<p>{oxfordCharityNumber}</p>)}
-            {middlesboroughCharityNumber && (<p>{middlesboroughCharityNumber}</p>)}
+            {copyright && (<p><small>{copyright}</small></p>)}
+            {oxfordCharityNumber && (<p><small>{oxfordCharityNumber}</small></p>)}
+            {middlesboroughCharityNumber && (<p><small>{middlesboroughCharityNumber}</small></p>)}
             {credits && (
-                <div dangerouslySetInnerHTML={{ __html: credits }} />
+                <p><small dangerouslySetInnerHTML={{ __html: credits }} /></p>
             )}
         </footer>
     );

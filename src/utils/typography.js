@@ -2,11 +2,15 @@ import Typography from "typography"
 
 const typography = new Typography({
   headerFontFamily: ['Palatino', 'Palatino Linotype', 'Book Antiqua', 'serif'],
-  bodyFontFamily: ['Palatino', 'Palatino Linotype', 'Book Antiqua', 'serif'],
+  bodyFontFamily: ['Montserrat', 'sans-serif'],
   baseFontSize: '18px',
   overrideStyles: () => ({
     h1: {
       fontStyle: 'italic'
+    },
+    '.header': {
+      fontStyle: 'italic',
+      fontFamily: 'Palatino, Palatino Linotype, Book Antiqua, serif',
     },
     h2: {
       fontStyle: 'italic'

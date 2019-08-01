@@ -9,21 +9,24 @@ import { rhythm } from "../utils/typography"
 
 const EventsItem = ({ node, title }) => (
     <div>
-        <h3
+        <h2
             css={css`
-        margin-bottom: ${rhythm(1 / 4)};
-      `}
+                margin-bottom: ${rhythm(1 / 4)};
+            `}
         >
             <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                 {title}
             </Link>
-        </h3>
+        </h2>
         <small
             css={css`
-        margin-bottom: ${rhythm(1 / 4)};
-        display: block;
-      `}
-        >{node.frontmatter.eventDate}</small>
+                margin-bottom: ${rhythm(1 / 4)};
+                display: block;
+                color: rgba(0, 0, 0, 0.7);
+            `}
+        >
+            {node.frontmatter.eventDate}
+        </small>
         <p
             dangerouslySetInnerHTML={{
                 __html: node.frontmatter.description || node.excerpt,
@@ -42,7 +45,8 @@ class Events extends React.Component {
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO title="Events" />
                 <div css={css`margin-bottom: ${rhythm(2)};`}>
-                    <h2>Events</h2>
+                    <h1>Events</h1>
+
                     {events.map(({ node }) => {
                         const title = node.frontmatter.title || node.fields.slug;
 
@@ -59,27 +63,27 @@ class Events extends React.Component {
 export default Events
 
 export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    events: allMarkdownRemark(filter: { frontmatter: { type: { eq: "events" } } }, sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            eventDate(formatString: "MMMM DD, YYYY")
-            title
-            description
-            type
-          }
+    query {
+        site {
+            siteMetadata {
+                title
+            }
         }
-      }
+        events: allMarkdownRemark(filter: { frontmatter: { type: { eq: "events" } } }, sort: { fields: [frontmatter___date], order: DESC }) {
+            edges {
+                node {
+                    excerpt
+                    fields {
+                        slug
+                    }
+                    frontmatter {
+                        eventDate(formatString: "MMMM DD, YYYY")
+                        title
+                        description
+                        type
+                    }
+                }
+            }
+        }
     }
-  }
 `
