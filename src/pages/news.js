@@ -33,7 +33,9 @@ const NewsItem = ({ node, title, primaryImage }) => (
       }}
     />
     {primaryImage && (
-      <img src={primaryImage} alt="" />
+      <Link to={node.fields.slug}>
+        <img src={primaryImage} alt="" />
+      </Link>
     )}
 
   </div>

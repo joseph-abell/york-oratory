@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-const EventsItem = ({ node, title }) => (
+const EventsItem = ({ node, title, primaryImage }) => (
     <div>
         <h2
             css={css`
@@ -32,6 +32,11 @@ const EventsItem = ({ node, title }) => (
                 __html: node.frontmatter.description || node.excerpt,
             }}
         />
+        {primaryImage && (
+            <Link to={node.fields.slug}>
+                <img src={primaryImage} alt='' />
+            </Link>
+        )}
     </div>
 );
 
@@ -49,9 +54,9 @@ class Events extends React.Component {
 
                     {events.map(({ node }) => {
                         const title = node.frontmatter.title || node.fields.slug;
-
+                        const primaryImage = node.frontmatter.primaryImage;
                         return (
-                            <EventsItem node={node} key={node.fields.slug} title={title} />
+                            <EventsItem node={node} key={node.fields.slug} title={title} primaryImage={primaryImage} />
                         )
                     })}
                 </div>
@@ -79,6 +84,7 @@ export const pageQuery = graphql`
                     frontmatter {
                         eventDate(formatString: "MMMM DD, YYYY")
                         title
+                        primaryImage
                         description
                         type
                     }

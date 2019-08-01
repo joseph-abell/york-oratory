@@ -87,8 +87,9 @@ const Header = ({ title }) => {
                 />
             </div>
             <Clearfix />
-            <header
-                css={css`
+            <Link to='/'>
+                <header
+                    css={css`
                     background: ${image && `center no-repeat url(${image}), #ddd`};
                     height: ${image ? '250px' : 'auto'};
                     margin-bottom: ${image && '3rem'};
@@ -98,10 +99,10 @@ const Header = ({ title }) => {
                         margin-bottom: ${image && '1rem'};
                     }
                 `}
-            >
-
-                <MobileMenu visible={menuActive} onMenuCloseClick={onMobileNavClick} />
-            </header>
+                >
+                </header>
+            </Link>
+            <MobileMenu visible={menuActive} onMenuCloseClick={onMobileNavClick} />
         </Fragment>
     );
 };
