@@ -24,7 +24,6 @@ const Header = ({ title, image }) => {
                 font-style: italic;
                 font-size: 2rem;
                 font-weight: bold;
-                line-height: 1.3rem;
             `}>
                 <Link
                     css={css`
@@ -36,6 +35,7 @@ const Header = ({ title, image }) => {
                         @media (min-width: 767px) {
                             font-size: 4rem;
                             text-align: center;
+                            line-height: 1.3em;
                         }
                     `}
                     to="/"

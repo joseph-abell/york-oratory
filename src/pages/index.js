@@ -108,6 +108,7 @@ export const pageQuery = graphql`
         title
       }
     }
+    
     header: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Header" } } }) {
       edges {
         node {
