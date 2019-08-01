@@ -121,12 +121,13 @@ collections:
         name: "contact"
         file: "content/contact/index.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Title", name: "title", widget: "hidden" }
           - { label: "Type", name: "type", widget: "hidden", default: "hidden" }
           - { label: "Parish Priest", name: "parishPriest", widget: "string" }
           - { label: "Address", name: "address", widget: "text" }
           - { label: "Telephone", name: "telephone", widget: "string" }
           - { label: "Email", name: "email", widget: "string"}
           - { label: "Directions", name: "directions", widget: "markdown"}
+          - { label: "Visiting Priests", name: "visitingPriests", widget: "markdown"}
 
         
