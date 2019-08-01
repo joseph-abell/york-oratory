@@ -1,5 +1,6 @@
 ---
 title: Contact
+type: /contact
 parishPriest: 'Fr Richard Duffield, Cong. Orat.'
 address: |-
   The Oratorian Community

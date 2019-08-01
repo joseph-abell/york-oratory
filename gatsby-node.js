@@ -6,7 +6,6 @@ const setupPage = async (graphql, createPage, component) => {
     `
     {
       pages: allMarkdownRemark(
-        filter: { frontmatter: { type: { eq: null }}}
         sort: { fields: [frontmatter___date], order: DESC }
         limit: 1000
       ) {
@@ -31,13 +30,15 @@ const setupPage = async (graphql, createPage, component) => {
   }
 
   result.data.pages.edges.forEach((page) => {
-    createPage({
-      path: page.node.fields.slug,
-      component,
-      context: {
-        slug: page.node.fields.slug
-      },
-    })
+    if (page.node.frontmatter.type !== '/hidden/') {
+      createPage({
+        path: page.node.fields.slug,
+        component,
+        context: {
+          slug: page.node.fields.slug
+        },
+      })
+    }
   })
 }
 

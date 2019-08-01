@@ -17,6 +17,7 @@ collections:
         file: "content/contact.md"
         fields:
           - { label: "Title", name: "title", widget: "hidden" }
+          - { label: "Type", name: "type", widget: "hidden", default: "/contact" }
           - { label: "Parish Priest", name: "parishPriest", widget: "string" }
           - { label: "Address", name: "address", widget: "text" }
           - { label: "Telephone", name: "telephone", widget: "string" }
@@ -46,6 +47,7 @@ collections:
         file: "content/footer.md"
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Footer"}
+          - { label: "Type", name: "type", widget: "hidden", default: "/hidden" }
           - { label: "Copyright", name: "copyright", widget: "string"}
           - { label: "Oxford Charity Number", name: "oxfordCharityNumber", widget: "string"}
           - { label: "Middlesborough Charity Number", name: "middlesboroughCharityNumber", widget: "string"}
@@ -60,6 +62,7 @@ collections:
         file: "content/header.md"
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Header"}
+          - { label: "Type", name: "type", widget: "hidden", default: "/hidden" }
           - { label: "Header Image", name: "headerImage", widget: "image"}
   - name: "menu"
     label: "Menu"
@@ -71,6 +74,7 @@ collections:
         file: "content/menu.md"
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Menu"}
+          - { label: "Type", name: "type", widget: "hidden", default: "/hidden" }
           - label: "Items"
             name: "items"
             widget: list
@@ -113,6 +117,7 @@ collections:
         file: "content/sidebar.md"
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Sidebar"}
+          - { label: "Type", name: "type", widget: "hidden", default: "/hidden" }
           - label: "Groups"
             name: "groups"
             widget: "list"
