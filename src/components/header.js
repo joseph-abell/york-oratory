@@ -15,7 +15,7 @@ const Header = ({ title, image }) => {
 
     return (
         <header css={css`
-            @media (max-width: 767px) {
+            @media (min-width: 767px) {
                 background: ${image && `center no-repeat url(${image}), #ddd`};
                 height: ${image ? '350px' : 'auto'};
             }            
@@ -27,14 +27,13 @@ const Header = ({ title, image }) => {
             `}>
                 <Link
                     css={css`
-                        
                         background: rgba(255, 255, 255, 0.5);
                         display: block;
                         color: rgba(0, 0, 0, 0.8);
                         text-align: center;                        
                         text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
 
-                        @media (max-width: 767px) {
+                        @media (min-width: 767px) {
                             font-size: 4rem;
                         }
                     `}
