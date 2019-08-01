@@ -1,7 +1,7 @@
 ---
 type: news
 title: Photographs of Br Henry's Diaconal Ordination
-date: 2019-07-30T22:02:40.232Z
+date: 2019-07-09T22:02:40.232Z
 description: Congratulations to Brother Henry on his ordination to the Diaconate.
 ---
 Congratulations to Brother Henry on his ordination to the Diaconate. Thank you to all who helped to make it such a memorable occasion. Here are some photographs as a reminder of the day.
