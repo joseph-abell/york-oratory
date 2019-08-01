@@ -5,7 +5,6 @@ groups:
       - newTab: true
         text: Newsletter
         url: /media/newsletter.pdf
-    title: ''
   - items:
       - newTab: false
         text: News
@@ -28,7 +27,6 @@ groups:
       - newTab: false
         text: Contact
         url: /contact
-    title: ''
   - items:
       - newTab: false
         text: Shrine of St Margaret Clitherow
@@ -38,11 +36,9 @@ groups:
       - newTab: true
         text: School
         url: 'https://stwilfridsprimaryyork.co.uk/'
-    title: ''
   - items:
       - newTab: true
         text: Oxford Oratory
         url: 'http://www.oxfordoratory.org.uk/'
-    title: ''
 ---
 

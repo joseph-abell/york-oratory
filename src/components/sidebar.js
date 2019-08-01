@@ -9,9 +9,8 @@ const SidebarItem = ({ text, url, newTab = false }) => (
     </li>
 )
 
-const SidebarGroup = ({ title, items }) => (
+const SidebarGroup = ({ items }) => (
     <li css={css`list-style: none;`}>
-        <h3>{title}</h3>
         <ul css={css`display: block; margin: 0; border: 1px solid #eee; border-radius: 3px; padding: 10px;`}>
             {items.map(({ text, url, newTab }) => (
                 <SidebarItem key={url} text={text} url={url} newTab={newTab} />
@@ -28,7 +27,6 @@ const Sidebar = () => {
                     node {
                         frontmatter {
                             groups {
-                                title
                                 items {
                                     text
                                     url
@@ -61,7 +59,12 @@ const Sidebar = () => {
                     padding: 0;
                 `}
             >
-                {sidebar.map(({ title, items }) => <SidebarGroup key={JSON.stringify(items)} title={title} items={items} />)}
+                {sidebar.map(({ items }) =>
+                    <SidebarGroup
+                        key={JSON.stringify(items)}
+                        items={items}
+                    />
+                )}
             </ul>
         </div>
     );

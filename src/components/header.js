@@ -1,10 +1,11 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-import { useState } from 'react';
+import { useState, Fragment } from 'react';
 import { Link } from 'gatsby';
 import { Boring } from 'react-burgers';
 
 import MobileMenu from './mobile-menu';
+import Clearfix from './clearfix';
 
 const Header = ({ title, image }) => {
     const [menuActive, setMenuActive] = useState(false);
@@ -14,17 +15,23 @@ const Header = ({ title, image }) => {
     }
 
     return (
-        <header css={css`
-            @media (min-width: 767px) {
-                background: ${image && `center no-repeat url(${image}), #ddd`};
-                height: ${image ? '350px' : 'auto'};
-            }            
-        `}>
-            <p className='header' css={css`
-                font-style: italic;
-                font-size: 2rem;
-                font-weight: bold;
-            `}>
+        <Fragment>
+            <p
+                className='header'
+                css={css`
+                    font-style: italic;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    float: left;
+                    margin-bottom: 0;
+
+                    @media (min-width: 767px) {
+                        position: ${image ? 'absolute' : 'static'};
+                        left: 0;
+                        right: 0;
+                    }
+                `}
+            >
                 <Link
                     css={css`
                         background: rgba(255, 255, 255, 0.5);
@@ -33,26 +40,52 @@ const Header = ({ title, image }) => {
                         text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
 
                         @media (min-width: 767px) {
-                            font-size: 4rem;
-                            text-align: center;
+                            font-size: ${image ? '4rem' : '2rem'};
+                            text-align: ${image ? 'center' : 'left'};
                             line-height: 1.3em;
                         }
                     `}
                     to="/"
-                >{title}</Link></p>
-            <div css={css`
-                position: absolute;
-                right: 20px;
-                top: 24px;
-                display: block;
+                >
+                    {title}
+                </Link>
+            </p>
+            <div
+                css={css`
+                    float: right;
+                    display: block;
+                    margin-top: -5px;
+                    margin-right: -15px;
 
-                @media (min-width: 767px) {
-                    display: none;
-                }
+                    @media (min-width: 767px) {
+                        display: none;
+                    }
+                `}
+            >
+                <Boring
+                    onClick={onMobileNavClick}
+                    lineHeight={6}
+                    color='#a00'
+                    ustomProps={{ 'aria-label': "Mobile Menu" }}
+                />
+            </div>
+            <Clearfix />
+            <header
+                css={css`
+                    background: ${image && `center no-repeat url(${image}), #ddd`};
+                    height: ${image ? '250px' : 'auto'};
+                    margin-bottom: ${image && '3rem'};
 
-            `}><Boring onClick={onMobileNavClick} lineHeight={6} color='#a00' customProps={{ 'aria-label': "Mobile Menu" }} /></div>
-            <MobileMenu visible={menuActive} onMenuCloseClick={onMobileNavClick} />
-        </header>
+                    @media (min-width: 767px) {
+                        height: ${image ? '350px' : 'auto'};
+                        margin-bottom: ${image && '1rem'};
+                    }
+                `}
+            >
+
+                <MobileMenu visible={menuActive} onMenuCloseClick={onMobileNavClick} />
+            </header>
+        </Fragment>
     );
 };
 

@@ -18,12 +18,13 @@ class Layout extends React.Component {
         margin-left: auto;
         margin-right: auto;
         max-width: ${rhythm(40)};
-        padding: ${rhythm(1.5)} ${rhythm(3 / 4)}
+        padding: 1.45rem ${rhythm(3 / 4)}
       `}>
         <Header title={title} image={image} />
         <Menu />
         <main css={css`
           margin-right: 20px;
+
           @media (min-width: 767px) {
             min-height: 60vh;
             float: left;

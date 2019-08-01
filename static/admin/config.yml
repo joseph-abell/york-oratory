@@ -8,6 +8,7 @@ public_folder: /media
 collections:
   - name: "contact"
     label: "Contact"
+    slug: "{{slug}}"
     editor:
       preview: false
     files:
@@ -116,7 +117,6 @@ collections:
             name: "groups"
             widget: "list"
             fields:
-              - { label: "Title", name: "title", widget: "string", required: false, default: "" }
               - label: "Items"
                 name: "items"
                 widget: "list"
