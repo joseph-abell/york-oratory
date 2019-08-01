@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-const NewsItem = ({ node, title }) => (
+const NewsItem = ({ node, title, primaryImage }) => (
   <div>
     <h2
       css={css`
@@ -24,12 +24,18 @@ const NewsItem = ({ node, title }) => (
         display: block;
         color: rgba(0, 0, 0, 0.7);
       `}
-    >{node.frontmatter.date}</small>
+    >
+      {node.frontmatter.date}
+    </small>
     <p
       dangerouslySetInnerHTML={{
         __html: node.frontmatter.description || node.excerpt,
       }}
     />
+    {primaryImage && (
+      <img src={primaryImage} alt="" />
+    )}
+
   </div>
 );
 
@@ -46,9 +52,9 @@ class News extends React.Component {
           <h1>News</h1>
           {news.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
-
+            const primaryImage = node.frontmatter.primaryImage;
             return (
-              <NewsItem node={node} key={node.fields.slug} title={title} />
+              <NewsItem node={node} key={node.fields.slug} title={title} primaryImage={primaryImage} />
             )
           })}
         </div>
@@ -76,6 +82,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            primaryImage
             description
             type
           }
