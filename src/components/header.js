@@ -15,8 +15,10 @@ const Header = ({ title, image }) => {
 
     return (
         <header css={css`
-            background: ${image && `center no-repeat url(${image}), #ddd`};
-            height: ${image ? '350px' : 'auto'};
+            @media (max-width: 767px) {
+                background: ${image && `center no-repeat url(${image}), #ddd`};
+                height: ${image ? '350px' : 'auto'};
+            }            
         `}>
             <p className='header' css={css`
                 font-style: italic;
@@ -29,9 +31,12 @@ const Header = ({ title, image }) => {
                         background: rgba(255, 255, 255, 0.5);
                         display: block;
                         color: rgba(0, 0, 0, 0.8);
-                        text-align: center;
-                        font-size: 4rem;
+                        text-align: center;                        
                         text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
+
+                        @media (max-width: 767px) {
+                            font-size: 4rem;
+                        }
                     `}
                     to="/"
                 >{title}</Link></p>
