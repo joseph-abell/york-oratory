@@ -33,8 +33,8 @@ const Footer = () => {
             }
 
             span {
-                color: #f9f;
-                text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
+                color: #a00;
+                text-shadow: rgba(150, 0, 0, 0.5) 0px 1px 2px;
             }
         `}>
             {copyright && (<p><small>{copyright}</small></p>)}
