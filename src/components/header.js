@@ -15,8 +15,8 @@ const Header = ({ title, image }) => {
 
     return (
         <header css={css`
-            background: center no-repeat url(${image}), #ddd;
-            height: 350px;
+            background: ${image && `center no-repeat url(${image}), #ddd`};
+            height: ${image ? '350px' : 'auto'};
         `}>
             <p className='header' css={css`
                 font-style: italic;
