@@ -38,7 +38,7 @@ groups:
   - items:
       - newTab: false
         text: School
-        url: /school
+        url: 'https://stwilfridsprimaryyork.co.uk/'
     title: ''
   - items:
       - newTab: false
