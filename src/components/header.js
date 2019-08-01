@@ -24,17 +24,18 @@ const Header = ({ title, image }) => {
                 font-style: italic;
                 font-size: 2rem;
                 font-weight: bold;
+                line-height: 1.3rem;
             `}>
                 <Link
                     css={css`
                         background: rgba(255, 255, 255, 0.5);
                         display: block;
                         color: rgba(0, 0, 0, 0.8);
-                        text-align: center;                        
                         text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
 
                         @media (min-width: 767px) {
                             font-size: 4rem;
+                            text-align: center;
                         }
                     `}
                     to="/"
