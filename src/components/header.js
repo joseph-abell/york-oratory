@@ -26,7 +26,7 @@ const Header = ({ title }) => {
                     display: none;
                 }
 
-            `}><Boring onClick={onMobileNavClick} lineHeight={6} color='#a00' /></div>
+            `}><Boring onClick={onMobileNavClick} lineHeight={6} color='#a00' customProps={{ 'aria-label': "Mobile Menu" }} /></div>
             <MobileMenu visible={menuActive} onMenuCloseClick={onMobileNavClick} />
         </header>
     );
