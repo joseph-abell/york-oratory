@@ -27,7 +27,8 @@ directions: >-
   are very convenient.
 
 
-  [View St Wilfrid's on Google Maps](<View St Wilfrid's on Google Maps>)
+  [View St Wilfrid's on Google
+  Maps](https://maps.google.co.uk/maps?expflags=enable_star_based_justifications:true&ie=UTF8&cid=1491886688963375025&q=Saint+Wilfrid%27s+Catholic+Church&iwloc=A&gl=GB&hl=en)
 
 
   [View St Joseph's on Google

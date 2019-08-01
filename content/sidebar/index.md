@@ -36,14 +36,14 @@ groups:
         url: /shrine-of-st-margaret-clitherow
     title: ''
   - items:
-      - newTab: false
+      - newTab: true
         text: School
-        url: /school
+        url: 'https://stwilfridsprimaryyork.co.uk/'
     title: ''
   - items:
-      - newTab: false
+      - newTab: true
         text: Oxford Oratory
-        url: /oxford-oratory
+        url: 'http://www.oxfordoratory.org.uk/'
     title: ''
 ---
 
