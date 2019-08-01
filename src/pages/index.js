@@ -84,7 +84,7 @@ class BlogIndex extends React.Component {
           <Link to='/events'>View More Events</Link>
         </div>
         <div css={css`margin-bottom: ${rhythm(2)};`}>
-          <h2>News</h2>
+          <h2 css={css`font-size: 2rem;`}>News</h2>
           {news.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
 
