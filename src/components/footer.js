@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import { useStaticQuery, graphql } from 'gatsby';
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 const Footer = () => {
     const data = useStaticQuery(graphql`

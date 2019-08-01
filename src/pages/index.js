@@ -4,6 +4,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
+import SEO from '../components/seo';
 import { rhythm } from "../utils/typography"
 
 const NewsItem = ({ node, title }) => (
@@ -69,6 +70,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <SEO title='Events and News' />
         <div css={css`margin-bottom: ${rhythm(2)};`}>
           <h2 css={css`font-size: 2rem;`}>Events</h2>
           {events.map(({ node }) => {
