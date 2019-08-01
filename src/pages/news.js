@@ -9,7 +9,7 @@ import { rhythm } from "../utils/typography"
 
 const NewsItem = ({ node, title }) => (
     <div>
-        <h1
+        <h2
             style={{
                 marginBottom: rhythm(1 / 4),
             }}
@@ -17,7 +17,7 @@ const NewsItem = ({ node, title }) => (
             <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                 {title}
             </Link>
-        </h1>
+        </h2>
         <small
             css={css`
                 margin-bottom: ${rhythm(1 / 4)};
@@ -43,7 +43,7 @@ class News extends React.Component {
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO title="News" />
                 <div css={css`margin-bottom: ${rhythm(2)};`}>
-                    <h2>News</h2>
+                    <h1>News</h1>
                     {news.map(({ node }) => {
                         const title = node.frontmatter.title || node.fields.slug;
 
