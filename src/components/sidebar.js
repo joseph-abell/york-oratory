@@ -10,14 +10,14 @@ const SidebarItem = ({ text, url, newTab = false }) => (
 )
 
 const SidebarGroup = ({ title, items }) => (
-    <div>
+    <li>
         <h3>{title}</h3>
         <ul css={css`display: block; margin: 0; border: 1px solid #eee; border-radius: 3px; padding: 10px;`}>
             {items.map(({ text, url, newTab }) => (
                 <SidebarItem key={url} text={text} url={url} newTab={newTab} />
             ))}
         </ul>
-    </div>
+    </li>
 );
 
 const Sidebar = () => {
