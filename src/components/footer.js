@@ -31,6 +31,11 @@ const Footer = () => {
                 margin-bottom: 1em;
                 color: rgba(0, 0, 0, 0.7);
             }
+
+            span {
+                color: #f9f;
+                text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 2px;
+            }
         `}>
             {copyright && (<p><small>{copyright}</small></p>)}
             {oxfordCharityNumber && (<p><small>{oxfordCharityNumber}</small></p>)}
