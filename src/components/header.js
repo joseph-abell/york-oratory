@@ -28,9 +28,10 @@ const Header = ({ title, image }) => {
                         
                         background: rgba(255, 255, 255, 0.5);
                         display: block;
-                        color: black;
+                        color: rgba(0, 0, 0, 0.8);
                         text-align: center;
                         font-size: 4rem;
+                        text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 1px;
                     `}
                     to="/"
                 >{title}</Link></p>
