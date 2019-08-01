@@ -32,8 +32,8 @@ groups:
     title: ''
   - items:
       - newTab: false
-        text: Shrine of Margaret Clitherow
-        url: /shrine-of-margaret-clitherow
+        text: Shrine of St Margaret Clitherow
+        url: /shrine-of-st-margaret-clitherow
     title: ''
   - items:
       - newTab: false
