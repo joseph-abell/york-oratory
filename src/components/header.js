@@ -3,11 +3,28 @@ import { css, jsx } from '@emotion/core';
 import { useState, Fragment } from 'react';
 import { Link } from 'gatsby';
 import { Boring } from 'react-burgers';
+import { useStaticQuery, graphql } from 'gatsby';
 
 import MobileMenu from './mobile-menu';
 import Clearfix from './clearfix';
 
-const Header = ({ title, image }) => {
+const Header = ({ title }) => {
+    const data = useStaticQuery(graphql`
+        query {
+            header: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Header" } } }) {
+                edges {
+                    node {
+                        frontmatter {
+                            headerImage
+                        }
+                    }
+                }
+            }
+        }
+    `);
+
+    const image = data.header.edges[0].node.frontmatter.headerImage;
+
     const [menuActive, setMenuActive] = useState(false);
 
     const onMobileNavClick = () => {
