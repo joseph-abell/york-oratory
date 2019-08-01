@@ -1,6 +1,7 @@
 ---
 type: events
 title: Canonisation Events
+primaryImage: /media/newman.png
 eventDate: 2019-10-13T11:00:00.000Z
 description: >-
   The Canonisation of Blessed John Henry Newman is happening in Rome on Sunday,
