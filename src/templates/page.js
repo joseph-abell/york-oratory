@@ -21,7 +21,6 @@ class PageTemplate extends React.Component {
                 />
                 <h1
                     css={css`
-                        margin-top: ${rhythm(1)};
                         margin-bottom: ${rhythm(1)};
                     `}
                 >

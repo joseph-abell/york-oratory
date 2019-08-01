@@ -9,9 +9,10 @@ import { rhythm } from "../utils/typography"
 const NewsItem = ({ node, title }) => (
   <div>
     <h3
-      style={{
-        marginBottom: rhythm(1 / 4),
-      }}
+      css={css`
+        font-size: 1.51572rem;
+        margin-bottom: ${rhythm(1 / 4)};
+      `}
     >
       <Link style={{ boxShadow: `none` }} to={`/${node.fields.slug}`}>
         {title}
@@ -37,6 +38,7 @@ const EventsItem = ({ node, title }) => (
     <h3
       css={css`
         margin-bottom: ${rhythm(1 / 4)};
+        font-size: 1.51572rem;
       `}
     >
       <Link style={{ boxShadow: `none` }} to={`/${node.fields.slug}`}>
@@ -68,7 +70,7 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <div css={css`margin-bottom: ${rhythm(2)};`}>
-          <h2>Events</h2>
+          <h2 css={css`font-size: 2rem;`}>Events</h2>
           {events.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug;
 
