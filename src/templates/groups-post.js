@@ -78,7 +78,6 @@ export const pageQuery = graphql`
                         type
                         groups {
                             title
-                            description
                             urlSlug
                             body
                             groupType
