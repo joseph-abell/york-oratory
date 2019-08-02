@@ -69,8 +69,8 @@ collections:
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Primary Image", name: "primaryImage", widget: "image", required: false }
-              - { label: "Group Type", name: "groupType", widget: "string", required: false }
+              - { label: "Primary Image", name: "primaryImage", widget: "image", required: false, default: '' }
+              - { label: "Group Type", name: "groupType", widget: "string", required: false, default: '' }
               - { label: "Body", name: "body", widget: "markdown" }
   - name: "home"
     label: "Home Page"
