@@ -39,9 +39,5 @@ groups:
       - newTab: true
         text: School
         url: 'https://stwilfridsprimaryyork.co.uk/'
-  - items:
-      - newTab: true
-        text: Oxford Oratory
-        url: 'http://www.oxfordoratory.org.uk/'
 ---
 
