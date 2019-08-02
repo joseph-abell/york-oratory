@@ -44,19 +44,19 @@ class Groups extends React.Component {
     render() {
         const { data } = this.props
         const siteTitle = data.site.siteMetadata.title
-        const events = data.events.edges
+        const groups = data.events.edges
 
         return (
             <Layout location={this.props.location} title={siteTitle}>
-                <SEO title="Events" />
+                <SEO title="Groups" />
                 <div css={css`margin-bottom: ${rhythm(2)};`}>
-                    <h1>Events</h1>
+                    <h1>Groups</h1>
 
-                    {events.map(({ node }) => {
+                    {groups.map(({ node }) => {
                         const title = node.frontmatter.title || node.fields.slug;
                         const primaryImage = node.frontmatter.primaryImage;
                         return (
-                            <EventsItem node={node} key={node.fields.slug} title={title} primaryImage={primaryImage} />
+                            <GroupsItem node={node} key={node.fields.slug} title={title} primaryImage={primaryImage} />
                         )
                     })}
                 </div>
