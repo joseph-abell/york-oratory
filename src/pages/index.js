@@ -73,7 +73,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title='Events and News' />
 
-        <div dangerouslySetInnerHTML={{ __html: description }} />
+        {description && <div dangerouslySetInnerHTML={{ __html: description }} />}
 
         <div css={css`margin-bottom: ${rhythm(2)};`}>
           <h2 css={css`font-size: 2rem;`}>Events</h2>
