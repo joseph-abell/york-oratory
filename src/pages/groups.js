@@ -44,7 +44,7 @@ class Groups extends React.Component {
     render() {
         const { data } = this.props
         const siteTitle = data.site.siteMetadata.title
-        const groups = data.events.edges
+        const groups = data.groups.edges
 
         return (
             <Layout location={this.props.location} title={siteTitle}>
