@@ -30,7 +30,7 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/groups`,
+        path: `${__dirname}/content/groups.md`,
         name: `groups`,
       },
     },

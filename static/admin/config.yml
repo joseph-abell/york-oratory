@@ -57,15 +57,21 @@ collections:
     label: "Groups"
     editor:
       preview: false
-    folder: "contents/groups"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Type", name: "type", widget: "hidden", default: "groups" }
-      - { label: "Primary Image", name: "primaryImage", widget: "image" }
-      - { label: "Group Type", name: "groupType", widget: "string", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+    files:
+      - label: Groups
+        name: groups
+        file: "content/groups.md"
+          fields:
+            - { label: "Title", name: "title", widget: "hidden", default: "Groups" }
+            - { label: "Type", name: "type", widget: "hidden", default: "groups" }
+            - label: "Groups"
+              name: "groups"
+              widget: "list"
+              fields:
+                - { label: "Title", name: "title", widget: "string" }
+                - { label: "Primary Image", name: "primaryImage", widget: "image" }
+                - { label: "Group Type", name: "groupType", widget: "string", required: false }
+                - { label: "Body", name: "body", widget: "markdown" }
   - name: "home"
     label: "Home Page"
     editor:
