@@ -13,6 +13,10 @@ groups:
       Oratory. Brothers continue to meet regularly with the same goal, growth in
       holiness in the way of St Philip. Not currently meeting but please contact
       Fr Stephen if you would be interested in restarting it.
+    description: >-
+      The Oratory began in Rome with a group of men who met informally in St
+      Philip’s rooms for prayer, recreation and spiritual guidance from the
+      saint of joy.
     groupType: ''
     primaryImage: ''
     title: Brothers of the Secular Oratory
@@ -23,6 +27,7 @@ groups:
       be some social time after in the Upper Room. Please bring your own lunch.
       This is a wonderful opportunity for women to come together and pray and
       enjoy some social time. New members are always welcome.
+    description: Women come together and pray and enjoy some social time.
     groupType: ''
     primaryImage: ''
     title: Women’s Oratory
@@ -32,6 +37,9 @@ groups:
       years. Members work for the deprived, sick and lonely in our parish and
       elsewhere in the city. If you would like to help with this work please
       contact the Parish Priest.
+    description: >-
+      This is the oldest society in the parish dating back well over a hundred
+      years. 
     groupType: ''
     primaryImage: ''
     title: Society of St Vincent de Paul
@@ -42,6 +50,10 @@ groups:
       others. At the moment this group is not meeting but we hope to revive if
       anyone would be interested in this work and spirituality. Please contact
       Br Adam for information.
+    description: >-
+      The Legion of Mary is a worldwide group fostering spiritual formation in
+      the spirit of Our Lady and offering practical and spiritual help to
+      others.
     groupType: ''
     primaryImage: ''
     title: Legion of Mary
@@ -62,6 +74,9 @@ groups:
 
 
       Please contact the Parish Priest to find out more.
+    description: >-
+      This group meets most Monday evening at 7:30pm from September until
+      Pentecost to help people deepen their understanding of the Catholic faith.
     groupType: ''
     primaryImage: ''
     title: Exploring the Catholic Faith
@@ -71,6 +86,10 @@ groups:
       and Spirituality, usually in the evening in the Upper Room at St
       Wilfrid’s. If there are any talks currently on offer details can be
       downloaded here.
+    description: >-
+      We have occasional one-off talks or a series of talks about Catholic Faith
+      and Spirituality, usually in the evening in the Upper Room at St
+      Wilfrid’s.
     groupType: ''
     primaryImage: ''
     title: Occasional Talks - Catholicism and the Arts
@@ -80,6 +99,9 @@ groups:
       6:15pm Mass on Saturday and the 10.30am and 12 noon Masses on Sunday. They
       practise on Thursday from 7pm to 9pm. They also ring for weddings by
       arrangement. stwilfridsbellringers.org.uk
+    description: >-
+      The St Wilfrid’s Bellringers ring the ten bells in the tower before the
+      6:15pm Mass on Saturday and the 10.30am and 12 noon Masses on Sunday.
     groupType: ''
     primaryImage: ''
     title: St Wilfrid’s Bellringers
@@ -88,6 +110,9 @@ groups:
       Life Ascending meets in the Upper Room on the last Wednesday of each month
       after the 12.10pm Mass until 3pm. All in their middle and later years
       welcome.
+    description: >-
+      Life Ascending meets in the Upper Room on the last Wednesday of each month
+      after the 12.10pm Mass until 3pm.
     groupType: ''
     primaryImage: ''
     title: Life Ascending
@@ -101,6 +126,10 @@ groups:
       second and fourth Tuesdays of the month, except in August. If you would
       like to know more, please contact Fr Stephen. Newman’s Group has a
       Facebook page.
+    description: >-
+      The group seeks to provide spiritual and doctrinal formation to young
+      adults aged 17-30, and to encourage young Catholic adults in the living of
+      their Faith.
     groupType: ''
     primaryImage: ''
     title: Newman’s Group (Young Adults)
@@ -109,6 +138,9 @@ groups:
       Coffee and Cake are served for parishioners and visitors after the 10:30am
       Mass on Sundays, sometimes in support of approved charities. If you can
       help with this by going on the rota please contact the Parish Priest.
+    description: >-
+      Coffee and Cake are served for parishioners and visitors after the 10:30am
+      Mass on Sundays, sometimes in support of approved charities.
     groupType: ''
     primaryImage: ''
     title: Coffee after Mass
@@ -135,6 +167,10 @@ groups:
 
 
       Please let us know if you would be interested in helping with our music.
+    description: >-
+      There is a small choir to support the singing at the 10:30am Sunday Mass,
+      and at the 12:00pm Latin Mass we have the Schola Sancti Wilfridi a
+      traditional choir that sings plainchant and polyphony.
     groupType: ''
     primaryImage: ''
     title: Choirs
