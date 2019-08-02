@@ -92,12 +92,57 @@ const setupData = async (graphql, createPage, type, component) => {
   })
 }
 
+const setupGroups = async (graphql, createPage, type, component) => {
+  const result = await graphql(
+    `{ allMarkdownRemark (filter: { frontmatter: { type: { eq: "groups" }}}) {
+        edges {
+          node {
+            frontmatter {
+              groups {
+                title
+                body
+                groupType
+                primaryImage
+              }
+            }
+          }
+        }
+      }
+    }`
+  )
+
+  if (result.errors) {
+    throw result.errors
+  }
+
+  // Create blog posts pages.
+  const posts = result.data.allMarkdownRemark.edges[0].node.frontmatter.groups;
+
+  posts.forEach((post) => {
+    console.log(post);
+    // const filteredPosts = posts.filter(p => post.node.frontmatter.type === p.node.frontmatter.type);
+    // const filteredIndex = filteredPosts.findIndex(p => p.node.frontmatter.title === post.node.frontmatter.title);
+    // const previous = filteredIndex === filteredPosts.length - 1 ? null : filteredPosts[filteredIndex + 1].node
+    // const next = filteredIndex === 0 ? null : filteredPosts[filteredIndex - 1].node;
+
+    // createPage({
+    //   path: post.node.fields.slug,
+    //   component,
+    //   context: {
+    //     slug: post.node.fields.slug,
+    //     previous,
+    //     next,
+    //   },
+    // })
+  })
+}
+
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
   setupPage(graphql, createPage, path.resolve(`./src/templates/page.js`));
   setupData(graphql, createPage, "news", path.resolve(`./src/templates/news-post.js`));
   setupData(graphql, createPage, "events", path.resolve(`./src/templates/events-post.js`));
-  setupData(graphql, createPage, "groups", path.resolve(`./src/templates/groups-post.js`));
+  setupGroups(graphql, createPage, "groups", path.resolve(`./src/templates/groups-post.js`));
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {

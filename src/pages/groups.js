@@ -44,19 +44,18 @@ class Groups extends React.Component {
     render() {
         const { data } = this.props
         const siteTitle = data.site.siteMetadata.title
-        const groups = data.groups.edges
-
+        const groups = data.groups.edges[0].node
+        console.log(groups);
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO title="Groups" />
                 <div css={css`margin-bottom: ${rhythm(2)};`}>
                     <h1>Groups</h1>
 
-                    {groups.map(({ node }) => {
-                        const title = node.frontmatter.title || node.fields.slug;
-                        const primaryImage = node.frontmatter.primaryImage;
+                    {groups.map(({ title, primaryImage }) => {
+
                         return (
-                            <GroupsItem node={node} key={node.fields.slug} title={title} primaryImage={primaryImage} />
+                            <GroupsItem key={title} title={title} primaryImage={primaryImage} />
                         )
                     })}
                 </div>
@@ -74,16 +73,19 @@ export const pageQuery = graphql`
                 title
             }
         }
-        groups: allMarkdownRemark(filter: { frontmatter: { type: { eq: "groups" } } }, sort: { fields: [frontmatter___date], order: DESC }) {
+        groups: allMarkdownRemark(filter: {frontmatter: {title: {eq: "Groups"}}}) {
             edges {
                 node {
-                    excerpt
                     fields {
                         slug
                     }
                     frontmatter {
-                        title
-                        primaryImage
+                        groups {
+                            title
+                            body
+                            groupType
+                            primaryImage
+                        }
                     }
                 }
             }

@@ -1,4 +1,6 @@
 ---
+title: "Groups"
+type: "groups"
 groups:
   - body: >-
       The Oratory began in Rome with a group of men who met informally in St
