@@ -31,5 +31,14 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Society of St Vincent de Paul
+  - body: >-
+      The Legion of Mary is a worldwide group fostering spiritual formation in
+      the spirit of Our Lady and offering practical and spiritual help to
+      others. At the moment this group is not meeting but we hope to revive if
+      anyone would be interested in this work and spirituality. Please contact
+      Br Adam for information.
+    groupType: ''
+    primaryImage: ''
+    title: Legion of Mary
 ---
 
