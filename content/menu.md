@@ -9,7 +9,7 @@ items:
     title: Newsletter
     url: /media/newsletter.pdf
   - newTab: false
-    title: Church Opening Times
-    url: /church-opening-times
+    title: "Visitor's Information"
+    url: /visitors-information
 ---
 

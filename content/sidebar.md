@@ -37,8 +37,8 @@ groups:
         text: Mass Times
         url: /mass-times
       - newTab: false
-        text: Church Opening Times
-        url: /church-opening-times
+        text: "Visitor's Information"
+        url: /visitors-information
       - newTab: false
         text: Parish Groups
         url: /parish-groups
