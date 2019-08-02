@@ -74,6 +74,7 @@ export const pageQuery = graphql`
                     frontmatter {
                         groups {
                             title
+                            description
                             urlSlug
                             body
                             groupType
