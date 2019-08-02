@@ -69,7 +69,7 @@ collections:
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Primary Image", name: "primaryImage", widget: "image" }
+              - { label: "Primary Image", name: "primaryImage", widget: "image", required: false }
               - { label: "Group Type", name: "groupType", widget: "string", required: false }
               - { label: "Body", name: "body", widget: "markdown" }
   - name: "home"
