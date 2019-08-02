@@ -40,5 +40,24 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Legion of Mary
+  - body: >-
+      This group meets most Monday evening at 7:30pm from September until
+      Pentecost to help people deepen their understanding of the Catholic faith.
+      Catholics who want to share their faith or to get to know it better are
+      welcome to come to help others who may wish to become Catholics through
+      the Rite of Christian Initiation or by being received into full communion
+      with the Catholic Church. Each meeting includes a systematic presentation
+      of Catholic teaching together with opportunities for prayer, questions,
+      and meeting other Catholics and enquirers. We end most evenings with the
+      Office of Compline sung in church.
+
+
+      In the year 2018/2019 we will be using the Evangelium Course.
+
+
+      Please contact the Parish Priest to find out more.
+    groupType: ''
+    primaryImage: ''
+    title: Exploring the Catholic Faith
 ---
 
