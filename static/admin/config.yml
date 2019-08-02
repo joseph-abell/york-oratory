@@ -156,6 +156,7 @@ collections:
             name: "groups"
             widget: "list"
             fields:
+              - { label: "Title", name: "title", widget: "string", required: false }
               - label: "Items"
                 name: "items"
                 widget: "list"
