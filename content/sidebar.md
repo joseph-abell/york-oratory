@@ -3,6 +3,23 @@ title: Sidebar
 type: /hidden
 groups:
   - items:
+      - newTab: false
+        text: The Oratory
+        url: /about
+      - newTab: false
+        text: St Wilfrid's
+        url: /st-wilfrids
+      - newTab: false
+        text: St Joseph's
+        url: /st-josephs
+      - newTab: false
+        text: Shrine of St Margaret Clitherow
+        url: /shrine-of-st-margaret-clitherow
+      - newTab: false
+        text: St Wilfrid's School
+        url: 'https://stwilfridsprimaryyork.co.uk/'
+    title: About
+  - items:
       - newTab: true
         text: Newsletter
         url: /media/newsletter.pdf
@@ -31,18 +48,5 @@ groups:
       - newTab: false
         text: Contact
         url: /contact
-  - items:
-      - newTab: false
-        text: Shrine of St Margaret Clitherow
-        url: /shrine-of-st-margaret-clitherow
-  - items:
-      - newTab: true
-        text: School
-        url: 'https://stwilfridsprimaryyork.co.uk/'
-  - items:
-      - newTab: false
-        text: Events
-        url: /events
-    title: About
 ---
 
