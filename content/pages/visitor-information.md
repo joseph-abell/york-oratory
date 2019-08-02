@@ -10,3 +10,5 @@ St Wilfrid's is open every day of the week for most of the day. The approximate 
 * Sunday from 8:00am until 6:00pm
 
 St Joseph's is usually closed except at times of services.
+
+Priests wishing to celebrate or concelebrate Mass in the Shrine of St Margaret Clitherow, at St Wilfrid's or St Joseph's (whether alone or with a group) must send their testimonial of good standing to the [Safeguarding Office at the Diocese of Middlesbrough](mailto://safeguarding@dioceseofmiddlesbrough.co.uk). We cannot accept any booking until we have written confirmation that this has been received. Middlesbrough Diocesan Safeguarding Office, 50a The Avenue, Linthorpe, Middlesbrough TS5 6QT.
