@@ -14,7 +14,7 @@ const GroupsItem = ({ node, group }) => (
                 margin-bottom: ${rhythm(1 / 4)};
             `}
         >
-            <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+            <Link style={{ boxShadow: `none` }} to={`/${group.urlSlug}`}>
                 {group.title}
             </Link>
         </h2>
@@ -36,7 +36,7 @@ class Groups extends React.Component {
         const { data } = this.props
         const siteTitle = data.site.siteMetadata.title
         const groups = data.groups.edges[0].node.frontmatter.groups;
-        console.log(groups);
+
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO title="Groups" />
