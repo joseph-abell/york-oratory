@@ -83,7 +83,7 @@ const Header = ({ title }) => {
 					onClick={onMobileNavClick}
 					lineHeight={6}
 					color='#a00'
-					ustomProps={{ 'aria-label': 'Mobile Menu' }}
+					customProps={{ 'aria-label': 'Mobile Menu' }}
 				/>
 			</div>
 			<Clearfix />
