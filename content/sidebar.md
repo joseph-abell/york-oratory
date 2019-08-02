@@ -14,6 +14,9 @@ groups:
         text: Events
         url: /events
       - newTab: false
+        text: Groups
+        url: /groups
+      - newTab: false
         text: Mass Times
         url: /mass-times
       - newTab: false
@@ -32,7 +35,6 @@ groups:
       - newTab: false
         text: Shrine of St Margaret Clitherow
         url: /shrine-of-st-margaret-clitherow
-    title: ''
   - items:
       - newTab: true
         text: School
