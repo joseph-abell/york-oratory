@@ -8,7 +8,11 @@ const SidebarItem = ({ text, url, newTab = false }) => (
 		css={css`
 			list-style: none;
 			line-height: 1.5em;
-			margin-bottom: 0;
+			margin: 10px 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
 		`}
 	>
 		<a href={url} target={newTab ? '_blank' : '_self'}>
