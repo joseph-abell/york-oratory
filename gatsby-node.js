@@ -100,6 +100,7 @@ const setupGroups = async (graphql, createPage, type, component) => {
             frontmatter {
               groups {
                 title
+                urlSlug
                 body
                 groupType
                 primaryImage
@@ -119,21 +120,19 @@ const setupGroups = async (graphql, createPage, type, component) => {
   const posts = result.data.allMarkdownRemark.edges[0].node.frontmatter.groups;
 
   posts.forEach((post) => {
-    console.log(post);
-    // const filteredPosts = posts.filter(p => post.node.frontmatter.type === p.node.frontmatter.type);
-    // const filteredIndex = filteredPosts.findIndex(p => p.node.frontmatter.title === post.node.frontmatter.title);
-    // const previous = filteredIndex === filteredPosts.length - 1 ? null : filteredPosts[filteredIndex + 1].node
-    // const next = filteredIndex === 0 ? null : filteredPosts[filteredIndex - 1].node;
+    const index = posts.findIndex(p => p.title === post.title);
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node
+    const next = index === 0 ? null : posts[index - 1].node;
 
-    // createPage({
-    //   path: post.node.fields.slug,
-    //   component,
-    //   context: {
-    //     slug: post.node.fields.slug,
-    //     previous,
-    //     next,
-    //   },
-    // })
+    createPage({
+      path: post.urlSlug,
+      component,
+      context: {
+        slug: post.urlSlug,
+        previous,
+        next,
+      },
+    })
   })
 }
 

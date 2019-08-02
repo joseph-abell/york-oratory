@@ -16,7 +16,7 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Brothers of the Secular Oratory
-    url: /groups/brothers-of-the-secular-oratory
+    urlSlug: groups/brothers-of-the-secular-oratory
   - body: >-
       Meets on the 1st Monday of each month. There is adoration at 11:30am
       followed by Mass and the Blessing with the relic of St Philip. There will
@@ -26,7 +26,7 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Women’s Oratory
-    url: /groups/womens-oratory
+    urlSlug: groups/womens-oratory
   - body: >-
       This is the oldest society in the parish dating back well over a hundred
       years. Members work for the deprived, sick and lonely in our parish and
@@ -35,7 +35,7 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Society of St Vincent de Paul
-    url: /groups/society-of-st-vincent-de-paul
+    urlSlug: groups/society-of-st-vincent-de-paul
   - body: >-
       The Legion of Mary is a worldwide group fostering spiritual formation in
       the spirit of Our Lady and offering practical and spiritual help to
@@ -45,7 +45,7 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Legion of Mary
-    url: /groups/legion-of-mary
+    urlSlug: groups/legion-of-mary
   - body: >-
       This group meets most Monday evening at 7:30pm from September until
       Pentecost to help people deepen their understanding of the Catholic faith.
@@ -65,7 +65,7 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Exploring the Catholic Faith
-    url: /groups/exploring-the-catholic-faith
+    urlSlug: groups/exploring-the-catholic-faith
   - body: >-
       We have occasional one-off talks or a series of talks about Catholic Faith
       and Spirituality, usually in the evening in the Upper Room at St
@@ -74,7 +74,7 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Occasional Talks - Catholicism and the Arts
-    url: /groups/occasional-talks
+    urlSlug: groups/occasional-talks
   - body: >-
       The St Wilfrid’s Bellringers ring the ten bells in the tower before the
       6:15pm Mass on Saturday and the 10.30am and 12 noon Masses on Sunday. They
@@ -83,7 +83,7 @@ groups:
     groupType: ''
     primaryImage: ''
     title: St Wilfrid’s Bellringers
-    url: /groups/st-wilfrids-bellringers
+    urlSlug: groups/st-wilfrids-bellringers
   - body: >-
       Life Ascending meets in the Upper Room on the last Wednesday of each month
       after the 12.10pm Mass until 3pm. All in their middle and later years
@@ -91,7 +91,7 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Life Ascending
-    url: /groups/life-ascending
+    urlSlug: groups/life-ascending
   - body: >-
       The group seeks to provide spiritual and doctrinal formation to young
       adults aged 17-30, and to encourage young Catholic adults in the living of
@@ -104,7 +104,7 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Newman’s Group (Young Adults)
-    url: /groups/newmans-group
+    urlSlug: groups/newmans-group
   - body: >-
       Coffee and Cake are served for parishioners and visitors after the 10:30am
       Mass on Sundays, sometimes in support of approved charities. If you can
@@ -112,7 +112,7 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Coffee after Mass
-    url: /groups/coffee
+    urlSlug: groups/coffee
   - body: >-
       We are always looking for musicians to enhance our Sunday liturgy.
 
@@ -138,6 +138,6 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Choirs
-    url: /groups/choirs
+    urlSlug: groups/choirs
 ---
 

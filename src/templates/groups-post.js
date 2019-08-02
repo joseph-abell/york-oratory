@@ -5,19 +5,20 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 class GroupsPostTemplate extends React.Component {
     render() {
-        const post = this.props.data.markdownRemark
-        const siteTitle = this.props.data.site.siteMetadata.title
+        const post = this.props.data.groups.edges[0].node.frontmatter.groups.find(i => i.urlSlug === this.props.pageContext.slug);
+        const siteTitle = this.props.data.site.siteMetadata.title;
+
         const { previous, next } = this.props.pageContext
 
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO
-                    title={post.frontmatter.title}
-                    description={post.frontmatter.description || post.excerpt}
+                    title={post.title}
+                    description={post.description || post.excerpt}
                 />
                 <h1
                     css={css`
@@ -25,10 +26,10 @@ class GroupsPostTemplate extends React.Component {
                         margin-bottom: ${rhythm(0.7)};
                     `}
                 >
-                    {post.frontmatter.title}
+                    {post.title}
                 </h1>
 
-                <div dangerouslySetInnerHTML={{ __html: post.html }} />
+                <div dangerouslySetInnerHTML={{ __html: post.body }} />
 
                 <ul
                     css={css`
@@ -62,19 +63,29 @@ class GroupsPostTemplate extends React.Component {
 export default GroupsPostTemplate
 
 export const pageQuery = graphql`
-    query GroupsPostBySlug($slug: String!) {
+    {
         site {
             siteMetadata {
                 title
                 author
             }
         }
-        markdownRemark(fields: { slug: { eq: $slug } }) {
-            id
-            excerpt(pruneLength: 160)
-            html
-            frontmatter {
-                title
+        groups: allMarkdownRemark (filter: {frontmatter: {type: {eq: "groups"}}}) {
+            edges {
+                node {
+                    frontmatter {
+                        title
+                        type
+                        groups {
+                            title
+                            description
+                            urlSlug
+                            body
+                            groupType
+                            primaryImage
+                        }
+                    }
+                }
             }
         }
     }

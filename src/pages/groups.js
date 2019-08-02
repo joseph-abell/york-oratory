@@ -7,7 +7,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-const GroupsItem = ({ node, title, primaryImage }) => (
+const GroupsItem = ({ node, group }) => (
     <div>
         <h2
             css={css`
@@ -15,26 +15,17 @@ const GroupsItem = ({ node, title, primaryImage }) => (
             `}
         >
             <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                {title}
+                {group.title}
             </Link>
         </h2>
-        <small
-            css={css`
-                margin-bottom: ${rhythm(1 / 4)};
-                display: block;
-                color: rgba(0, 0, 0, 0.7);
-            `}
-        >
-            {node.frontmatter.eventDate}
-        </small>
         <p
             dangerouslySetInnerHTML={{
-                __html: node.frontmatter.description || node.excerpt,
+                __html: group.description || node.excerpt,
             }}
         />
-        {primaryImage && (
+        {group.primaryImage && (
             <Link to={node.fields.slug}>
-                <img src={primaryImage} alt='' />
+                <img src={group.primaryImage} alt='' />
             </Link>
         )}
     </div>
@@ -44,20 +35,21 @@ class Groups extends React.Component {
     render() {
         const { data } = this.props
         const siteTitle = data.site.siteMetadata.title
-        const groups = data.groups.edges[0].node
-
+        const groups = data.groups.edges[0].node.frontmatter.groups;
+        console.log(groups);
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO title="Groups" />
                 <div css={css`margin-bottom: ${rhythm(2)};`}>
                     <h1>Groups</h1>
 
-                    {/* {groups.map(({ title, primaryImage }) => {
-
-                        return (
-                            <GroupsItem key={title} title={title} primaryImage={primaryImage} />
-                        )
-                    })} */}
+                    {groups.map((group) => (
+                        <GroupsItem
+                            key={group.title}
+                            node={data.groups.edges[0].node}
+                            group={group}
+                        />
+                    ))}
                 </div>
             </Layout>
         )
@@ -82,6 +74,8 @@ export const pageQuery = graphql`
                     frontmatter {
                         groups {
                             title
+                            description
+                            urlSlug
                             body
                             groupType
                             primaryImage
