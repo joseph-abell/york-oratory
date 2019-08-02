@@ -40,9 +40,6 @@ groups:
         text: "Visitor's Information"
         url: /visitors-information
       - newTab: false
-        text: Parish Groups
-        url: /parish-groups
-      - newTab: false
         text: Sacraments
         url: /sacraments
       - newTab: false
