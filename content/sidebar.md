@@ -37,8 +37,8 @@ groups:
         text: Mass Times
         url: /mass-times
       - newTab: false
-        text: "Visitor's Information"
-        url: /visitors-information
+        text: "Visitor Information"
+        url: /visitor-information
       - newTab: false
         text: Sacraments
         url: /sacraments

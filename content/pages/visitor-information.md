@@ -1,7 +1,7 @@
 ---
-title: Visitor's Information
+title: Visitor Information
 date: 2019-07-30T12:31:48.522Z
-description: Opening Times for St Joseph's and St Wilfrid's
+description: Opening Times and Visitor Information for St Joseph's and St Wilfrid's
 ---
 St Wilfrid's is open every day of the week for most of the day. The approximate times are as follows:
 

@@ -9,7 +9,7 @@ items:
     title: Newsletter
     url: /media/newsletter.pdf
   - newTab: false
-    title: "Visitor's Information"
-    url: /visitors-information
+    title: "Visitor Information"
+    url: /visitor-information
 ---
 
