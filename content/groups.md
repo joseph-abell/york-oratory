@@ -75,5 +75,24 @@ groups:
     groupType: ''
     primaryImage: ''
     title: St Wilfrid’s Bellringers
+  - body: >-
+      Life Ascending meets in the Upper Room on the last Wednesday of each month
+      after the 12.10pm Mass until 3pm. All in their middle and later years
+      welcome.
+    groupType: ''
+    primaryImage: ''
+    title: Life Ascending
+  - body: >-
+      The group seeks to provide spiritual and doctrinal formation to young
+      adults aged 17-30, and to encourage young Catholic adults in the living of
+      their Faith. There is social time, occasional talks and outings. Meetings
+      start at 7.30pm and end with Night Prayer in the church at around 9.00pm.
+      The meetings are held in the Upper Room (entrance via car park) on the
+      second and fourth Tuesdays of the month, except in August. If you would
+      like to know more, please contact Fr Stephen. Newman’s Group has a
+      Facebook page.
+    groupType: ''
+    primaryImage: ''
+    title: Newman’s Group (Young Adults)
 ---
 
