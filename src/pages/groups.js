@@ -45,19 +45,19 @@ class Groups extends React.Component {
         const { data } = this.props
         const siteTitle = data.site.siteMetadata.title
         const groups = data.groups.edges[0].node
-        console.log(groups);
+
         return (
             <Layout location={this.props.location} title={siteTitle}>
                 <SEO title="Groups" />
                 <div css={css`margin-bottom: ${rhythm(2)};`}>
                     <h1>Groups</h1>
 
-                    {groups.map(({ title, primaryImage }) => {
+                    {/* {groups.map(({ title, primaryImage }) => {
 
                         return (
                             <GroupsItem key={title} title={title} primaryImage={primaryImage} />
                         )
-                    })}
+                    })} */}
                 </div>
             </Layout>
         )
