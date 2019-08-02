@@ -14,5 +14,14 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Brothers of the Secular Oratory
+  - body: >-
+      Meets on the 1st Monday of each month. There is adoration at 11:30am
+      followed by Mass and the Blessing with the relic of St Philip. There will
+      be some social time after in the Upper Room. Please bring your own lunch.
+      This is a wonderful opportunity for women to come together and pray and
+      enjoy some social time. New members are always welcome.
+    groupType: ''
+    primaryImage: ''
+    title: Women’s Oratory
 ---
 
