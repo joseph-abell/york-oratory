@@ -59,5 +59,13 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Exploring the Catholic Faith
+  - body: >-
+      We have occasional one-off talks or a series of talks about Catholic Faith
+      and Spirituality, usually in the evening in the Upper Room at St
+      Wilfrid’s. If there are any talks currently on offer details can be
+      downloaded here.
+    groupType: ''
+    primaryImage: ''
+    title: Occasional Talks - Catholicism and the Arts
 ---
 
