@@ -34,7 +34,7 @@ collections:
     fields:
       - { label: "Type", name: "type", widget: "hidden", default: "events" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Primary Image", name: "primaryImage", widget: "image" }
+      - { label: "Primary Image", name: "primaryImage", widget: "image", required: false }
       - { label: "Event Date", name: "eventDate", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
@@ -123,7 +123,7 @@ collections:
     fields:
       - { label: "Type", name: "type", widget: "hidden", default: "news" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Primary Image", name: "primaryImage", widget: "image" }
+      - { label: "Primary Image", name: "primaryImage", widget: "image", required: false }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
