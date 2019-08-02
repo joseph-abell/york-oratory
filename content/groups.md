@@ -23,5 +23,13 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Women’s Oratory
+  - body: >-
+      This is the oldest society in the parish dating back well over a hundred
+      years. Members work for the deprived, sick and lonely in our parish and
+      elsewhere in the city. If you would like to help with this work please
+      contact the Parish Priest.
+    groupType: ''
+    primaryImage: ''
+    title: Society of St Vincent de Paul
 ---
 
