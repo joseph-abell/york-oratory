@@ -67,5 +67,13 @@ groups:
     groupType: ''
     primaryImage: ''
     title: Occasional Talks - Catholicism and the Arts
+  - body: >-
+      The St Wilfrid’s Bellringers ring the ten bells in the tower before the
+      6:15pm Mass on Saturday and the 10.30am and 12 noon Masses on Sunday. They
+      practise on Thursday from 7pm to 9pm. They also ring for weddings by
+      arrangement. stwilfridsbellringers.org.uk
+    groupType: ''
+    primaryImage: ''
+    title: St Wilfrid’s Bellringers
 ---
 
