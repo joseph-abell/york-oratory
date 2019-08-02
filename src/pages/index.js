@@ -67,10 +67,14 @@ class BlogIndex extends React.Component {
     const siteTitle = data.site.siteMetadata.title
     const news = data.news.edges
     const events = data.events.edges
+    const description = data.homepage.edges[0].node.html;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title='Events and News' />
+
+        <div dangerouslySetInnerHTML={{ __html: description }} />
+
         <div css={css`margin-bottom: ${rhythm(2)};`}>
           <h2 css={css`font-size: 2rem;`}>Events</h2>
 
@@ -107,6 +111,13 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    homepage: allMarkdownRemark(filter: {frontmatter: {title: {eq: "Homepage"}}}) {
+      edges {
+        node {
+          html
+        }
       }
     }
     news: allMarkdownRemark(limit: 3, filter: { frontmatter: { type: { eq: "news" } } }, sort: { fields: [frontmatter___date], order: DESC }) {
