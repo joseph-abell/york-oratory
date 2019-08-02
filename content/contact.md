@@ -34,13 +34,6 @@ directions: >-
 
   [View St Joseph's on Google
   Maps](https://www.google.co.uk/maps/place/St+Joseph's+R+C+Church/@53.97682,-1.0928873,17z/data=!3m1!4b1!4m5!3m4!1s0x487931769eff9de7:0x589f0ca4b58960d2!8m2!3d53.97682!4d-1.0906986)
-visitingPriests: >-
-  Priests wishing to celebrate or concelebrate Mass in the Shrine of St Margaret
-  Clitherow, at St Wilfrid's or St Joseph's (whether alone or with a group) must
-  send their testimonial of good standing to the [Safeguarding Office at the
-  Diocese of Middlesbrough](mailto://safeguarding@dioceseofmiddlesbrough.co.uk).
-  We cannot accept any booking until we have written confirmation that this has
-  been received. Middlesbrough Diocesan Safeguarding Office, 50a The Avenue,
-  Linthorpe, Middlesbrough TS5 6QT.
+visitingPriests: ' ""'
 ---
 
