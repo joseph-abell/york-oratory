@@ -1,5 +1,5 @@
 ---
-title: Church Opening Times
+title: Visitor's Information
 date: 2019-07-30T12:31:48.522Z
 description: Opening Times for St Joseph's and St Wilfrid's
 ---
