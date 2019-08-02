@@ -53,6 +53,30 @@ collections:
           - { label: "Oxford Charity Number", name: "oxfordCharityNumber", widget: "string" }
           - { label: "Middlesborough Charity Number", name: "middlesboroughCharityNumber", widget: "string" }
           - { label: "Credits", name: "credits", widget: "string" }
+  - name: "groups"
+    label: "Groups"
+    editor:
+      preview: false
+    folder: "contents/groups"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Type", name: "type", widget: "hidden", default: "groups" }
+      - { label: "Primary Image", name: "primaryImage", widget: "image" }
+      - { label: "Group Type", name: "groupType", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - name: "home"
+    label: "Home Page"
+    editor:
+      preview: false
+    files:
+      - label: "Home Page"
+        name: "homepage"
+        file: "content/homepage.md"
+        fields:
+          - { label: "Title", name: "title", widget: "hidden", default: "Home Page" }
+          - { label: "Body", name: "body", widget: "markdown" }
   - name: "header"
     label: "Header"
     editor:

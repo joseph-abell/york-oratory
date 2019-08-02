@@ -97,6 +97,7 @@ exports.createPages = async ({ graphql, actions }) => {
   setupPage(graphql, createPage, path.resolve(`./src/templates/page.js`));
   setupData(graphql, createPage, "news", path.resolve(`./src/templates/news-post.js`));
   setupData(graphql, createPage, "events", path.resolve(`./src/templates/events-post.js`));
+  setupData(graphql, createPage, "groups", path.resolve(`./src/templates/groups-post.js`));
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
