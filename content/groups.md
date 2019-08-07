@@ -186,5 +186,16 @@ groups:
     primaryImage: ''
     title: Choirs
     urlSlug: groups/choirs
+  - body: >-
+      Meets on Wednesdays from 4-5pm during term time. Please see Br Adam if you
+      are interested in joining.
+
+
+      ![](/media/20180227_165058-2018_09_14-16_43_05-utc-2-.jpg)
+    description: For ages 13-18
+    groupType: ''
+    primaryImage: ''
+    title: Young Oratory
+    urlSlug: groups/young-oratory
 ---
 
