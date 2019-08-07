@@ -11,8 +11,19 @@ groups:
       was the laymen’s group that came first. Wherever the Oratory is to be
       found this informal origin is recalled by the Brothers of the Secular
       Oratory. Brothers continue to meet regularly with the same goal, growth in
-      holiness in the way of St Philip. Not currently meeting but please contact
-      Fr Stephen if you would be interested in restarting it.
+      holiness in the way of St Philip.
+
+
+      Currently Brothers meets on Sundays from 5-6pm. Please see Br Adam if you
+      are interested.
+
+
+      Brothers doesn't meet in August.
+
+
+
+
+      ![](/media/web-st-philip-neri-fr-lawrence-lew-op-cc.jpg)
     description: >-
       The Oratory began in Rome with a group of men who met informally in St
       Philip’s rooms for prayer, recreation and spiritual guidance from the
