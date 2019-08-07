@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
 import React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -13,8 +13,6 @@ class GroupsPostTemplate extends React.Component {
 			(i) => i.urlSlug === this.props.pageContext.slug
 		);
 		const siteTitle = this.props.data.site.siteMetadata.title;
-
-		const { previous, next } = this.props.pageContext;
 
 		return (
 			<Layout location={this.props.location} title={siteTitle}>
@@ -29,31 +27,6 @@ class GroupsPostTemplate extends React.Component {
 				</h1>
 
 				<div dangerouslySetInnerHTML={{ __html: post.body }} />
-
-				<ul
-					css={css`
-						display: flex;
-						flex-wrap: wrap;
-						justify-content: space-between;
-						list-style: none;
-						padding: 0;
-					`}
-				>
-					<li>
-						{previous && (
-							<Link to={previous.fields.slug} rel='prev'>
-								← {previous.frontmatter.title}
-							</Link>
-						)}
-					</li>
-					<li>
-						{next && (
-							<Link to={next.fields.slug} rel='next'>
-								{next.frontmatter.title} →
-							</Link>
-						)}
-					</li>
-				</ul>
 			</Layout>
 		);
 	}

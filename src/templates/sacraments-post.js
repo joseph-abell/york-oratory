@@ -5,9 +5,9 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { rhythm, scale } from '../utils/typography';
+import { rhythm } from '../utils/typography';
 
-class NewsPostTemplate extends React.Component {
+class SacramentsPostTemplate extends React.Component {
 	render() {
 		const post = this.props.data.markdownRemark;
 		const siteTitle = this.props.data.site.siteMetadata.title;
@@ -18,30 +18,21 @@ class NewsPostTemplate extends React.Component {
 				<h1
 					css={css`
 						margin-top: ${rhythm(1)};
-						margin-bottom: ${rhythm(0.8)};
+						margin-bottom: ${rhythm(0.7)};
 					`}
 				>
 					{post.frontmatter.title}
 				</h1>
-				<p
-					css={css`
-						${scale(-1 / 5)} display: block;
-						margin-bottom: ${rhythm(1)};
-						color: rgba(0, 0, 0, 0.7);
-					`}
-				>
-					{post.frontmatter.date}
-				</p>
 				<div dangerouslySetInnerHTML={{ __html: post.html }} />
 			</Layout>
 		);
 	}
 }
 
-export default NewsPostTemplate;
+export default SacramentsPostTemplate;
 
 export const pageQuery = graphql`
-	query NewsPostBySlug($slug: String!) {
+	query SacramentsPostBySlug($slug: String!) {
 		site {
 			siteMetadata {
 				title
@@ -54,7 +45,6 @@ export const pageQuery = graphql`
 			html
 			frontmatter {
 				title
-				date(formatString: "MMMM DD, YYYY")
 				description
 			}
 		}
