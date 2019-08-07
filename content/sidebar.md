@@ -37,7 +37,7 @@ groups:
         text: Mass Times
         url: /mass-times
       - newTab: false
-        text: "Visitor Information"
+        text: Visitor Information
         url: /visitor-information
       - newTab: false
         text: Sacraments
@@ -45,5 +45,8 @@ groups:
       - newTab: false
         text: Contact
         url: /contact
+      - newTab: true
+        text: Newman Prayer Card
+        url: /media/newman-prayer-card.pdf
 ---
 
