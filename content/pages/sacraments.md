@@ -47,7 +47,7 @@ For all information about music at your wedding, please contact the Director of 
 
 Here are some useful documents to help you prepare for your wedding. Please click on the links.
 
-Guidelines for the Order of Service
+[Guidelines for the Order of Service](/media/wedding-service-template-not-mass-.pdf)
 
 Suggested readings for the Wedding Service
 
