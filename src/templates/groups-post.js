@@ -2,6 +2,7 @@
 import { css, jsx } from '@emotion/core';
 import React from 'react';
 import { graphql } from 'gatsby';
+import Markdown from 'markdown-to-jsx';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -26,7 +27,7 @@ class GroupsPostTemplate extends React.Component {
 					{post.title}
 				</h1>
 
-				<div dangerouslySetInnerHTML={{ __html: post.body }} />
+				<Markdown>{post.body}</Markdown>
 			</Layout>
 		);
 	}

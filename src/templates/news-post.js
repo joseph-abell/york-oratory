@@ -2,6 +2,7 @@
 import { css, jsx } from '@emotion/core';
 import React from 'react';
 import { graphql } from 'gatsby';
+import Markdown from 'markdown-to-jsx';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -32,7 +33,7 @@ class NewsPostTemplate extends React.Component {
 				>
 					{post.frontmatter.date}
 				</p>
-				<div dangerouslySetInnerHTML={{ __html: post.html }} />
+				<Markdown>{post.html}</Markdown>
 			</Layout>
 		);
 	}
