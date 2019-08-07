@@ -151,7 +151,6 @@ collections:
     fields:
       - { label: "Type", name: "type", widget: "hidden", default: "events" }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Primary Image", name: "primaryImage", widget: "image", required: false }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Policy", name: "policy", widget: "file" }
   - name: "sacraments"
