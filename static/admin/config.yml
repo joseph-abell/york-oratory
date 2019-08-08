@@ -23,7 +23,6 @@ collections:
           - { label: "Telephone", name: "telephone", widget: "string" }
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Directions", name: "directions", widget: "markdown" }
-          - { label: "Visiting Priests", name: "visitingPriests", widget: "markdown" }
   - name: "events"
     label: "Events"
     folder: "content/events"
@@ -52,7 +51,6 @@ collections:
           - { label: "Copyright", name: "copyright", widget: "string" }
           - { label: "Oxford Charity Number", name: "oxfordCharityNumber", widget: "string" }
           - { label: "Middlesborough Charity Number", name: "middlesboroughCharityNumber", widget: "string" }
-          - { label: "Credits", name: "credits", widget: "string" }
   - name: "groups"
     label: "Groups"
     editor:
