@@ -8,15 +8,15 @@ const Footer = () => {
 		query {
 			markdownRemark(frontmatter: { title: { eq: "Footer" } }) {
 				frontmatter {
-					copyright
 					oxfordCharityNumber
 					middlesboroughCharityNumber
+					credits
 				}
 			}
 		}
 	`);
 
-	const { copyright, oxfordCharityNumber, middlesboroughCharityNumber } = data.markdownRemark.frontmatter;
+	const { oxfordCharityNumber, middlesboroughCharityNumber, credits } = data.markdownRemark.frontmatter;
 
 	return (
 		<footer
@@ -39,11 +39,6 @@ const Footer = () => {
 				}
 			`}
 		>
-			{copyright && (
-				<p>
-					<small>{copyright}</small>
-				</p>
-			)}
 			{oxfordCharityNumber && (
 				<p>
 					<small>{oxfordCharityNumber}</small>
@@ -52,6 +47,11 @@ const Footer = () => {
 			{middlesboroughCharityNumber && (
 				<p>
 					<small>{middlesboroughCharityNumber}</small>
+				</p>
+			)}
+			{credits && (
+				<p>
+					<small dangerouslySetInnerHTML={{ __html: credits }} />
 				</p>
 			)}
 		</footer>
