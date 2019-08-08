@@ -149,7 +149,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Type", name: "type", widget: "hidden", default: "events" }
+      - { label: "Type", name: "type", widget: "hidden", default: "policies" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Policy", name: "policy", widget: "file" }
@@ -161,7 +161,7 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Type", name: "type", widget: "hidden", default: "events" }
+      - { label: "Type", name: "type", widget: "hidden", default: "sacraments" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Primary Image", name: "primaryImage", widget: "image", required: false }
       - { label: "Description", name: "description", widget: "string" }

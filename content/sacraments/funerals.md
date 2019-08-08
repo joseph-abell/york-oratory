@@ -1,5 +1,5 @@
 ---
-type: events
+type: sacraments
 title: Funerals
 description: Funeral information for St Wilfrid's and St Joseph's
 ---

@@ -1,5 +1,5 @@
 ---
-type: events
+type: sacraments
 title: First Holy Communion and Confirmation
 description: First Holy Communion and Confirmation info for St Wilfrid's and St Joseph's
 ---

@@ -2,7 +2,7 @@
 import { css, jsx } from '@emotion/core';
 import React from 'react';
 import { graphql } from 'gatsby';
-
+import Markdown from 'markdown-to-jsx';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
@@ -23,7 +23,7 @@ class SacramentsPostTemplate extends React.Component {
 				>
 					{post.frontmatter.title}
 				</h1>
-				<div dangerouslySetInnerHTML={{ __html: post.html }} />
+				<Markdown>{post.html}</Markdown>
 			</Layout>
 		);
 	}

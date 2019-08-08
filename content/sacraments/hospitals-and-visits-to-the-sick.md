@@ -1,5 +1,5 @@
 ---
-type: events
+type: sacraments
 title: Hospitals and visits to the sick
 description: ' '
 ---

@@ -1,5 +1,5 @@
 ---
-type: events
+type: sacraments
 title: Weddings
 description: Wedding information for St Wilfrid's and St Joseph's
 ---

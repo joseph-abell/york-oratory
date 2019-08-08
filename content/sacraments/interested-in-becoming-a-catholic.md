@@ -1,5 +1,5 @@
 ---
-type: events
+type: sacraments
 title: Interested in becoming a Catholic?
 description: Learn more about becoming a Catholic
 ---

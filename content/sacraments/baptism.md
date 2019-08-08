@@ -1,5 +1,5 @@
 ---
-type: events
+type: sacraments
 title: Baptism
 description: Baptism info for St Wilfrid's and St Joseph's
 ---
