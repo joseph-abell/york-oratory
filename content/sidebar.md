@@ -48,5 +48,8 @@ groups:
       - newTab: true
         text: Newman Prayer Card
         url: /media/newman-prayer-card.pdf
+      - newTab: false
+        text: Policies
+        url: /policies
 ---
 
