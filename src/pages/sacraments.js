@@ -40,7 +40,7 @@ class Sacraments extends React.Component {
 	render() {
 		const { data } = this.props;
 		const siteTitle = data.site.siteMetadata.title;
-		const sacraments = data.news.edges;
+		const sacraments = data.sacraments.edges;
 
 		return (
 			<Layout location={this.props.location} title={siteTitle}>
