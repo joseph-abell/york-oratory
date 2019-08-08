@@ -12,14 +12,7 @@ class Contact extends React.Component {
 	render() {
 		const { data } = this.props;
 		const siteTitle = data.site.siteMetadata.title;
-		const {
-			parishPriest,
-			address,
-			telephone,
-			email,
-			directions,
-			visitingPriests
-		} = data.contact.edges[0].node.frontmatter;
+		const { parishPriest, address, telephone, email, directions } = data.contact.edges[0].node.frontmatter;
 
 		return (
 			<Layout location={this.props.location} title={siteTitle}>
@@ -45,10 +38,6 @@ class Contact extends React.Component {
 					<div>
 						<h2>Directions:</h2>
 						<Markdown css={css`white-space: pre-wrap;`}>{directions}</Markdown>
-					</div>
-					<div>
-						<h2>Visiting Priests:</h2>
-						<Markdown css={css`white-space: pre-wrap;`}>{visitingPriests}</Markdown>
 					</div>
 				</div>
 			</Layout>
@@ -77,7 +66,6 @@ export const pageQuery = graphql`
 						telephone
 						email
 						directions
-						visitingPriests
 					}
 				}
 			}

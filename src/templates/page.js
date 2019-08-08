@@ -12,7 +12,7 @@ class PageTemplate extends React.Component {
 	render() {
 		const post = this.props.data.markdownRemark;
 		const siteTitle = this.props.data.site.siteMetadata.title;
-
+		console.log(post);
 		return (
 			<Layout location={this.props.location} title={siteTitle}>
 				<SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
