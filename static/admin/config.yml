@@ -48,9 +48,9 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Footer" }
           - { label: "Type", name: "type", widget: "hidden", default: "/hidden" }
-          - { label: "Copyright", name: "copyright", widget: "string" }
           - { label: "Oxford Charity Number", name: "oxfordCharityNumber", widget: "string" }
           - { label: "Middlesborough Charity Number", name: "middlesboroughCharityNumber", widget: "string" }
+          - { label: "Credits", name: "credits", widget: "string" }
   - name: "groups"
     label: "Groups"
     editor:
