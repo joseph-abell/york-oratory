@@ -58,6 +58,20 @@ module.exports = {
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
+				path: `${__dirname}/content/sacraments`,
+				name: `sacraments`
+			}
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/content/policies`,
+				name: `policies`
+			}
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
 				path: `${__dirname}/content/sidebar.md`,
 				name: `sidebar`
 			}
