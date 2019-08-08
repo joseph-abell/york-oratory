@@ -7,7 +7,7 @@ description: ' '
 
 If you are ill and housebound, or have a relative or friend who is, please contact the Parish Priest who will arrange for a visit. Holy Communion can be brought regularly to those who are ill and housebound in our parish who are unable to attend Mass.
 
-## Going into hospital?
+## Going into hospital
 
 If you are going into hospital, please contact the Parish Priest in order to receive the Sacrament of Anointing of the Sick before you go in. He can also let the Hospital Chaplain know so that you will be visited while you are there.
 
