@@ -11,13 +11,12 @@ const Footer = () => {
 					copyright
 					oxfordCharityNumber
 					middlesboroughCharityNumber
-					credits
 				}
 			}
 		}
 	`);
 
-	const { copyright, oxfordCharityNumber, middlesboroughCharityNumber, credits } = data.markdownRemark.frontmatter;
+	const { copyright, oxfordCharityNumber, middlesboroughCharityNumber } = data.markdownRemark.frontmatter;
 
 	return (
 		<footer
@@ -53,11 +52,6 @@ const Footer = () => {
 			{middlesboroughCharityNumber && (
 				<p>
 					<small>{middlesboroughCharityNumber}</small>
-				</p>
-			)}
-			{credits && (
-				<p>
-					<small dangerouslySetInnerHTML={{ __html: credits }} />
 				</p>
 			)}
 		</footer>
