@@ -54,7 +54,14 @@ const Menu = () => {
 					padding: 0;
 				`}
 			>
-				{menu.map(({ title, url, newTab }) => <MenuItem key={url} title={title} url={url} newTab={newTab} />)}
+				{menu.map(({ title, url, newTab }) => (
+					<MenuItem
+						key={url}
+						title={title}
+						url={url}
+						newTab={newTab}
+					/>
+				))}
 			</ul>
 		</div>
 	);
