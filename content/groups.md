@@ -21,8 +21,6 @@ groups:
       Brothers doesn't meet in August.
 
 
-
-
       ![](/media/web-st-philip-neri-fr-lawrence-lew-op-cc.jpg)
     description: >-
       The Oratory began in Rome with a group of men who met informally in St
@@ -44,6 +42,47 @@ groups:
     title: Women’s Oratory
     urlSlug: groups/womens-oratory
   - body: >-
+      Meets on Wednesdays from 4-5pm during term time. Please see Br Adam if you
+      are interested in joining.
+
+
+      ![](/media/20180227_165058-2018_09_14-16_43_05-utc-2-.jpg)
+    description: For ages 13-18
+    groupType: ''
+    primaryImage: ''
+    title: Young Oratory
+    urlSlug: groups/young-oratory
+  - body: >-
+      The group seeks to provide spiritual and doctrinal formation to young
+      adults aged 17-30, and to encourage young Catholic adults in the living of
+      their Faith. There is social time, occasional talks and outings. Meetings
+      start at 7.30pm and end with Night Prayer in the church at around 9.00pm.
+      The meetings are held in the Upper Room (entrance via car park) on the
+      second and fourth Tuesdays of the month, except in August. If you would
+      like to know more, please contact Fr Stephen. Newman’s Group has a
+      Facebook page.
+    description: >-
+      The group seeks to provide spiritual and doctrinal formation to young
+      adults aged 17-30, and to encourage young Catholic adults in the living of
+      their Faith.
+    groupType: ''
+    primaryImage: ''
+    title: Newman’s Group (Young Adults)
+    urlSlug: groups/newmans-group
+  - body: >-
+      We have occasional one-off talks or a series of talks about Catholic Faith
+      and Spirituality, usually in the evening in the Upper Room at St
+      Wilfrid’s. If there are any talks currently on offer details can be
+      downloaded here.
+    description: >-
+      We have occasional one-off talks or a series of talks about Catholic Faith
+      and Spirituality, usually in the evening in the Upper Room at St
+      Wilfrid’s.
+    groupType: ''
+    primaryImage: ''
+    title: Occasional Talks - Catholicism and the Arts
+    urlSlug: groups/occasional-talks
+  - body: >-
       This is the oldest society in the parish dating back well over a hundred
       years. Members work for the deprived, sick and lonely in our parish and
       elsewhere in the city. If you would like to help with this work please
@@ -55,20 +94,6 @@ groups:
     primaryImage: ''
     title: Society of St Vincent de Paul
     urlSlug: groups/society-of-st-vincent-de-paul
-  - body: >-
-      The Legion of Mary is a worldwide group fostering spiritual formation in
-      the spirit of Our Lady and offering practical and spiritual help to
-      others. At the moment this group is not meeting but we hope to revive if
-      anyone would be interested in this work and spirituality. Please contact
-      Br Adam for information.
-    description: >-
-      The Legion of Mary is a worldwide group fostering spiritual formation in
-      the spirit of Our Lady and offering practical and spiritual help to
-      others.
-    groupType: ''
-    primaryImage: ''
-    title: Legion of Mary
-    urlSlug: groups/legion-of-mary
   - body: >-
       This group meets most Monday evening at 7:30pm from September until
       Pentecost to help people deepen their understanding of the Catholic faith.
@@ -93,19 +118,6 @@ groups:
     title: Exploring the Catholic Faith
     urlSlug: groups/exploring-the-catholic-faith
   - body: >-
-      We have occasional one-off talks or a series of talks about Catholic Faith
-      and Spirituality, usually in the evening in the Upper Room at St
-      Wilfrid’s. If there are any talks currently on offer details can be
-      downloaded here.
-    description: >-
-      We have occasional one-off talks or a series of talks about Catholic Faith
-      and Spirituality, usually in the evening in the Upper Room at St
-      Wilfrid’s.
-    groupType: ''
-    primaryImage: ''
-    title: Occasional Talks - Catholicism and the Arts
-    urlSlug: groups/occasional-talks
-  - body: >-
       The St Wilfrid’s Bellringers ring the ten bells in the tower before the
       6:15pm Mass on Saturday and the 10.30am and 12 noon Masses on Sunday. They
       practise on Thursday from 7pm to 9pm. They also ring for weddings by
@@ -128,23 +140,6 @@ groups:
     primaryImage: ''
     title: Life Ascending
     urlSlug: groups/life-ascending
-  - body: >-
-      The group seeks to provide spiritual and doctrinal formation to young
-      adults aged 17-30, and to encourage young Catholic adults in the living of
-      their Faith. There is social time, occasional talks and outings. Meetings
-      start at 7.30pm and end with Night Prayer in the church at around 9.00pm.
-      The meetings are held in the Upper Room (entrance via car park) on the
-      second and fourth Tuesdays of the month, except in August. If you would
-      like to know more, please contact Fr Stephen. Newman’s Group has a
-      Facebook page.
-    description: >-
-      The group seeks to provide spiritual and doctrinal formation to young
-      adults aged 17-30, and to encourage young Catholic adults in the living of
-      their Faith.
-    groupType: ''
-    primaryImage: ''
-    title: Newman’s Group (Young Adults)
-    urlSlug: groups/newmans-group
   - body: >-
       Coffee and Cake are served for parishioners and visitors after the 10:30am
       Mass on Sundays, sometimes in support of approved charities. If you can
@@ -187,15 +182,18 @@ groups:
     title: Choirs
     urlSlug: groups/choirs
   - body: >-
-      Meets on Wednesdays from 4-5pm during term time. Please see Br Adam if you
-      are interested in joining.
-
-
-      ![](/media/20180227_165058-2018_09_14-16_43_05-utc-2-.jpg)
-    description: For ages 13-18
+      The Legion of Mary is a worldwide group fostering spiritual formation in
+      the spirit of Our Lady and offering practical and spiritual help to
+      others. At the moment this group is not meeting but we hope to revive if
+      anyone would be interested in this work and spirituality. Please contact
+      Br Adam for information.
+    description: >-
+      The Legion of Mary is a worldwide group fostering spiritual formation in
+      the spirit of Our Lady and offering practical and spiritual help to
+      others.
     groupType: ''
     primaryImage: ''
-    title: Young Oratory
-    urlSlug: groups/young-oratory
+    title: Legion of Mary
+    urlSlug: groups/legion-of-mary
 ---
 
