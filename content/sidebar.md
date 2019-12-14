@@ -5,7 +5,7 @@ groups:
   - items:
       - newTab: false
         text: The Oratory
-        url: /about
+        url: /the-oratory
       - newTab: false
         text: St Wilfrid's
         url: /st-wilfrids
