@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-
-import { useStaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql, Link } from 'gatsby';
 
 const SidebarItem = ({ text, url, newTab = false }) => (
     <li
@@ -15,9 +14,9 @@ const SidebarItem = ({ text, url, newTab = false }) => (
 			}
 		`}
     >
-        <a href={url} target={newTab ? '_blank' : '_self'}>
+        <Link to={url} target={newTab ? '_blank' : '_self'}>
             {text}
-        </a>
+        </Link>
     </li>
 );
 

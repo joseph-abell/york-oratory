@@ -1,7 +1,6 @@
 ---
 title: Footer
 type: /hidden
-oxfordCharityNumber: The Oxford Oratory Trust is a Registered Charity number 1018455
 middlesboroughCharityNumber: The Diocese of Middlesbrough is a Registered Charity number 233748
 credits: >-
   Made with <span>❤</span> by <a href="http://abelldesign.co.uk">Abell

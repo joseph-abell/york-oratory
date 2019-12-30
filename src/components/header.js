@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Link } from 'gatsby';
 import { Boring } from 'react-burgers';
 import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 import MobileMenu from './mobile-menu';
 import Clearfix from './clearfix';
@@ -20,9 +21,17 @@ const Header = ({ title }) => {
 						}
 					}
 				}
-			}
+			},
+            image: imageSharp(fluid: {originalName: {eq: "oratory_banner.jpg"}}) {
+                id
+                fluid(maxWidth: 1200) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
 		}
-	`);
+    `);
+
+    const fluid = data.image.fluid;
 
     const image = data.header.edges[0].node.frontmatter.headerImage;
     const subtitle = data.header.edges[0].node.frontmatter.subtitle;
@@ -44,23 +53,21 @@ const Header = ({ title }) => {
                 }
             `}
         >
-            <Link
-                className='header'
-                css={css`
-                    @media (min-width: 767px) {
-                        background-image: ${image ? `url('${image}')` : 'none'};
-                        background-position: center;
-                        background-repeat: no-repeat;
+            <Link to='/'>
+                <Img
+                    fluid={fluid}
+                    objectFit="cover"
+                    objectPosition="50% 50%"
+                    css={css`
+                        display: none;
+                        height: 60vh;
+                        background: #8c181f;
 
-                        position: absolute;
-                        top: 0;
-                        bottom: 0;
-                        left: 0;
-                        right: 0;
-                    }
-				`}
-                to='/'
-            >
+                        @media (min-width: 767px) {
+                            display: block;
+                        }
+                    `}
+                />
                 <h1
                     css={css`
                         color: #fff;
@@ -70,6 +77,7 @@ const Header = ({ title }) => {
                         margin-top: 30px;
                         display: inline-block;
                         line-height: 1rem;
+                        text-transform: uppercase;
 
                         @media (min-width: 767px) {
                             position: absolute;
@@ -112,6 +120,7 @@ const Header = ({ title }) => {
                         padding-left: 20px;
                         margin-top: 30px;
                         line-height: 1rem;
+                        text-transform: uppercase;
 
                         @media (min-width: 767px) {
                             display: block;
@@ -120,6 +129,10 @@ const Header = ({ title }) => {
                             line-height: 2rem;
                             width: 767px;
                             margin: 300px auto 0;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
                         }
 					`}
                 >

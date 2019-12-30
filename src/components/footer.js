@@ -4,11 +4,10 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { rhythm } from '../utils/typography';
 
 const Footer = () => {
-	const data = useStaticQuery(graphql`
+    const data = useStaticQuery(graphql`
 		query {
 			markdownRemark(frontmatter: { title: { eq: "Footer" } }) {
 				frontmatter {
-					oxfordCharityNumber
 					middlesboroughCharityNumber
 					credits
 				}
@@ -16,11 +15,11 @@ const Footer = () => {
 		}
 	`);
 
-	const { oxfordCharityNumber, middlesboroughCharityNumber, credits } = data.markdownRemark.frontmatter;
+    const { yorkCharityNumber, middlesboroughCharityNumber, credits } = data.markdownRemark.frontmatter;
 
-	return (
-		<footer
-			css={css`
+    return (
+        <footer
+            css={css`
 				text-align: center;
 				border-top: 1px solid #f4f4f4;
 				padding-top: ${rhythm(1.5)};
@@ -38,24 +37,24 @@ const Footer = () => {
 					text-shadow: rgba(150, 0, 0, 0.5) 0px 1px 2px;
 				}
 			`}
-		>
-			{oxfordCharityNumber && (
-				<p>
-					<small>{oxfordCharityNumber}</small>
-				</p>
-			)}
-			{middlesboroughCharityNumber && (
-				<p>
-					<small>{middlesboroughCharityNumber}</small>
-				</p>
-			)}
-			{credits && (
-				<p>
-					<small dangerouslySetInnerHTML={{ __html: credits }} />
-				</p>
-			)}
-		</footer>
-	);
+        >
+            {yorkCharityNumber && (
+                <p>
+                    <small>{yorkCharityNumber}</small>
+                </p>
+            )}
+            {middlesboroughCharityNumber && (
+                <p>
+                    <small>{middlesboroughCharityNumber}</small>
+                </p>
+            )}
+            {credits && (
+                <p>
+                    <small dangerouslySetInnerHTML={{ __html: credits }} />
+                </p>
+            )}
+        </footer>
+    );
 };
 
 export default Footer;

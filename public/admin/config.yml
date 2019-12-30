@@ -48,7 +48,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Footer" }
           - { label: "Type", name: "type", widget: "hidden", default: "/hidden" }
-          - { label: "Oxford Charity Number", name: "oxfordCharityNumber", widget: "string" }
+          - { label: "York Charity Number", name: "yorkCharityNumber", widget: "string", default: "" }
           - { label: "Middlesborough Charity Number", name: "middlesboroughCharityNumber", widget: "string" }
           - { label: "Credits", name: "credits", widget: "string" }
   - name: "groups"

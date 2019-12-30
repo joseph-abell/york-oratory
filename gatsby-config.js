@@ -89,7 +89,14 @@ module.exports = {
 				path: `${__dirname}/content/header.md`,
 				name: `header`
 			}
-		},
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+              name: `images`,
+              path: `${__dirname}/static/media`,
+            },
+        },
 		{
 			resolve: `gatsby-transformer-remark`,
 			options: {
