@@ -56,10 +56,7 @@ typings/
 
 # gatsby files
 .cache/
-public/*
-!public/admin
-public/admin/*
-!public/admin/config.yml
+public
 
 # Mac files
 .DS_Store
