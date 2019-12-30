@@ -94,6 +94,7 @@ collections:
         file: "content/header.md"
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Header" }
+          - { label: "Subtitle", name: "subtitle", widget: "string", default: "Serving the parishes of St Joseph and St Wilfrid. With the shrine of St Margaret Clitherow." }
           - { label: "Type", name: "type", widget: "hidden", default: "/hidden" }
           - { label: "Header Image", name: "headerImage", widget: "image" }
   - name: "menu"

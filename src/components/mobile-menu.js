@@ -83,9 +83,9 @@ const MobileMenu = ({ visible = false, onMenuCloseClick = () => {} }) => {
 			<Boring
 				active={true}
 				onClick={onMenuCloseClick}
-				lineHeight={6}
-				color='#a00'
-				customProps={{ 'aria-label': 'Close Mobile Menu' }}
+                lineHeight={6}
+                color='#fff'
+                customProps={{ 'aria-label': 'Close Mobile Menu' }}
 			/>
 
 			<div

@@ -121,7 +121,7 @@ module.exports = {
 				short_name: `York Oratory`,
 				start_url: `/`,
 				background_color: `#fff`,
-				theme_color: `#a00`,
+				theme_color: `#8c181f`,
 				display: `standalone`,
 				icon: 'static/favicon.png'
 			}

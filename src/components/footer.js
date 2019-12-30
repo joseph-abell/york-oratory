@@ -34,7 +34,7 @@ const Footer = () => {
 				}
 
 				span {
-					color: #a00;
+					color: #8c181f;
 					text-shadow: rgba(150, 0, 0, 0.5) 0px 1px 2px;
 				}
 			`}
