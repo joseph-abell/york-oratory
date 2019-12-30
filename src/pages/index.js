@@ -30,7 +30,7 @@ const NewsItem = ({ node, title, primaryImage }) => (
             {node.frontmatter.date}
         </small>
         {primaryImage && (
-            <Link to={node.fields.slug}>
+            <Link to={`/${node.fields.slug}`}>
                 <img src={primaryImage} alt='' />
             </Link>
         )}
