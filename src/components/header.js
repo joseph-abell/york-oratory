@@ -33,7 +33,7 @@ const Header = ({ title }) => {
 
 	return (
 		<Fragment>
-			<p
+			<div
 				className='header'
 				css={css`
 					font-style: italic;
@@ -66,7 +66,7 @@ const Header = ({ title }) => {
 				>
 					{title}
 				</Link>
-			</p>
+			</div>
 			<div
 				css={css`
 					float: right;

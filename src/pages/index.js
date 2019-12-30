@@ -49,7 +49,7 @@ class Homepage extends React.Component {
         const news = data.news.edges;
         const homepage = data.homepage.edges[0].node;
         const description = homepage.html;
-        const sundayMassTimes = homepage.frontmatter.sundayMassTimes;
+        const sundayMassTimes = homepage && homepage.frontmatter.sundayMassTimes;
 
         return (
             <Layout location={this.props.location} title={siteTitle}>
