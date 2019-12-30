@@ -15,9 +15,6 @@ groups:
       - newTab: false
         text: Shrine of St Margaret Clitherow
         url: /shrine-of-st-margaret-clitherow
-      - newTab: false
-        text: St Wilfrid's School
-        url: 'https://stwilfridsprimaryyork.co.uk/'
     title: About
   - items:
       - newTab: true
