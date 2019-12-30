@@ -2,23 +2,35 @@
 import { css, jsx } from '@emotion/core';
 import { useStaticQuery, graphql, Link } from 'gatsby';
 
-const SidebarItem = ({ text, url, newTab = false }) => (
-    <li
-        css={css`
-			list-style: none;
-			line-height: 1.5em;
-			margin: 10px 0;
+const SidebarItem = ({ text, url, newTab = false }) => {
+    const isPdf = url.includes('.pdf');
 
-			&:first-of-type {
-				margin-top: 0;
-			}
-		`}
-    >
-        <Link to={url} target={newTab ? '_blank' : '_self'}>
-            {text}
-        </Link>
-    </li>
-);
+    return (
+        <li
+            css={css`
+                list-style: none;
+                line-height: 1.5em;
+                margin: 10px 0;
+
+                &:first-of-type {
+                    margin-top: 0;
+                }
+            `}
+        >
+            {isPdf && (
+                <Link to={url} target={newTab ? '_blank' : '_self'}>
+                    {text}
+                </Link>
+            )}
+
+            {!isPdf && (
+                <a href={url} target={newTab ? '_blank' : '_self'}>
+                    {text}
+                </a>
+            )}
+        </li>
+    );
+};
 
 const SidebarGroup = ({ title, items }) => (
     <li css={css`list-style: none;`}>
