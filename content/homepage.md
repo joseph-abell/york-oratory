@@ -13,6 +13,6 @@ sundayMassTimes: |-
   * 10:30am Family Mass with Children’s Liturgy of the Word
   * 12:00 noon Sung Latin Mass in the Extraordinary Form
 
-  For more information visit [Mass Times](/mass-times).
+  For information on other mass times, visit [Mass Times](/mass-times).
 ---
 Serving the Churches of St Wilfrid’s and St Joseph’s in York.
