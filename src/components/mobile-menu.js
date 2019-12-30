@@ -42,6 +42,7 @@ const MobileMenu = ({ visible = false, onMenuCloseClick = () => {} }) => {
 									text
 									url
 									newTab
+                                    linkToDifferentSite
 								}
 							}
 						}

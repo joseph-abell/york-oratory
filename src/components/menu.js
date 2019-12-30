@@ -40,6 +40,7 @@ const Menu = () => {
 								title
 								url
 								newTab
+                                linkToDifferentSite
 							}
 						}
 					}

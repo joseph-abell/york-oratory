@@ -76,6 +76,7 @@ const Sidebar = () => {
 									text
 									url
 									newTab
+                                    linkToDifferentSite
 								}
 							}
 						}
