@@ -36,6 +36,9 @@ const typography = new Typography({
         a: {
             color: '#8c181f',
             textDecoration: 'none'
+        },
+        'h2, h1': {
+            fontWeight: 'normal',
         }
     })
 });

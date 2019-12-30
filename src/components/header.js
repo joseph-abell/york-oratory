@@ -16,6 +16,7 @@ const Header = ({ title }) => {
 					node {
 						frontmatter {
 							headerImage
+                            subtitle
 						}
 					}
 				}
@@ -24,6 +25,7 @@ const Header = ({ title }) => {
 	`);
 
     const image = data.header.edges[0].node.frontmatter.headerImage;
+    const subtitle = data.header.edges[0].node.frontmatter.subtitle;
 
     const [menuActive, setMenuActive] = useState(false);
 
@@ -42,7 +44,7 @@ const Header = ({ title }) => {
                 }
             `}
         >
-            <div
+            <Link
                 className='header'
                 css={css`
                     @media (min-width: 767px) {
@@ -57,8 +59,9 @@ const Header = ({ title }) => {
                         right: 0;
                     }
 				`}
+                to='/'
             >
-                <Link
+                <h1
                     css={css`
                         color: #fff;
                         text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
@@ -79,10 +82,10 @@ const Header = ({ title }) => {
                             margin-top: 100px;
                         }
 					`}
-                    to='/'
                 >
                     {title}
-                </Link>
+                </h1>
+
                 <div
                     css={css`
                         float: right;
@@ -100,7 +103,29 @@ const Header = ({ title }) => {
                         customProps={{ 'aria-label': 'Mobile Menu' }}
                     />
                 </div>
-            </div>
+
+                <h2
+                    css={css`
+                        color: #fff;
+                        text-shadow: rgba(0, 0, 0, 0.5) 2px 1px 1px;
+                        display: none;
+                        padding-left: 20px;
+                        margin-top: 30px;
+                        line-height: 1rem;
+
+                        @media (min-width: 767px) {
+                            display: block;
+                            text-align: center;
+                            font-size: 1.6rem;
+                            line-height: 2rem;
+                            width: 767px;
+                            margin: 300px auto 0;
+                        }
+					`}
+                >
+                    {subtitle}
+                </h2>
+            </Link>
             <Clearfix />
             <MobileMenu visible={menuActive} onMenuCloseClick={onMobileNavClick} />
         </div>
