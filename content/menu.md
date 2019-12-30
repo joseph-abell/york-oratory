@@ -2,14 +2,17 @@
 title: Menu
 type: /hidden
 items:
-  - newTab: false
+  - linkToDifferentSite: false
+    newTab: false
     title: Mass Times
     url: /mass-times
-  - newTab: true
+  - linkToDifferentSite: false
+    newTab: true
     title: Newsletter
     url: /media/newsletter.pdf
-  - newTab: false
-    title: "Visitor Information"
+  - linkToDifferentSite: false
+    newTab: false
+    title: Visitor Information
     url: /visitor-information
 ---
 
