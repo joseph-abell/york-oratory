@@ -7,32 +7,42 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
 
-const PoliciesItem = ({ node, title, primaryImage, policy }) => (
-	<div>
-		<h2 css={css`margin-bottom: ${rhythm(1 / 4)};`}>
-			<a href={policy} style={{ boxShadow: `none` }}>
+const PoliciesItem = ({ node, title, primaryImage, policy, newTab }) => (
+	<div css={css`
+        border-bottom: 1px solid #eee;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    `}>
+        <a href={policy} style={{ boxShadow: `none` }} target={newTab ? '_blank' : '_self'}>
+		    <h2 css={css`margin-bottom: ${rhythm(1 / 4)};`}>
 				{title}
-			</a>
-		</h2>
-		<small
-			css={css`
-				margin-bottom: ${rhythm(1 / 4)};
-				display: block;
-				color: rgba(0, 0, 0, 0.7);
-			`}
-		>
-			{node.frontmatter.date}
-		</small>
-		<p
-			dangerouslySetInnerHTML={{
-				__html: node.frontmatter.description || node.excerpt
-			}}
-		/>
-		{primaryImage && (
-			<a href={policy}>
-				<img src={primaryImage} alt='' />
-			</a>
-		)}
+		    </h2>
+            <small
+                css={css`
+                    margin-bottom: ${rhythm(1 / 4)};
+                    display: block;
+                    color: rgba(0, 0, 0, 0.7);
+                `}
+            >
+                {node.frontmatter.date}
+            </small>
+            <p
+                dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt
+                }}
+
+                css={css`
+                    color: hsla(0,0%,0%,0.8);
+                `}
+            />
+            {primaryImage && (
+                <img src={primaryImage} alt='' />
+            )}
+        </a>
 	</div>
 );
 
@@ -58,6 +68,7 @@ class Policies extends React.Component {
 								title={title}
 								primaryImage={primaryImage}
 								policy={node.frontmatter.policy}
+                                newTab={node.frontmatter.newTab}
 							/>
 						);
 					})}
@@ -93,6 +104,7 @@ export const pageQuery = graphql`
 						description
 						type
 						policy
+                        newTab
 					}
 				}
 			}

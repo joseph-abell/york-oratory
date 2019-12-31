@@ -8,12 +8,19 @@ import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
 
 const SacramentsItem = ({ node, title, primaryImage }) => (
-	<div>
-		<h2 css={css`margin-bottom: ${rhythm(1 / 4)};`}>
-			<Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+	<div css={css`
+        border-bottom: 1px solid #eee;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    `}>
+        <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+		    <h2 css={css`margin-bottom: ${rhythm(1 / 4)};`}>
 				{title}
-			</Link>
-		</h2>
+		    </h2>
+
 		<small
 			css={css`
 				margin-bottom: ${rhythm(1 / 4)};
@@ -26,13 +33,16 @@ const SacramentsItem = ({ node, title, primaryImage }) => (
 		<p
 			dangerouslySetInnerHTML={{
 				__html: node.frontmatter.description || node.excerpt
-			}}
+            }}
+            
+            css={css`
+                color: hsla(0,0%,0%,0.8);
+            `}
 		/>
 		{primaryImage && (
-			<Link to={node.fields.slug}>
-				<img src={primaryImage} alt='' />
-			</Link>
+            <img src={primaryImage} alt='' />
 		)}
+        </Link>
 	</div>
 );
 
