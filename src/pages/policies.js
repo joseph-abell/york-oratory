@@ -42,6 +42,7 @@ const PoliciesItem = ({ node, title, primaryImage, policy, newTab }) => (
             {primaryImage && (
                 <img src={primaryImage} alt='' />
             )}
+            <button>More Info</button>
         </a>
 	</div>
 );

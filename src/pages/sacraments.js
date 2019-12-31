@@ -11,6 +11,7 @@ const SacramentsItem = ({ node, title, primaryImage }) => (
 	<div css={css`
         border-bottom: 1px solid #eee;
         margin-bottom: 20px;
+        padding-bottom: 30px;
 
         &:last-of-type {
             border-bottom: 0;
@@ -21,27 +22,29 @@ const SacramentsItem = ({ node, title, primaryImage }) => (
 				{title}
 		    </h2>
 
-		<small
-			css={css`
-				margin-bottom: ${rhythm(1 / 4)};
-				display: block;
-				color: rgba(0, 0, 0, 0.7);
-			`}
-		>
-			{node.frontmatter.date}
-		</small>
-		<p
-			dangerouslySetInnerHTML={{
-				__html: node.frontmatter.description || node.excerpt
-            }}
-            
-            css={css`
-                color: hsla(0,0%,0%,0.8);
-            `}
-		/>
-		{primaryImage && (
-            <img src={primaryImage} alt='' />
-		)}
+            <small
+                css={css`
+                    margin-bottom: ${rhythm(1 / 4)};
+                    display: block;
+                    color: rgba(0, 0, 0, 0.7);
+                `}
+            >
+                {node.frontmatter.date}
+            </small>
+            <p
+                dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt
+                }}
+                
+                css={css`
+                    color: hsla(0,0%,0%,0.8);
+                `}
+            />
+            {primaryImage && (
+                <img src={primaryImage} alt='' />
+            )}
+
+            <button>More Info</button>
         </Link>
 	</div>
 );
