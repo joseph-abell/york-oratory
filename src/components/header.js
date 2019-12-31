@@ -14,13 +14,14 @@ const Header = ({ title }) => {
 		query {
 			header: markdownRemark(frontmatter: {title: {eq: "Header"}}) {
                 frontmatter {
-                    headerImage {
-                        childImageSharp {
-                            fluid(maxWidth: 800) {
-                                ...GatsbyImageSharpFluid
-                            }
-                        }
-                    }
+                    headerImage 
+                    # {
+                    #     childImageSharp {
+                    #         fluid(maxWidth: 800) {
+                    #             ...GatsbyImageSharpFluid
+                    #         }
+                    #     }
+                    # }
                     subtitle
                 }
             }
@@ -29,7 +30,7 @@ const Header = ({ title }) => {
 
     const image = data.header.frontmatter.headerImage;
     const subtitle = data.header.frontmatter.subtitle;
-    const fluid = image.childImageSharp.fluid;
+    // const fluid = image.childImageSharp.fluid;
 
     const [menuActive, setMenuActive] = useState(false);
 
@@ -49,7 +50,7 @@ const Header = ({ title }) => {
             `}
         >
             <Link to='/'>
-                <Img
+                {/* <Img
                     fluid={fluid}
                     objectFit="cover"
                     objectPosition="50% 50%"
@@ -62,7 +63,7 @@ const Header = ({ title }) => {
                             display: block;
                         }
                     `}
-                />
+                /> */}
                 <h1
                     css={css`
                         color: #fff;
