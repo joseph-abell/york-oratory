@@ -4,6 +4,6 @@ subtitle: >-
   Serving the parishes of St Joseph and St Wilfrid. With the shrine of St
   Margaret Clitherow.
 type: /hidden
-headerImage: /oratory_banner.jpg
+headerImage: /media/oratory_banner.jpg
 ---
 
