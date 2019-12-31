@@ -48,14 +48,11 @@ class Homepage extends React.Component {
         const siteTitle = data.site.siteMetadata.title;
         const news = data.news.edges;
         const homepage = data.homepage.edges[0].node;
-        const description = homepage.html;
         const sundayMassTimes = homepage && homepage.frontmatter.sundayMassTimes;
 
         return (
             <Layout location={this.props.location} title={siteTitle}>
-                <SEO title='Events and News' />
-
-                {description && <div dangerouslySetInnerHTML={{ __html: description }} />}
+                <SEO title='Mass Times and News' />
 
                 {sundayMassTimes && (
                     <div>

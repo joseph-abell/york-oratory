@@ -91,7 +91,6 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "hidden", default: "Home Page" }
           - { label: "Sunday Mass Times", name: "sundayMassTimes", widget: "markdown" }
-          - { label: "Body", name: "body", widget: "markdown" }
   - name: "header"
     label: "Header"
     editor:
