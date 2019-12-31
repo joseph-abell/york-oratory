@@ -7,7 +7,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
 
-const GroupsItem = ({ node, group }) => (
+const GroupsItem = ({ group }) => (
 	<div css={css`
         border-bottom: 1px solid #eee;
         padding-bottom: 30px;
@@ -23,13 +23,8 @@ const GroupsItem = ({ node, group }) => (
             </h2>
 
             <p
-                dangerouslySetInnerHTML={{
-                    __html: group.description || node.excerpt
-                }}
-
-                css={css`
-                    color: hsla(0,0%,0%,0.8);
-                `}
+                dangerouslySetInnerHTML={{ __html: group.description }}
+                css={css`color: hsla(0,0%,0%,0.8);`}
             />
 
             {group.primaryImage && (
@@ -46,7 +41,7 @@ class Groups extends React.Component {
 	render() {
 		const { data } = this.props;
 		const siteTitle = data.site.siteMetadata.title;
-		const groups = data.groups.edges[0].node.frontmatter.groups;
+        const groups = data.groups.frontmatter.groups;
 
 		return (
 			<Layout location={this.props.location} title={siteTitle}>
@@ -55,7 +50,7 @@ class Groups extends React.Component {
 					<h1>Groups</h1>
 
 					{groups.map((group) => (
-						<GroupsItem key={group.title} node={data.groups.edges[0].node} group={group} />
+						<GroupsItem key={group.title} group={group} />
 					))}
 				</div>
 			</Layout>
@@ -72,24 +67,20 @@ export const pageQuery = graphql`
 				title
 			}
 		}
-		groups: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Groups" } } }) {
-			edges {
-				node {
-					fields {
-						slug
-					}
-					frontmatter {
-						groups {
-							title
-							description
-							urlSlug
-							body
-							groupType
-							primaryImage
-						}
-					}
-				}
-			}
+		groups: markdownRemark(frontmatter: { title: { eq: "Groups" } }) {
+            fields {
+                slug
+            }
+            frontmatter {
+                groups {
+                    title
+                    description
+                    urlSlug
+                    body
+                    groupType
+                    primaryImage
+                }
+            }
 		}
 	}
 `;

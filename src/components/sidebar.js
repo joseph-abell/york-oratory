@@ -17,13 +17,13 @@ const SidebarItem = ({ text, url, newTab = false }) => {
                 }
             `}
         >
-            {isPdf && (
+            {!isPdf && (
                 <Link to={url} target={newTab ? '_blank' : '_self'}>
                     {text}
                 </Link>
             )}
 
-            {!isPdf && (
+            {isPdf && (
                 <a href={url} target={newTab ? '_blank' : '_self'}>
                     {text}
                 </a>

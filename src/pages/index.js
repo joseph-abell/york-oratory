@@ -14,7 +14,7 @@ class Homepage extends React.Component {
         const { data } = this.props;
         const siteTitle = data.site.siteMetadata.title;
         const news = data.news.edges;
-        const homepage = data.homepage.edges[0].node;
+        const homepage = data.homepage;
         const sundayMassTimes = homepage && homepage.frontmatter.sundayMassTimes;
 
         return (
@@ -63,15 +63,11 @@ export const pageQuery = graphql`
 				title
 			}
 		}
-		homepage: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Homepage" } } }) {
-			edges {
-				node {
-					html
-                    frontmatter {
-                        sundayMassTimes
-                    }
-				}
-			}
+		homepage: markdownRemark(frontmatter: { title: { eq: "Homepage" } }) {
+            html
+            frontmatter {
+                sundayMassTimes
+            }
 		}
 		news: allMarkdownRemark(
 			limit: 3
