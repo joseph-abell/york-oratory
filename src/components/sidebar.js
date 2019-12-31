@@ -66,28 +66,24 @@ const SidebarGroup = ({ title, items }) => (
 const Sidebar = () => {
     const data = useStaticQuery(graphql`
 		query {
-			sidebar: allMarkdownRemark(limit: 3, filter: { frontmatter: { title: { eq: "Sidebar" } } }) {
-				edges {
-					node {
-						frontmatter {
-							groups {
-								title
-								items {
-									text
-									url
-									newTab
-                                    linkToDifferentSite
-								}
-							}
-						}
-						html
-					}
-				}
+			sidebar: markdownRemark(frontmatter: { title: { eq: "Sidebar" } }) {
+                frontmatter {
+                    groups {
+                        title
+                        items {
+                            text
+                            url
+                            newTab
+                            linkToDifferentSite
+                        }
+                    }
+                }
+                html
 			}
 		}
 	`);
 
-    const sidebar = data && data.sidebar.edges[0].node.frontmatter.groups;
+    const sidebar = data && data.sidebar.frontmatter.groups;
 
     return (
         <div

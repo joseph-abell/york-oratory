@@ -12,29 +12,24 @@ import Clearfix from './clearfix';
 const Header = ({ title }) => {
     const data = useStaticQuery(graphql`
 		query {
-			header: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Header" } } }) {
-				edges {
-					node {
-						frontmatter {
-							headerImage
-                            subtitle
-						}
-					}
-				}
-			},
-            image: imageSharp(fluid: {originalName: {eq: "oratory_banner.jpg"}}) {
-                id
-                fluid(maxWidth: 1200) {
-                    ...GatsbyImageSharpFluid
+			header: markdownRemark(frontmatter: {title: {eq: "Header"}}) {
+                frontmatter {
+                    headerImage {
+                        childImageSharp {
+                            fluid(maxWidth: 800) {
+                                ...GatsbyImageSharpFluid
+                            }
+                        }
+                    }
+                    subtitle
                 }
             }
-		}
+        }
     `);
 
-    const fluid = data.image.fluid;
-
-    const image = data.header.edges[0].node.frontmatter.headerImage;
-    const subtitle = data.header.edges[0].node.frontmatter.subtitle;
+    const image = data.header.frontmatter.headerImage;
+    const subtitle = data.header.frontmatter.subtitle;
+    const fluid = image.childImageSharp.fluid;
 
     const [menuActive, setMenuActive] = useState(false);
 

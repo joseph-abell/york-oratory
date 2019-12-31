@@ -32,24 +32,20 @@ const MenuItem = ({ title, url, newTab = false }) => {
 const Menu = () => {
     const data = useStaticQuery(graphql`
 		query {
-			menu: allMarkdownRemark(filter: { frontmatter: { title: { eq: "Menu" } } }) {
-				edges {
-					node {
-						frontmatter {
-							items {
-								title
-								url
-								newTab
-                                linkToDifferentSite
-							}
-						}
-					}
-				}
+			menu: markdownRemark(frontmatter: {title: {eq: "Menu"}}) {
+                frontmatter {
+                    items {
+                        title
+                        url
+                        newTab
+                        linkToDifferentSite
+                    }
+                }
 			}
 		}
 	`);
 
-    const menu = data && data.menu.edges[0].node.frontmatter.items;
+    const menu = data && data.menu.frontmatter.items;
 
     return (
         <div
