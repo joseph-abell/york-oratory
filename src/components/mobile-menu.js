@@ -74,10 +74,15 @@ const MobileMenu = ({ visible = false, onMenuCloseClick = () => {} }) => {
 
 				@media (min-width: 767px) {
 					display: none;
-				}
+                }
+                
+                ul {
+                    margin: 0;
+                    padding: 0;
+                }
 
 				li {
-					display: block;
+                    display: block;
 				}
 			`}
 		>
@@ -87,11 +92,16 @@ const MobileMenu = ({ visible = false, onMenuCloseClick = () => {} }) => {
                 lineHeight={6}
                 color='#fff'
                 customProps={{ 'aria-label': 'Close Mobile Menu' }}
+                css={css`
+                    float: right;
+                    && {
+                        padding: 0;
+                    }
+                `}
 			/>
 
 			<div
 				css={css`
-					padding: 0 0 0 20px;
 					margin: 0;
 					max-height: calc(100vh - 80px);
 					position: relative;
