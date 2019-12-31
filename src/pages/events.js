@@ -7,10 +7,11 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
 
-const EventsItem = ({ node, title, primaryImage }) => (
+const EventsItem = ({ node, title }) => (
 	<div css={css`
         border-bottom: 1px solid #eee;
         margin-bottom: 20px;
+        padding-bottom: 30px;
 
         &:last-of-type {
             border-bottom: 0;
@@ -38,10 +39,7 @@ const EventsItem = ({ node, title, primaryImage }) => (
                     color: hsla(0,0%,0%,0.8);
                 `}
             />
-
-            {primaryImage && (
-                <img src={primaryImage} alt='' width='80%' />
-            )}
+            <button>More Info</button>
         </Link>
 	</div>
 );
@@ -60,9 +58,8 @@ class Events extends React.Component {
 
 					{events.map(({ node }) => {
 						const title = node.frontmatter.title || node.fields.slug;
-						const primaryImage = node.frontmatter.primaryImage;
 						return (
-							<EventsItem node={node} key={node.fields.slug} title={title} primaryImage={primaryImage} />
+							<EventsItem node={node} key={node.fields.slug} title={title} />
 						);
 					})}
 				</div>

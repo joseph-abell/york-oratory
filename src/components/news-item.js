@@ -7,41 +7,45 @@ const NewsItem = ({ node, title, primaryImage }) => (
     <div css={css`
         border-bottom: 1px solid #eee;
         margin-bottom: 20px;
+        padding-bottom: 30px;
 
         &:last-of-type {
             border-bottom: 0;
         }
     `}>
-        <h3
-            css={css`
-				font-size: 1.51572rem;
-				margin-bottom: ${rhythm(1 / 4)};
-			`}
-        >
-            <Link style={{ boxShadow: `none` }} to={`/${node.fields.slug}`}>
+        <Link style={{ boxShadow: `none` }} to={`/${node.fields.slug}`}>
+            <h3
+                css={css`
+                    font-size: 1.51572rem;
+                    margin-bottom: ${rhythm(1 / 4)};
+                `}
+            >
                 {title}
-            </Link>
-        </h3>
-        <small
-            css={css`
-				margin-bottom: ${rhythm(1 / 4)};
-				display: block;
-				color: rgba(0, 0, 0, 0.7);
-			`}
-        >
-            {node.frontmatter.date}
-        </small>
-        <div css={css`clear: both;`} />
-        {primaryImage && (
-            <Link to={`/${node.fields.slug}`}>
+            </h3>
+            <small
+                css={css`
+                    margin-bottom: ${rhythm(1 / 4)};
+                    display: block;
+                    color: rgba(0, 0, 0, 0.7);
+                `}
+            >
+                {node.frontmatter.date}
+            </small>
+            <div css={css`clear: both;`} />
+            {primaryImage && (
                 <img src={primaryImage} alt='' width='80%' />
-            </Link>
-        )}
-        <p
-            dangerouslySetInnerHTML={{
-                __html: node.frontmatter.description || node.excerpt
-            }}
-        />
+            )}
+            <p
+                dangerouslySetInnerHTML={{
+                    __html: node.frontmatter.description || node.excerpt
+                }}
+
+                css={css`
+                    color: hsla(0,0%,0%,0.8);
+                `}
+            />
+            <button>More Info</button>
+        </Link>
     </div>
 );
 
