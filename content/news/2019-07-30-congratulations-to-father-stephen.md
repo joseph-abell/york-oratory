@@ -1,7 +1,7 @@
 ---
 type: news
 title: Congratulations to Father Stephen
-primaryImage: /rsz_father-stephen-2.jpg
+primaryImage: /media/rsz_father-stephen-2.jpg
 date: 2019-07-22T20:56:12.104Z
 description: Father Stephen celebrates 25 years as a priest.
 ---
