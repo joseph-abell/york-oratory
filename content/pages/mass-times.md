@@ -36,7 +36,7 @@ description: Mass Times for St Joseph's and St Wilfrid's
 
 * 9:30am Mass
 
-**Monday, Wednesday & Friday**
+**Monday, Wednesday and Friday**
 
 * 9:15am
 

@@ -5,42 +5,9 @@ import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import NewsItem from '../components/news-item';
 import { rhythm } from '../utils/typography';
 import Markdown from 'markdown-to-jsx';
-
-const NewsItem = ({ node, title, primaryImage }) => (
-    <div>
-        <h3
-            css={css`
-				font-size: 1.51572rem;
-				margin-bottom: ${rhythm(1 / 4)};
-			`}
-        >
-            <Link style={{ boxShadow: `none` }} to={`/${node.fields.slug}`}>
-                {title}
-            </Link>
-        </h3>
-        <small
-            css={css`
-				margin-bottom: ${rhythm(1 / 4)};
-				display: block;
-				color: rgba(0, 0, 0, 0.7);
-			`}
-        >
-            {node.frontmatter.date}
-        </small>
-        {primaryImage && (
-            <Link to={`/${node.fields.slug}`}>
-                <img src={primaryImage} alt='' />
-            </Link>
-        )}
-        <p
-            dangerouslySetInnerHTML={{
-                __html: node.frontmatter.description || node.excerpt
-            }}
-        />
-    </div>
-);
 
 class Homepage extends React.Component {
     render() {
@@ -55,8 +22,19 @@ class Homepage extends React.Component {
                 <SEO title='Mass Times and News' />
 
                 {sundayMassTimes && (
-                    <div>
-                        <h2>Sunday Mass Times</h2>
+                    <div
+                        css={css`
+                            border: 1px solid #eee;
+                            border-radius: 3px;
+                            padding: 10px;
+                            margin-bottom: 30px;
+
+                            p:last-of-type {
+                                margin-bottom: 0;
+                            }
+                        `}
+                    >
+                        <h2 css={css`font-size: 2rem;`}>Sunday Mass Times</h2>
                         <Markdown css={css`white-space: pre-wrap;`}>{sundayMassTimes}</Markdown>
                     </div>
                 )}

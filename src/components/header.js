@@ -71,7 +71,7 @@ const Header = ({ title }) => {
                 <h1
                     css={css`
                         color: #fff;
-                        text-shadow: rgba(0, 0, 0, 0.35) 1px 1px 1px;
+                        text-shadow: rgba(0, 0, 0, 0.5) 2px 1px 1px;
                         font-size: 2rem;
                         padding-left: 20px;
                         margin-top: 30px;
@@ -115,7 +115,7 @@ const Header = ({ title }) => {
                 <h2
                     css={css`
                         color: #fff;
-                        text-shadow: rgba(0, 0, 0, 0.5) 2px 1px 1px;
+                        text-shadow: rgba(0, 0, 0, 0.8) 2px 1px 1px;
                         display: none;
                         padding-left: 20px;
                         margin-top: 30px;

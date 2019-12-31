@@ -39,6 +39,18 @@ const typography = new Typography({
         },
         'h2, h1': {
             fontWeight: 'normal',
+        },
+        strong: {
+            fontWeight: 500,
+        },
+        button: {
+            backgroundColor: '#8c181f',
+            color: '#fff',
+            border: 0,
+            borderRadius: '3px',
+            padding: '5px 10px',
+            cursor: 'pointer',
+            fontSize: '0.8rem'
         }
     })
 });

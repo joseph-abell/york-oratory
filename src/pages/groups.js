@@ -8,22 +8,37 @@ import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
 
 const GroupsItem = ({ node, group }) => (
-	<div>
-		<h2 css={css`margin-bottom: ${rhythm(1 / 4)};`}>
-			<Link style={{ boxShadow: `none` }} to={`/${group.urlSlug}`}>
-				{group.title}
-			</Link>
-		</h2>
-		<p
-			dangerouslySetInnerHTML={{
-				__html: group.description || node.excerpt
-			}}
-		/>
-		{group.primaryImage && (
-			<Link to={node.fields.slug}>
-				<img src={group.primaryImage} alt='' />
-			</Link>
-		)}
+	<div css={css`
+        border-bottom: 1px solid #eee;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    `}>
+        <Link style={{ boxShadow: `none` }} to={`/${group.urlSlug}`}>
+            <h2 css={css`margin-bottom: ${rhythm(1 / 4)};`}>
+                {group.title}
+            </h2>
+
+            <p
+                dangerouslySetInnerHTML={{
+                    __html: group.description || node.excerpt
+                }}
+
+                css={css`
+                    color: hsla(0,0%,0%,0.8);
+                `}
+            />
+
+            {group.primaryImage && (
+                <img src={group.primaryImage} alt='' />
+            )}
+
+            <button>More Info</button>
+        </Link>
+		
 	</div>
 );
 

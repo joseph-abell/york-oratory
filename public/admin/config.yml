@@ -161,6 +161,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Policy", name: "policy", widget: "file" }
+      - { label: "Open in New Tab", name: "newTab", widget: "boolean", default: false, required: false }
   - name: "sacraments"
     label: "Sacraments"
     folder: "content/sacraments"

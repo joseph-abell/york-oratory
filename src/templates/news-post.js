@@ -14,7 +14,10 @@ class NewsPostTemplate extends React.Component {
 		const siteTitle = this.props.data.site.siteMetadata.title;
 
 		return (
-			<Layout location={this.props.location} title={siteTitle}>
+            <Layout
+                location={this.props.location}
+                title={siteTitle}
+            >
 				<SEO title={post.frontmatter.title} description={post.frontmatter.description || post.excerpt} />
 				<h1
 					css={css`
@@ -33,7 +36,13 @@ class NewsPostTemplate extends React.Component {
 				>
 					{post.frontmatter.date}
 				</p>
-				<Markdown>{post.html}</Markdown>
+                <div css={css`
+                    img {
+                        width: 80%;
+                    }
+                `}>
+                    <Markdown>{post.html}</Markdown>
+                </div>
 			</Layout>
 		);
 	}
