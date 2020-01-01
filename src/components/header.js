@@ -13,24 +13,23 @@ const Header = ({ title }) => {
     const data = useStaticQuery(graphql`
 		query {
 			header: markdownRemark(frontmatter: {title: {eq: "Header"}}) {
-                frontmatter {
-                    headerImage 
-                    # {
-                    #     childImageSharp {
-                    #         fluid(maxWidth: 800) {
-                    #             ...GatsbyImageSharpFluid
-                    #         }
-                    #     }
-                    # }
+				frontmatter {
+					headerImage
                     subtitle
+				}
+			},
+            image: imageSharp(fluid: {originalName: {eq: "oratory_banner.jpg"}}) {
+                id
+                fluid(maxWidth: 1200) {
+                    ...GatsbyImageSharpFluid
                 }
             }
-        }
+		}
     `);
 
     const image = data.header.frontmatter.headerImage;
     const subtitle = data.header.frontmatter.subtitle;
-    // const fluid = image.childImageSharp.fluid;
+    const fluid = data.image.fluid;
 
     const [menuActive, setMenuActive] = useState(false);
 
@@ -50,7 +49,7 @@ const Header = ({ title }) => {
             `}
         >
             <Link to='/'>
-                {/* <Img
+                <Img
                     fluid={fluid}
                     objectFit="cover"
                     objectPosition="50% 50%"
@@ -63,7 +62,7 @@ const Header = ({ title }) => {
                             display: block;
                         }
                     `}
-                /> */}
+                />
                 <h1
                     css={css`
                         color: #fff;
