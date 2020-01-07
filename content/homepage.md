@@ -10,8 +10,9 @@ sundayMassTimes: |-
 
   * Saturday 6:30pm (Vigil of Sunday)
   * 8:30am Quiet Mass
-  * 10:30am Family Mass with Children’s Liturgy of the Word
+  * 10:30am Sung Mass
   * 12:00 noon Sung Latin Mass in the Extraordinary Form
 
   For information on other mass times, visit [Mass Times](/mass-times).
 ---
+
