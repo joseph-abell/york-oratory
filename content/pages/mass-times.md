@@ -13,7 +13,7 @@ description: Mass Times for St Joseph's and St Wilfrid's
 **Sunday**
 
 * 8:30am Quiet Mass
-* 10:30am Family Mass with Children's Liturgy of the Word
+* 10:30am Sung Mass
 * 12:00 noon Sung Latin Mass in the Extraordinary Form
 
 **Monday - Saturday**
@@ -46,18 +46,30 @@ description: Mass Times for St Joseph's and St Wilfrid's
 
 - - -
 
+## Confessions
+
+**St Wilfrid's**
+
+* 11:30am - 12 noon Monday to Friday
+* 10:45 - 12 noon Saturdays
+* Twenty minutes before Mass on Sundays
+
+**St Joseph's**
+
+* Twenty minutes before Mass
+
+- - -
+
 ## Other Services
 
-Sung Vespers: Sundays at 4:00pm followed by Benediction at about 4:30pm
+**St Wilfrid's**
 
-Confessions are heard twenty minutes before each Mass, and on Saturdays from 10:45–12:00.
+* Sung Vespers: Sundays at 4:00pm followed by Benediction at about 4:30pm.
+* Exposition of the Blessed Sacrament from Monday to Saturday from 11:30–12:00.
+* Rosary (or other devotions) on Tuesdays, Thursdays, and Fridays after the 12.10pm Mass.
+* Novena Prayers to Our Lady of Perpetual Succour every Wednesday after the 12.10pm Mass.
+* Devotions to Our Lady of York (Our Lady of Mercy) take place in the Lady Chapel after the 12:10pm Mass every Saturday.
 
-There is Exposition of the Blessed Sacrament from Monday to Saturday from 11:30–12:00.
+**St Joseph's**
 
-Rosary or other devotions take place in church from Tuesday to Saturday after the 12:10 Mass.
-
-The Blessing with the Relic of St Philip takes place after the 12:10pm Mass every Monday.
-
-There are Novena Prayers to Our Lady of Perpetual Succour every Wednesday after the Rosary.
-
-Devotions to Our Lady of York (Our Lady of Mercy) take place in the Lady Chapel after the 12:10pm Mass every Saturday.
+* Exposition of the Blessed Sacrament and Confessions 4.30pm-5pm on Saturdays.
