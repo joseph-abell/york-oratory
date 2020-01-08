@@ -71,6 +71,52 @@ groups:
     title: Newman’s Group (Young Adults)
     urlSlug: groups/newmans-group
   - body: >-
+      We are always looking for musicians to enhance our Sunday liturgy.
+
+
+      There is a small choir to support the singing at the 10:30am Sunday Mass.
+      We have hymns, simple motets and congregational Mass settings. We are
+      looking for both male and female voices. Please contact Br Adam for
+      information.
+
+
+      At the 12:00pm Latin Mass we have the Schola Sancti Wilfridi a traditional
+      choir that sings plainchant and polyphony. Singers are also welcome to
+      support the Fathers at Sung Latin Vespers on Sundays at 4:00pm.
+
+
+      We also award four choral scholarships each year, one in each voice, to
+      sing classical church music at the 12 noon Sunday Latin Mass and at
+      Vespers and Benediction. To find out more about these, please contact the
+      Director of Music, Dr John Ridgeway-Wood.
+
+
+      Please let us know if you would be interested in helping with our music.
+    description: >-
+      There is a small choir to support the singing at the 10:30am Sunday Mass,
+      and at the 12:00pm Latin Mass we have the Schola Sancti Wilfridi a
+      traditional choir that sings plainchant and polyphony.
+    groupType: ''
+    primaryImage: ''
+    title: Choirs
+    urlSlug: groups/choirs
+  - body: >-
+      Coffee and Cake are served for parishioners and visitors after the 10:30am
+      and 12 noon Masses on Sundays in the Upper Room.
+
+
+      This provides a relaxed and informal way to meet other Catholics and we
+      enjoy welcoming both visitors and regular parishioners.
+
+
+      If you can help with this by going on the rota please contact the Parish
+      Priest.
+    description: Coffee and Cake after Sunday Masses
+    groupType: ''
+    primaryImage: ''
+    title: Coffee after Mass
+    urlSlug: groups/coffee
+  - body: >-
       This is the oldest society in the parish dating back well over a hundred
       years. Members work for the deprived, sick and lonely in our parish and
       elsewhere in the city. If you would like to help with this work please
@@ -105,46 +151,5 @@ groups:
     primaryImage: ''
     title: Life Ascending
     urlSlug: groups/life-ascending
-  - body: >-
-      Coffee and Cake are served for parishioners and visitors after the 10:30am
-      Mass on Sundays, sometimes in support of approved charities. If you can
-      help with this by going on the rota please contact the Parish Priest.
-    description: >-
-      Coffee and Cake are served for parishioners and visitors after the 10:30am
-      Mass on Sundays, sometimes in support of approved charities.
-    groupType: ''
-    primaryImage: ''
-    title: Coffee after Mass
-    urlSlug: groups/coffee
-  - body: >-
-      We are always looking for musicians to enhance our Sunday liturgy.
-
-
-      There is a small choir to support the singing at the 10:30am Sunday Mass.
-      We have hymns, simple motets and congregational Mass settings. We are
-      looking for both male and female voices. Please contact Br Adam for
-      information.
-
-
-      At the 12:00pm Latin Mass we have the Schola Sancti Wilfridi a traditional
-      choir that sings plainchant and polyphony. Singers are also welcome to
-      support the Fathers at Sung Latin Vespers on Sundays at 4:00pm.
-
-
-      We also award four choral scholarships each year, one in each voice, to
-      sing classical church music at the 12 noon Sunday Latin Mass and at
-      Vespers and Benediction. To find out more about these, please contact the
-      Director of Music, Dr John Ridgeway-Wood.
-
-
-      Please let us know if you would be interested in helping with our music.
-    description: >-
-      There is a small choir to support the singing at the 10:30am Sunday Mass,
-      and at the 12:00pm Latin Mass we have the Schola Sancti Wilfridi a
-      traditional choir that sings plainchant and polyphony.
-    groupType: ''
-    primaryImage: ''
-    title: Choirs
-    urlSlug: groups/choirs
 ---
 
