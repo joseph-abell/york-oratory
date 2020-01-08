@@ -71,19 +71,6 @@ groups:
     title: Newman’s Group (Young Adults)
     urlSlug: groups/newmans-group
   - body: >-
-      We have occasional one-off talks or a series of talks about Catholic Faith
-      and Spirituality, usually in the evening in the Upper Room at St
-      Wilfrid’s. If there are any talks currently on offer details can be
-      downloaded here.
-    description: >-
-      We have occasional one-off talks or a series of talks about Catholic Faith
-      and Spirituality, usually in the evening in the Upper Room at St
-      Wilfrid’s.
-    groupType: ''
-    primaryImage: ''
-    title: Occasional Talks - Catholicism and the Arts
-    urlSlug: groups/occasional-talks
-  - body: >-
       This is the oldest society in the parish dating back well over a hundred
       years. Members work for the deprived, sick and lonely in our parish and
       elsewhere in the city. If you would like to help with this work please
@@ -95,29 +82,6 @@ groups:
     primaryImage: ''
     title: Society of St Vincent de Paul
     urlSlug: groups/society-of-st-vincent-de-paul
-  - body: >-
-      This group meets most Monday evening at 7:30pm from September until
-      Pentecost to help people deepen their understanding of the Catholic faith.
-      Catholics who want to share their faith or to get to know it better are
-      welcome to come to help others who may wish to become Catholics through
-      the Rite of Christian Initiation or by being received into full communion
-      with the Catholic Church. Each meeting includes a systematic presentation
-      of Catholic teaching together with opportunities for prayer, questions,
-      and meeting other Catholics and enquirers. We end most evenings with the
-      Office of Compline sung in church.
-
-
-      In the year 2018/2019 we will be using the Evangelium Course.
-
-
-      Please contact the Parish Priest to find out more.
-    description: >-
-      This group meets most Monday evening at 7:30pm from September until
-      Pentecost to help people deepen their understanding of the Catholic faith.
-    groupType: ''
-    primaryImage: ''
-    title: Exploring the Catholic Faith
-    urlSlug: groups/exploring-the-catholic-faith
   - body: >-
       The St Wilfrid’s Bellringers ring the ten bells in the tower before the
       6:15pm Mass on Saturday and the 10.30am and 12 noon Masses on Sunday. They
@@ -182,19 +146,5 @@ groups:
     primaryImage: ''
     title: Choirs
     urlSlug: groups/choirs
-  - body: >-
-      The Legion of Mary is a worldwide group fostering spiritual formation in
-      the spirit of Our Lady and offering practical and spiritual help to
-      others. At the moment this group is not meeting but we hope to revive if
-      anyone would be interested in this work and spirituality. Please contact
-      Br Adam for information.
-    description: >-
-      The Legion of Mary is a worldwide group fostering spiritual formation in
-      the spirit of Our Lady and offering practical and spiritual help to
-      others.
-    groupType: ''
-    primaryImage: ''
-    title: Legion of Mary
-    urlSlug: groups/legion-of-mary
 ---
 
