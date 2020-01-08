@@ -54,13 +54,14 @@ groups:
     urlSlug: groups/young-oratory
   - body: >-
       The group seeks to provide spiritual and doctrinal formation to young
-      adults aged 17-30, and to encourage young Catholic adults in the living of
-      their Faith. There is social time, occasional talks and outings. Meetings
-      start at 7.30pm and end with Night Prayer in the church at around 9.00pm.
-      The meetings are held in the Upper Room (entrance via car park) on the
-      second and fourth Tuesdays of the month, except in August. If you would
-      like to know more, please contact Fr Stephen. Newman’s Group has a
-      Facebook page.
+      adults aged 17-35, and to encourage young Catholic adults in the living of
+      their Faith. There is a combination of spiritual and doctrinal formation,
+      social time, occasional talks, film nights and outings.. Meetings start at
+      7.30pm and end with Night Prayer in the church at around 9.00pm. The
+      meetings are held in the Upper Room (entrance via car park) on the second
+      and fourth Tuesdays of the month, except in August. If you would like to
+      know more, please contact Fr Stephen. Newman’s Group has a [Facebook
+      page.](https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F442610759223778%2F)
     description: >-
       The group seeks to provide spiritual and doctrinal formation to young
       adults aged 17-30, and to encourage young Catholic adults in the living of
