@@ -14,8 +14,23 @@ groups:
       holiness in the way of St Philip.
 
 
-      Currently Brothers meets on Sundays from 5-6pm. Please see Br Adam if you
-      are interested.
+      Currently Brothers meets on Sundays from 5-6pm at St Wilfrid's church.
+
+
+      Typically we meet in the upper room for a cup of tea and around half an
+      hour's recreation time; afterwards we go into the church for a short
+      spiritual talk and then sing Compline (the Church's night prayer) by
+      candlelight. Brothers is a very good way for Catholic men to meet other
+      committed Catholics and to gain some support in one's spiritual life.
+
+
+      If you are interested in finding out more then you can simply turn up to
+      one of the meetings and make yourself known, or speak to Br Adam.
+
+
+      Those who regularly attend the meetings may be invited to be enrolled in
+      Brothers; this makes one part of the spiritual family of St Philip
+      (similar to a third order in other religious communities).
 
 
       Brothers doesn't meet in August.
