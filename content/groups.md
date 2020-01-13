@@ -57,8 +57,29 @@ groups:
     title: Women’s Oratory
     urlSlug: groups/womens-oratory
   - body: >-
-      Meets on Wednesdays from 4-5pm during term time. Please see Br Adam if you
-      are interested in joining.
+      Meets on Wednesdays from 4-5pm during term time. It is a great way for
+      Catholic teenagers to meet other Catholics the same age. We focus on
+      building friendships, supporting an active prayer-life, learning about the
+      Faith, and helping in the Church.
+
+
+      Typically we start to gather in the upper room of St Wilfrid's church, and
+      the meeting begins properly in St Philip's chapel with the Gospel reading
+      for the day, followed by a short spiritual talk. The activities afterwards
+      vary from week to week, and are a varied as cleaning the church, competing
+      in quiz, cooking pancakes, Confessions, Adoration of the Most Blessed
+      Sacrament, playing board games, and having talks.
+
+
+      This group is for both boys and girls.
+
+
+      _"For young men to make sure of persevering, it is absolutely necessary
+      that they should avoid wicked companions, and be familiar with good
+      ones."_ - St Philip Neri
+
+
+      Please talk to Br Adam if you are interested in joining.
 
 
       ![](/media/20180227_165058-2018_09_14-16_43_05-utc-2-.jpg)
