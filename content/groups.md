@@ -2,7 +2,47 @@
 title: Groups
 type: groups
 groups:
-  - body: "The Oratory began in Rome with a group of men who met informally in St Philip’s rooms for prayer, recreation and spiritual guidance from the saint of joy. The community of priests which we now call “the Oratory” was formed later to care for the spiritual needs of this group as it outgrew St Philip’s rooms and became known in Rome and around the world. But it was the laymen’s group that came first. Wherever the Oratory is to be found this informal origin is recalled by the Brothers of the Secular Oratory. Brothers continue to meet regularly with the same goal, growth in holiness in the way of St Philip.\n\nCurrently Brothers meets on Sundays from 5-6pm at St Wilfrid's church.\n\nTypically we meet in the upper room for a cup of tea and around half an hour's recreation time; afterwards we go into the church for a short spiritual talk and then sing Compline (the Church's night prayer) by candlelight. Brothers is a very good way for Catholic men to meet other committed Catholics and to gain some support in one's spiritual life.\n\nIf you are interested in finding out more then you can simply turn up to one of the meetings and make yourself known, or speak to Br Adam.\n\nThose who regularly attend the meetings may be invited to be enrolled in Brothers; this makes one part of the spiritual family of St Philip (similar to a third order in other religious communities).\n\n_\"Iron sharpens iron,_\r\n\n_and one man sharpens another.\"_ - Proverbs 27:17\n\nBrothers doesn't meet in August.\n\n![](/media/web-st-philip-neri-fr-lawrence-lew-op-cc.jpg)"
+  - body: >-
+      The Oratory began in Rome with a group of men who met informally in St
+      Philip’s rooms for prayer, recreation and spiritual guidance from the
+      saint of joy. The community of priests which we now call “the Oratory” was
+      formed later to care for the spiritual needs of this group as it outgrew
+      St Philip’s rooms and became known in Rome and around the world. But it
+      was the laymen’s group that came first. Wherever the Oratory is to be
+      found this informal origin is recalled by the Brothers of the Secular
+      Oratory. Brothers continue to meet regularly with the same goal, growth in
+      holiness in the way of St Philip.
+
+
+      Currently Brothers meets on Sundays from 5-6pm at St Wilfrid's church.
+
+
+      Typically we meet in the upper room for a cup of tea and around half an
+      hour's recreation time; afterwards we go into the church for a short
+      spiritual talk and then sing Compline (the Church's night prayer) by
+      candlelight. Brothers is a very good way for Catholic men to meet other
+      committed Catholics and to gain some support in one's spiritual life.
+
+
+      If you are interested in finding out more then you can simply turn up to
+      one of the meetings and make yourself known, or speak to Br Adam.
+
+
+      Those who regularly attend the meetings may be invited to be enrolled in
+      Brothers; this makes one part of the spiritual family of St Philip
+      (similar to a third order in other religious communities).
+
+
+      _"Iron sharpens iron,_
+
+
+      _and one man sharpens another."_ - Proverbs 27:17
+
+
+      Brothers doesn't meet in August.
+
+
+      ![](/media/web-st-philip-neri-fr-lawrence-lew-op-cc.jpg)
     description: >-
       The Oratory began in Rome with a group of men who met informally in St
       Philip’s rooms for prayer, recreation and spiritual guidance from the
@@ -73,13 +113,19 @@ groups:
     title: Newman’s Group (Young Adults)
     urlSlug: groups/newmans-group
   - body: >-
-      We are always looking for musicians to enhance our Sunday liturgy.
+      10.30am
 
 
-      There is a small choir to support the singing at the 10:30am Sunday Mass.
-      We have hymns, simple motets and congregational Mass settings. We are
-      looking for both male and female voices. Please contact Br Adam for
-      information.
+      There is a choir which sings at the 10:30am Sunday Mass. In addition to
+      hymns and congregational Mass settings, we work on choral music by
+      composers such as Mozart and Tallis in a friendly and supportive
+      environment. We are looking for both male and female voices. All are
+      welcome. 
+
+
+      Please contact Br Adam or Molly Reinker Morgan for information.
+
+
 
 
       At the 12:00pm Latin Mass we have the Schola Sancti Wilfridi a traditional
@@ -94,10 +140,7 @@ groups:
 
 
       Please let us know if you would be interested in helping with our music.
-    description: >-
-      There is a small choir to support the singing at the 10:30am Sunday Mass,
-      and at the 12:00pm Latin Mass we have the Schola Sancti Wilfridi a
-      traditional choir that sings plainchant and polyphony.
+    description: Singing at 10.30am and 12noon Sunday Masses at St Wilfrid's
     groupType: ''
     primaryImage: ''
     title: Choirs
