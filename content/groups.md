@@ -113,7 +113,7 @@ groups:
     title: Newman’s Group (Young Adults)
     urlSlug: groups/newmans-group
   - body: >-
-      10.30am
+      **10.30am**
 
 
       There is a choir which sings at the 10:30am Sunday Mass. In addition to
@@ -126,6 +126,7 @@ groups:
       Please contact Br Adam or Molly Reinker Morgan for information.
 
 
+      **12noon**
 
 
       At the 12:00pm Latin Mass we have the Schola Sancti Wilfridi a traditional
