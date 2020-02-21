@@ -123,7 +123,7 @@ const Header = ({ title }) => {
                             font-size: 1.6rem;
                             line-height: 2rem;
                             width: 767px;
-                            margin: 300px auto 0;
+                            margin: 240px auto 0;
                             position: absolute;
                             top: 0;
                             left: 0;
