@@ -1,8 +1,8 @@
 ---
 title: Footer
 type: /hidden
-yorkCharityNumber: ' '
-middlesboroughCharityNumber: The Diocese of Middlesbrough is a Registered Charity number 233748
+yorkCharityNumber: ' The York Oratory Trust (CIO) 1187865'
+middlesboroughCharityNumber: '-'
 menu:
   - linkToDifferentSite: false
     newTab: false
