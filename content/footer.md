@@ -1,8 +1,8 @@
 ---
 title: Footer
 type: /hidden
-yorkCharityNumber: ' The York Oratory Trust (CIO) 1187865'
-middlesboroughCharityNumber: '-'
+yorkCharityNumber: '1187865'
+middlesboroughCharityNumber: ' The York Oratory Trust (CIO) 1187865'
 menu:
   - linkToDifferentSite: false
     newTab: false
