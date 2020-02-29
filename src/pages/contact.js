@@ -12,13 +12,14 @@ class Contact extends React.Component {
 	render() {
 		const { data } = this.props;
 		const siteTitle = data.site.siteMetadata.title;
-		const { parishPriest, address, telephone, email, directions } = data.contact.edges[0].node.frontmatter;
+		const { parishPriest, address, telephone, email, directions, description } = data.contact.edges[0].node.frontmatter;
 
 		return (
 			<Layout location={this.props.location} title={siteTitle}>
 				<SEO title='Events' />
 				<div css={css`margin-bottom: ${rhythm(2)};`}>
 					<h1>Contact</h1>
+					<p>{description}</p>
 					<div>
 						<h2>Parish Priest:</h2>
 						<p>{parishPriest}</p>
@@ -28,12 +29,12 @@ class Contact extends React.Component {
 						<Markdown css={css`white-space: pre-wrap;`}>{address}</Markdown>
 					</div>
 					<div>
-						<h2>Telephone:</h2>
-						<p>{telephone}</p>
-					</div>
-					<div>
 						<h2>Email:</h2>
 						<p>{email}</p>
+					</div>
+					<div>
+						<h2>Telephone:</h2>
+						<p>{telephone}</p>
 					</div>
 					<div>
 						<h2>Directions:</h2>
@@ -66,6 +67,7 @@ export const pageQuery = graphql`
 						telephone
 						email
 						directions
+						description
 					}
 				}
 			}
