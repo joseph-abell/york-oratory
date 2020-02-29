@@ -50,8 +50,5 @@ groups:
         newTab: false
         text: Sacraments
         url: /sacraments
-      - newTab: true
-        text: Newman Prayer Card
-        url: /media/newman-prayer-card.pdf
 ---
 
