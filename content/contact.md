@@ -11,7 +11,9 @@ address: |-
   York
   YO1 7EN
 telephone: 01904 624 767
-email: rectory@stwilfridsyork.org.uk
+email: >-
+  General enquiries: parish@yorkoratory.com; Oratory enquiries:
+  provost@yorkoratory.com
 directions: >-
   Postcode for SatNav for St Wilfrid's YO1 7EF
 
