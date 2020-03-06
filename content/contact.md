@@ -1,7 +1,32 @@
 ---
 title: Contact
 type: /contact
-description: "The best way to contact us is via email\r\n\nFor general enquiries, information on renting St Joseph' Hall, and baptism certificates parish@yorkoratory.com\r\n\nFor enquiries regarding the sacraments including Weddings, Baptisms, Funerals, becoming a Catholic parishpriest@yorkoratory.com\r\n\nFor enquiries regarding the Oratory, and information about vocations provost@yorkoratory.com\r\n\nFor enquiries regarding the Shrine of St Margaret Clitherow shrine@yorkoratory.com"
+description: >-
+  The best way to contact us is via email
+
+
+
+
+  For general enquiries, information on renting St Joseph' Hall, and baptism
+  certificates parish@yorkoratory.com
+
+
+
+
+  For enquiries regarding the sacraments including Weddings, Baptisms, Funerals,
+  becoming a Catholic parishpriest@yorkoratory.com
+
+
+
+
+  For enquiries regarding the Oratory, and information about vocations
+  provost@yorkoratory.com
+
+
+
+
+  For enquiries regarding the Shrine of St Margaret Clitherow
+  shrine@yorkoratory.com
 parishPriest: 'Fr Daniel Seward, Cong. Orat.'
 provost: 'Fr Richard Duffield, Cong. Orat.'
 address: |-
