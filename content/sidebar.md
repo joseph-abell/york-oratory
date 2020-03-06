@@ -19,6 +19,10 @@ groups:
         newTab: false
         text: Shrine of St Margaret Clitherow
         url: /shrine-of-st-margaret-clitherow
+      - linkToDifferentSite: false
+        newTab: false
+        text: Contact
+        url: /contact
     title: About
   - items:
       - linkToDifferentSite: false
