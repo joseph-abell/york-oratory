@@ -4,14 +4,14 @@ title: Bishop Robert's Sermon
 date: 2020-03-06T22:04:04.424Z
 description: Bishop Robert's sermon for the Mass of Thanksgiving
 ---
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <o:OfficeDocumentSettings>
   <o:RelyOnVML/>
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:WordDocument>
   <w:View>Normal</w:View>
   <w:Zoom>0</w:Zoom>
@@ -50,9 +50,9 @@ description: Bishop Robert's sermon for the Mass of Thanksgiving
    <m:intLim m:val="subSup"/>
    <m:naryLim m:val="undOvr"/>
   </m:mathPr></w:WordDocument>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 9]><xml>
+<!--\\[if gte mso 9]><xml>
  <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
   DefSemiHidden="false" DefQFormat="false" DefPriority="99"
   LatentStyleCount="375">
@@ -629,9 +629,9 @@ description: Bishop Robert's sermon for the Mass of Thanksgiving
   <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
    Name="Unresolved Mention"/>
  </w:LatentStyles>
-</xml><!\[endif]-->
+</xml><!\\[endif]-->
 
-<!--\[if gte mso 10]>
+<!--\\[if gte mso 10]>
 <style>
  /* Style Definitions */
  table.MsoNormalTable
@@ -657,7 +657,7 @@ description: Bishop Robert's sermon for the Mass of Thanksgiving
 	mso-bidi-font-family:"Times New Roman";
 	mso-bidi-theme-font:minor-bidi;}
 </style>
-<!\[endif]-->
+<!\\[endif]-->
 
 <!--StartFragment-->
 
@@ -665,7 +665,7 @@ It is wholly appropriate that an Oratory should celebrate its foundation on the 
 
 Philip did not see himself as a founder or leader of a movement but simply as a son of the Church completely imbued with the love of God and wanting to share that love with others. The community he gathered around him began almost by accident. The Oratory was born out of Philip’s innovative pastoral work of making people saints in their own homes. Many priests and people saw that his unique ministry of lay formation and spiritual guidance was one which could be of great benefit to priests and people way beyond the bounds of the city of Rome. Rome was the missionary territory of St Philip – his Indies, as he was told by his spiritual director when he was minded to become a foreign missionary. He remained in Rome all his adult life carrying out his priestly duties of prayer, preaching and the administration of the sacraments which remain the pillars of the Oratorian life. It has to be said that Philip had no objection to others imitating his ministry in other parts of the world. In his own day the Oratories of Naples and Palermo were founded and still exist today. England had to wait until 1848 when St John Henry Newman brought the Oratory to Birmingham. So here at last St Philip has come to York, which according to Google maps is 1,358 from Rome! Still he has come to a Roman city and he has six priests and brothers imbued with his spirit and who love his Institute. Fr Richard, Fr Daniel, Fr Stephen, Br Adam, Br Henry, Br David and Br Huw. I am sure St Philip must be proud and pleased that you are continuing his work in the north of England; thank you from all of us for all that you do. I also want to take this opportunity to thank Bishop Draineyfor asking the Oratory to come to York and for the encouragement and support he has given it.
 
-It was in 1575 that Pope Gregory XIII approved the Constitutions of the Oratory and so made our Congregation an official part of the life of the universal Church. [Every religious order or congregation has its own charism and plays a part in enriching the life and mission of the Church. The Oratory is no exception. It gives to the Church a place where priests can serve the Lord in a spirit of prayer and joyfulness through proclaiming the truth, beauty and goodness of our faith in the spirit of our founder.](<>)
+It was in 1575 that Pope Gregory XIII approved the Constitutions of the Oratory and so made our Congregation an official part of the life of the universal Church. Every religious order or congregation has its own charism and plays a part in enriching the life and mission of the Church. The Oratory is no exception. It gives to the Church a place where priests can serve the Lord in a spirit of prayer and joyfulness through proclaiming the truth, beauty and goodness of our faith in the spirit of our founder.
 
 As its name suggests an Oratory is above all a place of prayer. It is a gathering place for all to come to pray and to learn about prayer. It is a place where personal influence and friendship build up a community where both priests and people come to have a personal and loving encounter with the Lord. Philip’s pastoral strategy was simple and yet profound. He would walk around the streets of Rome and casually invite people to join him in prayer; “so when are going to start doing good?”; he would say. His infectious humour and simple holiness drew people to him “like iron to a magnet” his early biographers tell us. His joyful and attractive personality came about through his profound life of prayer. In the words of Cardinal Newman he would *“draw them on from good to better”.* It was the idea of personal influence that attracted St John Henry to the Oratory. He saw the Oratory as a place where priests and people can become friends of the Lord.Heart speaks to heart.
 
@@ -676,11 +676,5 @@ Finally the Oratory is a family of secular priests living in community and bound
 *“what the process is by which the spirit of a particular Oratory is formed may not be easy to trace out in fact. The particular locality, the people with which they are surrounded, the circumstances of their country, all exert their separate influences”*
 
 So dear fathers and brothers as you begin your life as an independent Oratory may your community be characterized by fidelity to the Church and an openness to the world yet not courting its favour. I pray that you will be a place that witnesses to the beauty, truth and goodness of God. I pray that you will be hospitable and attentive to the needs of the poor and marginalized and may you always have a sense of humour. Above all I pray that the York Oratory will be a holy place. We invoke the prayers of our Blessed Mother, St Peter whom we commemorate today, our Holy Father St Philip and all the Oratorian saints and beati especially our own Cardinal that they may protect and keep this house in the centuries to come.
-
-
-
-
-
-
 
 <!--EndFragment-->
