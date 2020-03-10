@@ -12,3 +12,7 @@ Take part at St Wilfrid’s:
 4.45pm: Rosary; 
 
 5pm: Benediction and Procession of Our Lady of York
+
+
+
+![](/media/beholdmain-09.jpg)
