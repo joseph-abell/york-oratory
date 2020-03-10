@@ -1,7 +1,7 @@
 ---
 type: events
 title: Rededication of England to Our Lady
-primaryImage: ''
+primaryImage: /media/beholdmain-09.jpg
 eventDate: 2020-03-29T15:45:00.000Z
 description: The Re-Consecration of England to Our Lady as Her Dowry
 ---
