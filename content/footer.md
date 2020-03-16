@@ -1,7 +1,7 @@
 ---
 title: Footer
 type: /hidden
-yorkCharityNumber: '1187865'
+yorkCharityNumber: The York Oratory Trust (CIO) 1187865
 middlesboroughCharityNumber: ' The York Oratory Trust (CIO) 1187865'
 menu:
   - linkToDifferentSite: false
@@ -16,4 +16,3 @@ credits: >-
   Made with <span>❤</span> by <a href="http://abelldesign.co.uk">Abell
   Design</a> and <a href="https://josephabell.co.uk">Joseph Abell</a>
 ---
-
