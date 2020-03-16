@@ -5,7 +5,6 @@ primaryImage: /media/mc_001-2-2017_07_14-10_45_16-utc-.jpg
 eventDate: 2019-08-17T15:29:01.098Z
 description: Pilgrimage in honour of St Margaret Clitherow and the Martyrs of York
 ---
-
 In 1586 St Margaret Clitherow was led from her prison to be pressed to death on Ouse Bridge in York. Each year there is a Mass and procession to honour her and to pray for our country.
 
 Saturday 31st August 2019
