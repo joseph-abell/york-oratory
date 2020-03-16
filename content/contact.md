@@ -5,24 +5,16 @@ description: >-
   The best way to contact us is via email
 
 
-
-
   For general enquiries, information on renting St Joseph' Hall, and baptism
   certificates parish@yorkoratory.com
-
-
 
 
   For enquiries regarding the sacraments including Weddings, Baptisms, Funerals,
   becoming a Catholic parishpriest@yorkoratory.com
 
 
-
-
   For enquiries regarding the Oratory, and information about vocations
   provost@yorkoratory.com
-
-
 
 
   For enquiries regarding the Shrine of St Margaret Clitherow
@@ -64,4 +56,3 @@ directions: >-
   [View St Joseph's on Google
   Maps](https://www.google.co.uk/maps/place/St+Joseph's+R+C+Church/@53.97682,-1.0928873,17z/data=!3m1!4b1!4m5!3m4!1s0x487931769eff9de7:0x589f0ca4b58960d2!8m2!3d53.97682!4d-1.0906986)
 ---
-
