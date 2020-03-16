@@ -19,7 +19,7 @@ const EventsItem = ({ node, title }) => (
       }
     `}
   >
-    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+    <Link style={{ boxShadow: `none` }} to={`/${node.fields.slug}`}>
       <h2
         css={css`
           margin-bottom: ${rhythm(1 / 4)};
@@ -66,12 +66,13 @@ class Events extends React.Component {
         >
           <h1>Events</h1>
 
-          {events.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-              <EventsItem node={node} key={node.fields.slug} title={title} />
-            )
-          })}
+          {events.map(({ node }) => (
+            <EventsItem
+              node={node}
+              key={node.fields.slug}
+              title={node.frontmatter.title || node.fields.slug}
+            />
+          ))}
         </div>
       </Layout>
     )
