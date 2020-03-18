@@ -1,6 +1,7 @@
 ---
 type: news
 title: The voice of prayer is never silent
+primaryImage: /media/66303020_10158628187433989_4756982799251013632_o-2.jpg
 date: 2020-03-18T20:17:11.918Z
 description: How do we make sense of not having the Mass?
 ---
