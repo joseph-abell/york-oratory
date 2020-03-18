@@ -1,6 +1,7 @@
 ---
 type: news
 title: 'No Public Masses at St Wilfrid''s, St Joseph''s or the Shrine'
+primaryImage: /media/Screen Shot 2020-03-18 at 20.44.44.png
 date: 2020-03-18T20:22:09.075Z
 description: >-
   The Bishops of England and Wales have suspended all public worship in our
