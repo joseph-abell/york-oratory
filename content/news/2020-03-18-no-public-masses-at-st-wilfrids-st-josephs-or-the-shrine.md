@@ -2,7 +2,9 @@
 type: news
 title: 'No Public Masses at St Wilfrid''s, St Joseph''s or the Shrine'
 date: 2020-03-18T20:22:09.075Z
-description: Public Masses
+description: >-
+  The Bishops of England and Wales have suspended all public worship in our
+  churches
 ---
 The Bishops of England and Wales have suspended all public worship in our churches from Friday, 20th March. This is on government advice, and in common with many other places in the world, including Rome itself.
 
