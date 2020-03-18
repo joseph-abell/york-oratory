@@ -2,7 +2,7 @@
 type: news
 title: The voice of prayer is never silent
 date: 2020-03-18T20:17:11.918Z
-description: Masses suspended
+description: How do we make sense of not having the Mass?
 ---
 From after the lunchtime Mass on Friday there will be no public Masses at St Wilfrid’s, St Joseph’s or the Shrine of St Margaret Clitherow for the foreseeable future. Even the Second World War did not bring this about although there was probably a short period after the bombing of 1942 when Mass was celebrated elsewhere. The situation is as distressing as it seems unprecedented.
 
