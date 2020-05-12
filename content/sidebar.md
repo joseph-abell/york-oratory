@@ -57,6 +57,6 @@ groups:
       - linkToDifferentSite: false
         newTab: false
         text: Donations
-        url: /donations
+        url: /donation
 ---
 
