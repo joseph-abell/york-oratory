@@ -54,5 +54,9 @@ groups:
         newTab: false
         text: Sacraments
         url: /sacraments
+      - linkToDifferentSite: false
+        newTab: false
+        text: Donations
+        url: /donations
 ---
 
