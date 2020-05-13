@@ -23,6 +23,6 @@ Cheques payable to the York Oratory can be sent to 11 High Petergate, York, YO1 
 
 Please [contact us](https://yorkoratory.com/contact) to request information about setting up a standing order or a Bank Transfer.
 
-##### Parish
+#### Parish
 
 Please note that the York Oratory is a separate entity from the parishes that we serve and the Diocese of Middlesbrough. If you wish to donate for a specific fundraising appeal, parish, or would like more information please [contact us.](https://yorkoratory.com/contact)
