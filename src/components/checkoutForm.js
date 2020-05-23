@@ -75,7 +75,7 @@ const CheckoutForm = () => {
     // which would refresh the page.
     event.preventDefault()
 
-    if (!stripe || !elements) {
+    if (!stripe || !elements || !paymentSecret) {
       // Stripe.js has not yet loaded.
       // Make sure to disable form submission until Stripe.js has loaded.
       return
@@ -84,9 +84,6 @@ const CheckoutForm = () => {
     const result = await stripe.confirmCardPayment(paymentSecret, {
       payment_method: {
         card: elements.getElement(CardElement),
-        billing_details: {
-          name: "Jenny Rosen",
-        },
       },
     })
 
@@ -108,7 +105,7 @@ const CheckoutForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <CardSection />
-      <button disabled={!stripe}>Confirm order</button>
+      <button disabled={!stripe || !paymentSecret}>Confirm order</button>
     </form>
   )
 }
