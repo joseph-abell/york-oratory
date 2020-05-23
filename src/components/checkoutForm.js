@@ -1,64 +1,66 @@
 import React, { useState, useEffect } from "react"
-import { PaymentRequestButtonElement, useStripe } from "@stripe/react-stripe-js"
+import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js"
+import styled from "styled-components"
+
+const CARD_ELEMENT_OPTIONS = {
+  style: {
+    base: {
+      color: "#32325d",
+      fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+      fontSmoothing: "antialiased",
+      fontSize: "16px",
+      "::placeholder": {
+        color: "#aab7c4",
+      },
+    },
+    invalid: {
+      color: "#fa755a",
+      iconColor: "#fa755a",
+    },
+  },
+}
+
+const StyledCardElement = styled.div`
+  .StripeElement {
+    height: 40px;
+    padding: 10px 12px;
+    width: 100%;
+    color: #32325d;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+  }
+
+  .StripeElement--focus {
+    box-shadow: 0 1px 3px 0 #cfd7df;
+  }
+
+  .StripeElement--invalid {
+    border-color: #fa755a;
+  }
+
+  .StripeElement--webkit-autofill {
+    background-color: #fefde5 !important;
+  }
+`
+
+const CardSection = () => (
+  <label htmlFor="cardElement">
+    Card details
+    <StyledCardElement>
+      <CardElement id="cardElement" options={CARD_ELEMENT_OPTIONS} />
+    </StyledCardElement>
+  </label>
+)
 
 const CheckoutForm = () => {
   const stripe = useStripe()
-  const [paymentRequest, setPaymentRequest] = useState(null)
+  const elements = useElements()
   const [paymentSecret, setPaymentSecret] = useState(null)
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    if (stripe) {
-      const pr = stripe.paymentRequest({
-        currency: "gbp",
-        country: "GB",
-        total: {
-          label: "Test Donation",
-          amount: 1000,
-        },
-        requestPayerName: true,
-        requestPayerEmail: true,
-      })
-
-      pr.on("paymentmethod", async ev => {
-        // Confirm the PaymentIntent without handling potential next actions (yet).
-        const { error: confirmError } = await stripe.confirmCardPayment(
-          paymentSecret,
-          { payment_method: ev.paymentMethod.id },
-          { handleActions: false }
-        )
-
-        if (confirmError) {
-          // Report to the browser that the payment failed, prompting it to
-          // re-show the payment interface, or show an error message and close
-          // the payment interface.
-          ev.complete("fail")
-        } else {
-          // Report to the browser that the confirmation was successful, prompting
-          // it to close the browser payment method collection interface.
-          ev.complete("success")
-          // Let Stripe.js handle the rest of the payment flow.
-          const { error, paymentIntent } = await stripe.confirmCardPayment(
-            paymentSecret
-          )
-          if (error) {
-            // The payment failed -- ask your customer for a new payment method.
-            console.log(error)
-          } else {
-            // The payment has succeeded.
-            console.log(paymentIntent)
-          }
-        }
-      })
-
-      pr.canMakePayment().then(result => {
-        console.log(result)
-        if (result) {
-          setPaymentRequest(pr)
-        }
-      })
-    }
-  }, [stripe, paymentSecret])
 
   useEffect(() => {
     fetch("/.netlify/functions/createPaymentIntent")
@@ -66,12 +68,47 @@ const CheckoutForm = () => {
       .then(secret => setPaymentSecret(secret))
   }, [])
 
-  useEffect(() => {
-    if (paymentRequest && paymentSecret) setLoading(false)
-  }, [paymentRequest, paymentSecret])
+  const handleSubmit = async event => {
+    // We don't want to let default form submission happen here,
+    // which would refresh the page.
+    event.preventDefault()
 
-  if (loading) return <div>Payment not ready</div>
-  return <PaymentRequestButtonElement options={{ paymentRequest }} />
+    if (!stripe || !elements) {
+      // Stripe.js has not yet loaded.
+      // Make sure to disable form submission until Stripe.js has loaded.
+      return
+    }
+
+    const result = await stripe.confirmCardPayment(paymentSecret, {
+      payment_method: {
+        card: elements.getElement(CardElement),
+        billing_details: {
+          name: "Jenny Rosen",
+        },
+      },
+    })
+
+    if (result.error) {
+      // Show error to your customer (e.g., insufficient funds)
+      console.log(result.error.message)
+    } else {
+      // The payment has been processed!
+      if (result.paymentIntent.status === "succeeded") {
+        // Show a success message to your customer
+        // There's a risk of the customer closing the window before callback
+        // execution. Set up a webhook or plugin to listen for the
+        // payment_intent.succeeded event that handles any business critical
+        // post-payment actions.
+      }
+    }
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <CardSection />
+      <button disabled={!stripe}>Confirm order</button>
+    </form>
+  )
 }
 
 export default CheckoutForm

@@ -15,9 +15,6 @@ exports.handler = async (_, _, callback) => {
 
   callback(null, {
     statusCode: 200,
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-    },
     body: paymentIntent.client_secret,
   })
 }
