@@ -51,7 +51,12 @@ const CheckoutForm = () => {
         }
       })
 
-      pr.canMakePayment().then(() => setPaymentRequest(pr))
+      pr.canMakePayment().then(result => {
+        console.log(result)
+        if (result) {
+          setPaymentRequest(pr)
+        }
+      })
     }
   }, [stripe, paymentSecret])
 
