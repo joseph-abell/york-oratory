@@ -4,6 +4,8 @@ import { PaymentRequestButtonElement, useStripe } from "@stripe/react-stripe-js"
 const CheckoutForm = () => {
   const stripe = useStripe()
   const [paymentRequest, setPaymentRequest] = useState(null)
+  const [paymentSecret, setPaymentSecret] = useState(null)
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     if (stripe) {
@@ -25,7 +27,17 @@ const CheckoutForm = () => {
     }
   }, [stripe])
 
-  if (paymentRequest) {
+  useEffect(() => {
+    fetch("https://yorkoratory.com/.netlify/functions/createPaymentIntent")
+      .then(r => r.text())
+      .then(secret => setPaymentSecret(secret))
+  }, [])
+
+  useEffect(() => {
+    if (paymentRequest && paymentSecret) setLoading(false)
+  }, [paymentRequest, paymentSecret])
+
+  if (loading) {
     return <PaymentRequestButtonElement options={{ paymentRequest }} />
   }
 
