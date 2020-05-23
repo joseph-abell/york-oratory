@@ -4,10 +4,11 @@ const setupStripe = require("stripe")
 const { STRIPE_KEY } = process.env
 const stripe = setupStripe(STRIPE_KEY)
 
-exports.handler = async (event, context, callback) => {
+exports.handler = async (_, _, callback) => {
   const paymentIntent = await stripe.paymentIntents.create({
     amount: 1000,
     currency: "gbp",
+
     // Verify your integration in this guide by including this parameter
     metadata: { integration_check: "accept_a_payment" },
   })
