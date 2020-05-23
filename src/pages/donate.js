@@ -3,7 +3,7 @@ import { Elements } from "@stripe/react-stripe-js"
 import { loadStripe } from "@stripe/stripe-js"
 import CheckoutForm from "../components/checkoutForm.js"
 
-const stripePromise = loadStripe("sk_test_6sv9ejFmdNPctBPizKicJVQ0005hgqzcNn")
+const stripePromise = loadStripe("pk_test_D536cfQ6cBIIt068VreBlu0700fXOMit0K")
 
 const Donate = () => (
   <Elements stripe={stripePromise}>
