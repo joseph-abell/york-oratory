@@ -244,9 +244,10 @@ const CheckoutForm = () => {
 
         <div>
           <p>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">
+              Email (Used to send a receipt of your donation)
+            </label>
           </p>
-          <p>Used to send a receipt of your donation.</p>
           <p>
             <input
               type="email"
