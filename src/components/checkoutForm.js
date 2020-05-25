@@ -297,12 +297,16 @@ const CheckoutForm = () => {
       </div>
 
       <div>
-        <label htmlFor="massIntentions">Mass Intentions</label>
-        <textarea
-          id="massIntentions"
-          value={massIntentions}
-          onChange={onMassIntentionsChange}
-        />
+        <p>
+          <label htmlFor="massIntentions">Mass Intentions</label>
+        </p>
+        <p>
+          <textarea
+            id="massIntentions"
+            value={massIntentions}
+            onChange={onMassIntentionsChange}
+          />
+        </p>
       </div>
 
       <div>
