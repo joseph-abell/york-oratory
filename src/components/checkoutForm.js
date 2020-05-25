@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js"
-import createHistory from "history/createBrowserHistory"
 import styled from "styled-components"
-
-const history = createHistory()
 
 const CARD_ELEMENT_OPTIONS = {
   style: {
@@ -117,12 +114,7 @@ const CheckoutForm = () => {
   }
 
   if (error) {
-    return (
-      <div>
-        {error}
-        <button onClick={onRetryClick}>Retry</button>
-      </div>
-    )
+    return <div>{error}</div>
   }
   return (
     <form onSubmit={handleSubmit}>
