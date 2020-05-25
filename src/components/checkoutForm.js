@@ -191,19 +191,27 @@ const CheckoutForm = () => {
     <StyledForm onSubmit={handleSubmit}>
       <div>
         <div>
-          <label htmlFor="name">Name</label>
-          <input type="text" id="name" value={name} onChange={onNameChange} />
+          <p>
+            <label htmlFor="name">Name</label>
+          </p>
+          <p>
+            <input type="text" id="name" value={name} onChange={onNameChange} />
+          </p>
         </div>
 
         <div>
-          <label htmlFor="email">Email</label>
+          <p>
+            <label htmlFor="email">Email</label>
+          </p>
           <div>Used to send a receipt of your donation.</div>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={onEmailChange}
-          />
+          <p>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={onEmailChange}
+            />
+          </p>
         </div>
 
         <p>
