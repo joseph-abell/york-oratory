@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react"
 import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js"
+import createHistory from "history/createBrowserHistory"
 import styled from "styled-components"
+
+const history = createHistory()
 
 const CARD_ELEMENT_OPTIONS = {
   style: {
@@ -61,6 +64,8 @@ const CheckoutForm = () => {
   const stripe = useStripe()
   const elements = useElements()
   const [paymentSecret, setPaymentSecret] = useState(null)
+  const [success, setSuccess] = useState(false)
+  const [error, setError] = useState()
 
   useEffect(() => {
     fetch("/.netlify/functions/createPaymentIntent")
@@ -86,8 +91,7 @@ const CheckoutForm = () => {
     })
 
     if (result.error) {
-      // Show error to your customer (e.g., insufficient funds)
-      console.log(result.error.message)
+      setError(result.error.message)
     } else {
       // The payment has been processed!
       if (result.paymentIntent.status === "succeeded") {
@@ -96,10 +100,30 @@ const CheckoutForm = () => {
         // execution. Set up a webhook or plugin to listen for the
         // payment_intent.succeeded event that handles any business critical
         // post-payment actions.
+
+        setSuccess(true)
       }
     }
   }
 
+  const onRetryClick = () => {
+    history.go(0)
+  }
+
+  if (success) {
+    return (
+      <div>Your payment has gone through. Thank you for your donation.</div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div>
+        {error}
+        <button onClick={onRetryClick}>Retry</button>
+      </div>
+    )
+  }
   return (
     <form onSubmit={handleSubmit}>
       <CardSection />
