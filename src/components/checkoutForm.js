@@ -108,17 +108,29 @@ const CheckoutForm = () => {
   const [giftaid, setGiftaid] = useState("no")
   const [massIntentions, setMassIntentions] = useState("")
   const [email, setEmail] = useState("")
-  const [name, setName] = useState("")
+  const [title, setTitle] = useState("")
+  const [firstName, setFirstName] = useState("")
+  const [surname, setSurname] = useState("")
+  const [address, setAddress] = useState("")
   const [showGiftAidOptions, setShowGiftAidOptions] = useState(false)
 
   useEffect(() => {
     if (amount < minAmount) return
     fetch(
-      `/.netlify/functions/createPaymentIntent?amount=${amount}&giftaid=${giftaid}&massIntentions=${massIntentions}&email=${email}&name=${name}`
+      `/.netlify/functions/createPaymentIntent?amount=${amount}&giftaid=${giftaid}&massIntentions=${massIntentions}&email=${email}&title=${title}&firstName=${firstName}&surname=${surname}&address=${address}`
     )
       .then(r => r.text())
       .then(secret => setPaymentSecret(secret))
-  }, [amount, giftaid, email, massIntentions, name])
+  }, [
+    amount,
+    giftaid,
+    email,
+    massIntentions,
+    title,
+    firstName,
+    surname,
+    address,
+  ])
 
   const handleSubmit = async event => {
     // We don't want to let default form submission happen here,
@@ -186,7 +198,10 @@ const CheckoutForm = () => {
   const onGiftAidChange = e => setGiftaid(e.target.value)
   const onMassIntentionsChange = e => setMassIntentions(e.target.value)
   const onEmailChange = e => setEmail(e.target.value)
-  const onNameChange = e => setName(e.target.value)
+  const onTitleChange = e => setTitle(e.target.value)
+  const onFirstNameChange = e => setFirstName(e.target.value)
+  const onSurnameChange = e => setSurname(e.target.value)
+  const onAddressChange = e => setAddress(e.target.value)
 
   const isDisabled = !stripe || !paymentSecret || numberError
 
@@ -195,10 +210,34 @@ const CheckoutForm = () => {
       <div>
         <div>
           <p>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="title">Name</label>
           </p>
           <p>
-            <input type="text" id="name" value={name} onChange={onNameChange} />
+            <input
+              type="text"
+              id="title"
+              value={title}
+              placeholder="Title"
+              onChange={onTitleChange}
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              id="title"
+              value={firstName}
+              placeholder="First Name"
+              onChange={onFirstNameChange}
+            />
+          </p>
+          <p>
+            <input
+              type="text"
+              id="title"
+              value={surname}
+              placeholder="Surname"
+              onChange={onSurnameChange}
+            />
           </p>
         </div>
 
@@ -292,6 +331,19 @@ const CheckoutForm = () => {
               />
               <label htmlFor="giftAidYes">{noDeck}</label>
             </p>
+
+            <div>
+              <p>
+                <label htmlFor="address">Address</label>
+              </p>
+              <p>
+                <textarea
+                  id="address"
+                  value={address}
+                  onChange={onAddressChange}
+                />
+              </p>
+            </div>
           </div>
         )}
       </div>

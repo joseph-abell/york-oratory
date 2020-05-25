@@ -9,7 +9,10 @@ exports.handler = async (request, _, callback) => {
   const giftaid = request.queryStringParameters.giftaid || "no"
   const massIntentions = request.queryStringParameters.massIntentions || ""
   const receipt_email = request.queryStringParameters.email || ""
-  const name = request.queryStringParameters.name || ""
+  const title = request.queryStringParameters.title || ""
+  const firstName = request.queryStringParameters.firstName || ""
+  const surname = request.queryStringParameters.surname || ""
+  const address = request.queryStringParameters.address || ""
 
   const paymentIntent = await stripe.paymentIntents.create({
     amount,
@@ -19,8 +22,11 @@ exports.handler = async (request, _, callback) => {
     // Verify your integration in this guide by including this parameter
     metadata: {
       giftaid,
-      name,
+      title,
+      first_name: firstName,
+      surname,
       mass_intentions: massIntentions,
+      address,
     },
   })
 
