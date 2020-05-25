@@ -8,8 +8,6 @@ exports.handler = async (request, _, callback) => {
   const amount = request?.queryStringParameters?.amount * 100 || 1000
   const giftaid = request?.queryStringParameters?.giftaid || "no"
 
-  console.log(amount, giftaid)
-
   const paymentIntent = await stripe.paymentIntents.create({
     amount,
     currency: "gbp",
