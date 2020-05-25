@@ -396,13 +396,13 @@ collections:
             default: /hidden
           - label: Description
             name: deck
-            widget: string
+            widget: markdown
           - label: Yes Option Description
             name: yesDeck
-            widget: string
+            widget: markdown
           - label: No Option Description
             name: noDeck
-            widget: string
+            widget: markdown
           - label: Title
             name: title
             widget: string

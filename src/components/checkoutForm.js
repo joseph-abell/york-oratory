@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js"
 import NumberFormat from "react-number-format"
 import styled from "styled-components"
+import { useStaticQuery, graphql } from "gatsby"
 
 const CARD_ELEMENT_OPTIONS = {
   style: {
@@ -52,6 +53,10 @@ const StyledForm = styled.form`
   button {
     margin-right: 20px;
   }
+
+  input[type="text"] {
+    padding: 10px;
+  }
 `
 
 const CardSection = () => (
@@ -59,15 +64,33 @@ const CardSection = () => (
     <p>
       <strong>Card details</strong>
     </p>
-    <p>
+    <div style={{ marginBottom: "30px" }}>
       <StyledCardElement>
         <CardElement id="cardElement" options={CARD_ELEMENT_OPTIONS} />
       </StyledCardElement>
-    </p>
+    </div>
   </label>
 )
 
 const CheckoutForm = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      giftaid: markdownRemark(frontmatter: { title: { eq: "Gift Aid" } }) {
+        frontmatter {
+          amounts {
+            amount
+          }
+          deck
+          noDeck
+          yesDeck
+        }
+      }
+    }
+  `)
+  const { deck, noDeck, yesDeck } = data?.giftaid?.frontmatter
+  const amounts = data?.giftaid?.frontmatter?.amounts?.map(a => a.amount)
+  console.log(amounts, deck, noDeck, yesDeck)
+
   const minAmount = 10
 
   const stripe = useStripe()
@@ -171,17 +194,11 @@ const CheckoutForm = () => {
         </p>
 
         <p>
-          <button type="button" onClick={() => onSetAmountClick(10)}>
-            £10
-          </button>
-
-          <button type="button" onClick={() => onSetAmountClick(20)}>
-            £20
-          </button>
-
-          <button type="button" onClick={() => onSetAmountClick(50)}>
-            £50
-          </button>
+          {amounts?.map(a => (
+            <button type="button" onClick={() => onSetAmountClick(a)}>
+              £{a}
+            </button>
+          ))}
         </p>
 
         <p>Or set your own custom amount (min £10)</p>
@@ -211,7 +228,7 @@ const CheckoutForm = () => {
           <strong>Gift Aid for UK Donors</strong>
         </p>
 
-        <p>Boost your donations by 25% at no cost to you.</p>
+        <p>{deck}</p>
 
         <p>
           <button type="button" onClick={onShowGiftAidOptionsClick}>
@@ -231,14 +248,7 @@ const CheckoutForm = () => {
                 id="giftAidYes"
               />
 
-              <label htmlFor="giftAidYes">
-                Yes, I am a UK Tax Payer and I would like the York Oratory to
-                reclaim the tax on this donation.
-                <br />I understand that if I pay less Income Tax and / or
-                Capital Gains Tax than the amount of Gift Aid claimed on all my
-                donations in that tax year it is my responsibility to pay any
-                difference.
-              </label>
+              <label htmlFor="giftAidYes">{yesDeck}</label>
             </p>
 
             <p>
@@ -250,9 +260,7 @@ const CheckoutForm = () => {
                 onChange={onGiftAidChange}
                 id="giftAidNo"
               />
-              <label htmlFor="giftAidYes">
-                No I will not use Gift Aid for this donation.
-              </label>
+              <label htmlFor="giftAidYes">{noDeck}</label>
             </p>
           </div>
         )}
