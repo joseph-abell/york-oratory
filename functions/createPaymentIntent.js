@@ -1,8 +1,8 @@
 // Set your secret key. Remember to switch to your live secret key in production!
 // See your keys here: https://dashboard.stripe.com/account/apikeys
 const setupStripe = require("stripe")
-const { STRIPE_KEY } = process.env
-const stripe = setupStripe(STRIPE_KEY)
+const { STRIPEKEY } = process.env
+const stripe = setupStripe(STRIPEKEY)
 
 exports.handler = async (a, b, callback) => {
   const paymentIntent = await stripe.paymentIntents.create({

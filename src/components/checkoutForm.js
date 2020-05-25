@@ -68,8 +68,6 @@ const CheckoutForm = () => {
       .then(secret => setPaymentSecret(secret))
   }, [])
 
-  console.log(paymentSecret)
-
   const handleSubmit = async event => {
     // We don't want to let default form submission happen here,
     // which would refresh the page.
