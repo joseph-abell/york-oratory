@@ -103,16 +103,19 @@ const CheckoutForm = () => {
   const [amount, setAmount] = useState(minAmount)
   const [numberError, setNumberError] = useState()
   const [giftaid, setGiftaid] = useState("no")
+  const [massIntentions, setMassIntentions] = useState("")
+  const [email, setEmail] = useState("")
+  const [name, setName] = useState("")
   const [showGiftAidOptions, setShowGiftAidOptions] = useState(false)
 
   useEffect(() => {
     if (amount < minAmount) return
     fetch(
-      `/.netlify/functions/createPaymentIntent?amount=${amount}&giftaid=${giftaid}`
+      `/.netlify/functions/createPaymentIntent?amount=${amount}&giftaid=${giftaid}&massIntentions=${massIntentions}&email=${email}&name=${name}`
     )
       .then(r => r.text())
       .then(secret => setPaymentSecret(secret))
-  }, [amount, giftaid])
+  }, [amount, giftaid, email, massIntentions, name])
 
   const handleSubmit = async event => {
     // We don't want to let default form submission happen here,
@@ -175,19 +178,34 @@ const CheckoutForm = () => {
     }
   }
 
-  const onShowGiftAidOptionsClick = () => {
-    setShowGiftAidOptions(true)
-  }
-
-  const onGiftAidChange = e => setGiftaid(e.target.value)
-
+  const onShowGiftAidOptionsClick = () => setShowGiftAidOptions(true)
   const onSetAmountClick = a => setAmount(a)
+  const onGiftAidChange = e => setGiftaid(e.target.value)
+  const onMassIntentionsChange = e => setMassIntentions(e.target.value)
+  const onEmailChange = e => setEmail(e.target.value)
+  const onNameChange = e => setName(e.target.value)
 
   const isDisabled = !stripe || !paymentSecret || numberError
 
   return (
     <StyledForm onSubmit={handleSubmit}>
       <div>
+        <div>
+          <label htmlFor="name">Name</label>
+          <input type="text" id="name" value={name} onChange={onNameChange} />
+        </div>
+
+        <div>
+          <label htmlFor="email">Email</label>
+          <div>Used to send a receipt of your donation.</div>
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={onEmailChange}
+          />
+        </div>
+
         <p>
           <label htmlFor="amount">
             <strong>Amount to Donate</strong>
@@ -265,6 +283,15 @@ const CheckoutForm = () => {
             </p>
           </div>
         )}
+      </div>
+
+      <div>
+        <label htmlFor="massIntentions">Mass Intentions</label>
+        <textarea
+          id="massIntentions"
+          value={massIntentions}
+          onChange={onMassIntentionsChange}
+        />
       </div>
 
       <div>
