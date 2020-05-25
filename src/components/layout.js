@@ -10,7 +10,7 @@ import Menu from "./menu"
 import Sidebar from "./sidebar"
 import Clearfix from "./clearfix"
 
-const stripePromise = loadStripe("pk_test_D536cfQ6cBIIt068VreBlu0700fXOMit0K")
+const stripePromise = loadStripe("pk_test_bfLSXeXP6bKA2ulZg01SOL4100u2oN1sQs")
 
 class Layout extends React.Component {
   render() {
