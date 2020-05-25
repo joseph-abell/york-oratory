@@ -329,7 +329,7 @@ const CheckoutForm = () => {
                 onChange={onGiftAidChange}
                 id="giftAidNo"
               />
-              <label htmlFor="giftAidYes">{noDeck}</label>
+              <label htmlFor="giftAidNo">{noDeck}</label>
             </p>
 
             <div>
