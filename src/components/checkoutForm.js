@@ -135,8 +135,6 @@ const CheckoutForm = () => {
     console.log(e)
   }
 
-  console.log(numberError)
-
   return (
     <form onSubmit={handleSubmit}>
       <div>
