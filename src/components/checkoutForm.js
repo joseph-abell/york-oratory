@@ -246,7 +246,7 @@ const CheckoutForm = () => {
           <p>
             <label htmlFor="email">Email</label>
           </p>
-          <div>Used to send a receipt of your donation.</div>
+          <p>Used to send a receipt of your donation.</p>
           <p>
             <input
               type="email"
