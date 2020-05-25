@@ -57,6 +57,9 @@ const StyledForm = styled.form`
   input[type="text"] {
     padding: 10px;
   }
+  input[type="email"] {
+    padding: 10px;
+  }
 `
 
 const CardSection = () => (

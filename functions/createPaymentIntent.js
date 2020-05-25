@@ -18,7 +18,6 @@ exports.handler = async (request, _, callback) => {
 
     // Verify your integration in this guide by including this parameter
     metadata: {
-      integration_check: "accept_a_payment",
       giftaid,
       name,
       mass_intentions: massIntentions,
