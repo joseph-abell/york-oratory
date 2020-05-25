@@ -149,7 +149,9 @@ const CheckoutForm = () => {
 
   if (success) {
     return (
-      <div>Your payment has gone through. Thank you for your donation.</div>
+      <div style={{ marginBottom: "20px" }}>
+        Your payment has gone through. Thank you for your donation.
+      </div>
     )
   }
 
