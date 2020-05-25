@@ -149,7 +149,6 @@ const CheckoutForm = () => {
     } else if (numberError) {
       setNumberError()
     }
-    console.log(e)
   }
 
   const onShowGiftAidOptionsClick = () => {
