@@ -1,14 +1,11 @@
 import React from "react"
-import { Elements } from "@stripe/react-stripe-js"
-import { loadStripe } from "@stripe/stripe-js"
-import CheckoutForm from "../components/checkoutForm.js"
-
-const stripePromise = loadStripe("pk_test_D536cfQ6cBIIt068VreBlu0700fXOMit0K")
+import CheckoutForm from "../components/checkoutForm"
+import Layout from "../components/layout"
 
 const Donate = () => (
-  <Elements stripe={stripePromise}>
+  <Layout>
     <CheckoutForm />
-  </Elements>
+  </Layout>
 )
 
 export default Donate
