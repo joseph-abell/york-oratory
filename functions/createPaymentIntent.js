@@ -4,7 +4,8 @@ const setupStripe = require("stripe")
 const { STRIPEKEY } = process.env
 const stripe = setupStripe(STRIPEKEY)
 
-exports.handler = async (a, b, callback) => {
+exports.handler = async (request, b, callback) => {
+  console.log(request, b)
   const paymentIntent = await stripe.paymentIntents.create({
     amount: 1000,
     currency: "gbp",
