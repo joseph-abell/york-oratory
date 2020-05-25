@@ -306,7 +306,7 @@ const CheckoutForm = () => {
         </p>
 
         {showGiftAidOptions && (
-          <div>
+          <div style={{ border: "3px solid #8c181f", padding: "10px" }}>
             <p>
               <input
                 type="radio"
