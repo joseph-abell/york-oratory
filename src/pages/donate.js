@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 const Donate = () => (
   <Layout>
     <SEO title="Donate" />
+    <h1>Donate</h1>
     <CheckoutForm />
   </Layout>
 )
