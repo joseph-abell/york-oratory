@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { useStripe, useElements, CardElement } from "@stripe/react-stripe-js"
+import NumberFormat from "react-number-format"
 import styled from "styled-components"
 
 const CARD_ELEMENT_OPTIONS = {
@@ -63,19 +64,23 @@ const CheckoutForm = () => {
   const [paymentSecret, setPaymentSecret] = useState(null)
   const [success, setSuccess] = useState(false)
   const [error, setError] = useState()
+  const minAmount = 10
+  const [amount, setAmount] = useState(minAmount)
+  const [numberError, setNumberError] = useState()
 
   useEffect(() => {
-    fetch("/.netlify/functions/createPaymentIntent")
+    if (amount < minAmount) return
+    fetch(`/.netlify/functions/createPaymentIntent?amount=${amount}`)
       .then(r => r.text())
       .then(secret => setPaymentSecret(secret))
-  }, [])
+  }, [amount])
 
   const handleSubmit = async event => {
     // We don't want to let default form submission happen here,
     // which would refresh the page.
     event.preventDefault()
 
-    if (!stripe || !elements || !paymentSecret) {
+    if (!stripe || !elements || !paymentSecret || amount < minAmount) {
       // Stripe.js has not yet loaded.
       // Make sure to disable form submission until Stripe.js has loaded.
       return
@@ -117,10 +122,49 @@ const CheckoutForm = () => {
       </div>
     )
   }
+
+  const onNumberFormatChange = e => {
+    const v = e.floatValue
+    setAmount(v)
+
+    if (e.floatValue < minAmount) {
+      setNumberError(`Value must be at least £${minAmount}`)
+    } else if (numberError) {
+      setNumberError()
+    }
+    console.log(e)
+  }
+
+  console.log(numberError)
+
   return (
     <form onSubmit={handleSubmit}>
-      <CardSection />
-      <button disabled={!stripe || !paymentSecret}>Confirm order</button>
+      <div>
+        <label htmlFor="amount">Amount to Donate</label>
+
+        <NumberFormat
+          value={amount}
+          onValueChange={onNumberFormatChange}
+          decimalScale={0}
+          allowNegative={false}
+          allowEmptyFormatting={false}
+          allowLeadingZeros={false}
+          prefix="£"
+          type="text"
+        />
+      </div>
+
+      {numberError && <div>{numberError}</div>}
+
+      <div>
+        <CardSection />
+      </div>
+
+      <div>
+        <button disabled={!stripe || !paymentSecret || !numberError}>
+          Confirm order
+        </button>
+      </div>
     </form>
   )
 }
