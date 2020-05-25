@@ -394,6 +394,15 @@ collections:
             name: type
             widget: hidden
             default: /hidden
+          - label: Description
+            name: deck
+            widget: string
+          - label: Yes Option Description
+            name: yesDeck
+            widget: string
+          - label: No Option Description
+            name: noDeck
+            widget: string
           - label: Title
             name: title
             widget: string
@@ -406,16 +415,3 @@ collections:
                 name: amount
                 widget: number
                 min: 0
-          - label: Gift Aid
-            name: giftAid
-            widget: object
-            fields:
-              - label: Description
-                name: deck
-                widget: string
-              - label: Yes Option Description
-                name: yesDeck
-                widget: string
-              - label: No Option Description
-                name: noDeck
-                widget: string
