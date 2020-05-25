@@ -103,10 +103,6 @@ const CheckoutForm = () => {
     }
   }
 
-  const onRetryClick = () => {
-    history.go(0)
-  }
-
   if (success) {
     return (
       <div>Your payment has gone through. Thank you for your donation.</div>
@@ -114,7 +110,12 @@ const CheckoutForm = () => {
   }
 
   if (error) {
-    return <div>{error}</div>
+    return (
+      <div>
+        <p>{error}</p>
+        <p>Reload the page to try again.</p>
+      </div>
+    )
   }
   return (
     <form onSubmit={handleSubmit}>
