@@ -89,7 +89,6 @@ const CheckoutForm = () => {
   `)
   const { deck, noDeck, yesDeck } = data?.giftaid?.frontmatter
   const amounts = data?.giftaid?.frontmatter?.amounts?.map(a => a.amount)
-  console.log(amounts, deck, noDeck, yesDeck)
 
   const minAmount = 10
 
