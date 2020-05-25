@@ -58,6 +58,9 @@ const typography = new Typography({
       cursor: "pointer",
       fontSize: "0.8rem",
     },
+    "button:disabled": {
+      opacity: "0.3",
+    },
   }),
 })
 

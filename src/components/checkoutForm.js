@@ -159,6 +159,10 @@ const CheckoutForm = () => {
 
   const onSetAmountClick = a => setAmount(a)
 
+  const isDisabled = !stripe || !paymentSecret || !numberError
+
+  console.log(isDisabled, stripe, paymentSecret, numberError)
+
   return (
     <StyledForm onSubmit={handleSubmit}>
       <div>
@@ -257,7 +261,7 @@ const CheckoutForm = () => {
       </div>
 
       <div>
-        <button disabled={!stripe || !paymentSecret || !numberError}>
+        <button type="submit" disabled={isDisabled}>
           Confirm order
         </button>
       </div>
