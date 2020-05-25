@@ -14,7 +14,8 @@ const stripePromise = loadStripe("pk_test_bfLSXeXP6bKA2ulZg01SOL4100u2oN1sQs")
 
 class Layout extends React.Component {
   render() {
-    const { title, image, children } = this.props
+    const { image, children } = this.props
+    const title = this?.props?.title || "York Oratory"
     return (
       <Elements stripe={stripePromise}>
         <Header title={title} image={image} />
