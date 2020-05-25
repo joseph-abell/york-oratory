@@ -193,7 +193,8 @@ const CheckoutForm = () => {
     }
   }
 
-  const onShowGiftAidOptionsClick = () => setShowGiftAidOptions(true)
+  const onToggleGiftAidOptionsClick = () =>
+    setShowGiftAidOptions(!showGiftAidOptions)
   const onSetAmountClick = a => setAmount(a)
   const onGiftAidChange = e => setGiftaid(e.target.value)
   const onMassIntentionsChange = e => setMassIntentions(e.target.value)
@@ -300,13 +301,19 @@ const CheckoutForm = () => {
         <p>{deck}</p>
 
         <p>
-          <button type="button" onClick={onShowGiftAidOptionsClick}>
-            Show Gift Aid Options
+          <button type="button" onClick={onToggleGiftAidOptionsClick}>
+            {showGiftAidOptions ? "Hide" : "Show"} Gift Aid Options
           </button>
         </p>
 
         {showGiftAidOptions && (
-          <div style={{ border: "3px solid #8c181f", padding: "10px" }}>
+          <div
+            style={{
+              border: "3px solid #8c181f",
+              padding: "10px",
+              marginBottom: "20px",
+            }}
+          >
             <p>
               <input
                 type="radio"
