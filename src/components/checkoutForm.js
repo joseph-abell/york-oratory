@@ -334,7 +334,9 @@ const CheckoutForm = () => {
 
             <div>
               <p>
-                <label htmlFor="address">Address</label>
+                <label htmlFor="address">
+                  Address (Only used to process Gift Aid)
+                </label>
               </p>
               <p>
                 <textarea
