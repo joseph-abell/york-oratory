@@ -404,7 +404,8 @@ collections:
             fields:
               - label: Amount
                 name: amount
-                widget: string
+                widget: number
+                min: 0
           - label: Gift Aid
             name: giftAid
             widget: object
