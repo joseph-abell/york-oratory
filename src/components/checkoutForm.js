@@ -253,6 +253,7 @@ const CheckoutForm = () => {
               type="email"
               id="email"
               value={email}
+              placeholder="Email"
               onChange={onEmailChange}
             />
           </p>
@@ -351,6 +352,7 @@ const CheckoutForm = () => {
                   id="address"
                   value={address}
                   onChange={onAddressChange}
+                  placeholder="Address"
                 />
               </p>
             </div>
@@ -367,6 +369,7 @@ const CheckoutForm = () => {
             id="massIntentions"
             value={massIntentions}
             onChange={onMassIntentionsChange}
+            placeholder="Mass Intentions"
           />
         </p>
       </div>
