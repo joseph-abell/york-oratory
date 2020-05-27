@@ -1,21 +1,24 @@
 /** @jsx jsx */
-import { css, jsx } from "@emotion/core"
-import React from "react"
-import { Elements } from "@stripe/react-stripe-js"
-import { loadStripe } from "@stripe/stripe-js"
-import { rhythm } from "../utils/typography"
-import Header from "./header"
-import Footer from "./footer"
-import Menu from "./menu"
-import Sidebar from "./sidebar"
-import Clearfix from "./clearfix"
+import { css, jsx } from "@emotion/core";
+import React from "react";
+import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
+import { rhythm } from "../utils/typography";
+import Header from "./header";
+import Footer from "./footer";
+import Menu from "./menu";
+import Sidebar from "./sidebar";
+import Clearfix from "./clearfix";
 
-const stripePromise = loadStripe("pk_test_bfLSXeXP6bKA2ulZg01SOL4100u2oN1sQs") // LIVE: "pk_live_RVoO3T5GOBizjsFeyuB7faMd00rD1KE4Rn")
+const stripePromise = loadStripe("pk_live_RVoO3T5GOBizjsFeyuB7faMd00rD1KE4Rn");
+
+// LIVE: "pk_live_RVoO3T5GOBizjsFeyuB7faMd00rD1KE4Rn"
+// DEV: "pk_test_bfLSXeXP6bKA2ulZg01SOL4100u2oN1sQs"
 
 class Layout extends React.Component {
   render() {
-    const { image, children } = this.props
-    const title = this?.props?.title || "York Oratory"
+    const { image, children } = this.props;
+    const title = this?.props?.title || "York Oratory";
     return (
       <Elements stripe={stripePromise}>
         <Header title={title} image={image} />
@@ -47,8 +50,8 @@ class Layout extends React.Component {
           <Footer />
         </div>
       </Elements>
-    )
+    );
   }
 }
 
-export default Layout
+export default Layout;
