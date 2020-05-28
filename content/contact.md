@@ -19,6 +19,9 @@ description: >-
 
   For enquiries regarding the Shrine of St Margaret Clitherow
   shrine@yorkoratory.com
+
+
+  For financial enquires finance@yorkoratory.com
 parishPriest: 'Fr Daniel Seward, Cong. Orat.'
 provost: 'Fr Richard Duffield, Cong. Orat.'
 address: |-
@@ -28,9 +31,6 @@ address: |-
   York
   YO1 7EN
 telephone: 01904 624 767
-email: >-
-  General enquiries: parish@yorkoratory.com; Oratory enquiries:
-  provost@yorkoratory.com
 directions: >-
   Postcode for SatNav for St Wilfrid's YO1 7EF
 
@@ -56,3 +56,4 @@ directions: >-
   [View St Joseph's on Google
   Maps](https://www.google.co.uk/maps/place/St+Joseph's+R+C+Church/@53.97682,-1.0928873,17z/data=!3m1!4b1!4m5!3m4!1s0x487931769eff9de7:0x589f0ca4b58960d2!8m2!3d53.97682!4d-1.0906986)
 ---
+
