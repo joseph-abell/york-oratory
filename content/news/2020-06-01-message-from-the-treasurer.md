@@ -18,6 +18,6 @@ St Joseph's and St Wilfrid's are both run by the York Oratory, this means that t
 
 The sheet can be downloaded [here](https://yorkoratory.com//media/Howtodonate.pdf).
 
-There are several options so please have a look and decide which is most suited to your circumstances.
+There are several options so please have a look and decide which is most suited to your circumstances. There is also some brief information on our [donations page](https://yorkoratory.com/donation).
 
 Once again thank you for your support.
