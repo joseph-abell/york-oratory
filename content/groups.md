@@ -33,13 +33,22 @@ groups:
       (similar to a third order in other religious communities).
 
 
-      _"Iron sharpens iron,_
+      *"Iron sharpens iron,*
 
 
-      _and one man sharpens another."_ - Proverbs 27:17
+      *and one man sharpens another."* - Proverbs 27:17
 
 
       Brothers doesn't meet in August.
+
+
+
+
+      \*\*\* Coronavirus Update\*\*\*
+
+
+      During the lockdown Brothers will be livestreamed on our YouTube channel
+      at 6.30pm on Sundays.
 
 
       ![](/media/web-st-philip-neri-fr-lawrence-lew-op-cc.jpg)
