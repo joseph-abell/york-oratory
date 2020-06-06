@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { css, jsx } from "@emotion/core"
-import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
@@ -9,21 +8,19 @@ import NewsItem from "../components/news-item"
 import { rhythm } from "../utils/typography"
 import Markdown from "markdown-to-jsx"
 
-class Homepage extends React.Component {
-  render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const news = data.news.edges
-    const homepage = data.homepage
-    const sundayMassTimes = homepage && homepage.frontmatter.sundayMassTimes
+const Homepage = (props) => {
+  const { data } = props
+  const siteTitle = data.site.siteMetadata.title
+  const news = data.news.edges
+  const homepage = data.homepage
+  const sundayMassTimes = homepage && homepage.frontmatter.sundayMassTimes
+  return (
+    <Layout location={this.props.location} title={siteTitle}>
+      <SEO title="Mass Times and News" />
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Mass Times and News" />
-
-        {sundayMassTimes && (
-          <div
-            css={css`
+      {sundayMassTimes && (
+        <div
+          css={css`
               border: 1px solid #eee;
               border-radius: 3px;
               padding: 10px;
@@ -33,54 +30,53 @@ class Homepage extends React.Component {
                 margin-bottom: 0;
               }
             `}
-          >
-            <h2
-              css={css`
-                font-size: 2rem;
-              `}
-            >
-              Sunday Mass Times
-            </h2>
-            <Markdown
-              css={css`
-                white-space: pre-wrap;
-              `}
-            >
-              {sundayMassTimes}
-            </Markdown>
-          </div>
-        )}
-
-        <div
-          css={css`
-            margin-bottom: ${rhythm(2)};
-          `}
         >
           <h2
             css={css`
+                font-size: 2rem;
+              `}
+          >
+            Sunday Mass Times
+            </h2>
+          <Markdown
+            css={css`
+                white-space: pre-wrap;
+              `}
+          >
+            {sundayMassTimes}
+          </Markdown>
+        </div>
+      )}
+
+      <div
+        css={css`
+            margin-bottom: ${rhythm(2)};
+          `}
+      >
+        <h2
+          css={css`
               font-size: 2rem;
             `}
-          >
-            News
+        >
+          News
           </h2>
-          {news.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            const primaryImage = node.frontmatter.primaryImage
+        {news.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          const primaryImage = node.frontmatter.primaryImage
 
-            return (
-              <NewsItem
-                node={node}
-                key={node.fields.slug}
-                title={title}
-                primaryImage={primaryImage}
-              />
-            )
-          })}
-          <Link to="/news">View More News</Link>
-        </div>
-      </Layout>
-    )
-  }
+          return (
+            <NewsItem
+              node={node}
+              key={node.fields.slug}
+              title={title}
+              primaryImage={primaryImage}
+            />
+          )
+        })}
+        <Link to="/news">View More News</Link>
+      </div>
+    </Layout>
+  )
 }
 
 export default Homepage
