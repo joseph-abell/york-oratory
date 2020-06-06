@@ -90,7 +90,6 @@ export const pageQuery = graphql`
             provost
             address
             telephone
-            email
             directions
             description
           }
