@@ -15,7 +15,7 @@ const Homepage = (props) => {
   const homepage = data.homepage
   const sundayMassTimes = homepage && homepage.frontmatter.sundayMassTimes
   return (
-    <Layout location={this.props.location} title={siteTitle}>
+    <Layout location={props.location} title={siteTitle}>
       <SEO title="Mass Times and News" />
 
       {sundayMassTimes && (
