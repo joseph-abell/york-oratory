@@ -16,7 +16,7 @@ It is thanks to your support that we are able to continue praying for the city a
 
 St Joseph's and St Wilfrid's are both run by the York Oratory, this means that there are separate legal organisations with separate bank accounts, and different way to donate to these accounts. In order to help you stay informed about where your donations are going we have prepared a brief information sheet which also describes the different ways possible for you to donate to us, and so information of Mass Intentions.
 
-The sheet can be downloaded [here](https://yorkoratory.com//media/Howtodonate.pdf).
+The sheet can be downloaded [here](https://yorkoratory.com/media/How%20to%20donate.pdf).
 
 There are several options so please have a look and decide which is most suited to your circumstances. There is also some brief information on our [donations page](https://yorkoratory.com/donation).
 
