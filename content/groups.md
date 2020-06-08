@@ -89,12 +89,18 @@ groups:
       This group is for both boys and girls.
 
 
-      _"For young men to make sure of persevering, it is absolutely necessary
+      *"For young men to make sure of persevering, it is absolutely necessary
       that they should avoid wicked companions, and be familiar with good
-      ones."_ - St Philip Neri
+      ones."* - St Philip Neri
 
 
       Please talk to Br Adam if you are interested in joining.
+
+
+      \*\*\* Coronavirus Update\*\*\*
+
+
+      Young Oratory is currently suspended due to the lockdown
 
 
       ![](/media/20180227_165058-2018_09_14-16_43_05-utc-2-.jpg)
