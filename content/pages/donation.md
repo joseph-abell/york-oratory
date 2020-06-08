@@ -13,7 +13,7 @@ To make an online payment to the York Oratory please click [here](https://yorkor
 
 Donations for Mass intentions go directly to the priest who says the Mass.  The easiest way to administer this is if you place a cash donation in an envelope with the details of the Mass intention and post it through our letter box (11 High Petergate, YO1 7EN). 
 
-If this isn't possible, then you can request a Mass Intention and donate online by clicking[ here](https://yorkoratory.com/donate/). Make sure to write your intention in the ‘Mass Intention’ box. Please note that due to the costs of administering online payments the minimum donation possible is £10.
+If this isn't possible, then you can request a Mass Intention and donate online by clicking [here](https://yorkoratory.com/donate/). Make sure to write your intention in the ‘Mass Intention’ box. Please note that due to the costs of administering online payments the minimum donation possible is £10.
 
 A list of Mass intentions is published each week on our website.
 
