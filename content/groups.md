@@ -42,13 +42,10 @@ groups:
       Brothers doesn't meet in August.
 
 
-
-
       \*\*\* Coronavirus Update\*\*\*
 
 
-      During the lockdown Brothers will be livestreamed on our YouTube channel
-      at 6.30pm on Sundays.
+      Brothers is suspended for the time being
 
 
       ![](/media/web-st-philip-neri-fr-lawrence-lew-op-cc.jpg)
