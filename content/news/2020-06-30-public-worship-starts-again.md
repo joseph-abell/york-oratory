@@ -1,6 +1,7 @@
 ---
 type: news
 title: Public Worship Starts again
+primaryImage: /media/St-Wilfrids-2257-2.jpg
 date: 2020-06-30T12:53:15.312Z
 description: >-
   Please click here for all the times of Masses in our churches, and on our live
