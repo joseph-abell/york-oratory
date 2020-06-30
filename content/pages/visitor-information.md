@@ -3,7 +3,7 @@ title: Visitor Information
 date: 2019-07-30T12:31:48.522Z
 description: Opening Times and Visitor Information for St Joseph's and St Wilfrid's
 ---
-## Both St Wilfrid's and St Joseph's churches are currently closed due to the lockdown.
+## There are currently reduced opening times at St Wilfrid's: 12 noon - 4pm every day, in addition to the [times of Mass](https://yorkoratory.com/news/2020-06-30-public-worship-starts-again/).
 
 ## Opening times
 
@@ -33,6 +33,5 @@ Five minutes' walk from St Wilfrid's [Bootham Row Car Park](https://www.york.gov
 
 Priests wishing to celebrate or concelebrate Mass in the Shrine of St Margaret Clitherow, at St Wilfrid's or St Joseph's (whether alone or with a group) must send their testimonial of good standing to the [Safeguarding Office at the Diocese of Middlesbrough](mailto://safeguarding@dioceseofmiddlesbrough.co.uk). We cannot accept any booking until we have written confirmation that this has been received.
 
-Middlesbrough Diocesan Safeguarding Office, 50a The Avenue,
-Linthorpe,
+Middlesbrough Diocesan Safeguarding Office, 50a The Avenue, Linthorpe,
 Middlesbrough TS5 6QT.
