@@ -27,4 +27,4 @@ Please [contact us](https://yorkoratory.com/contact) to request information abou
 
 #### Parish
 
-Please note that the York Oratory is a separate entity from the parishes that we serve and the Diocese of Middlesbrough. If you wish to donate for a specific fundraising appeal, parish, or would like more information please [contact us.](https://yorkoratory.com/contact)
+Please note that the York Oratory is a separate entity from the parishes that we serve and the Diocese of Middlesbrough. There is more information available in this [pdf](https://yorkoratory.com/media/How%20to%20donate.pdf). If you wish to donate for a specific fundraising appeal, parish, or would like more information please [contact us.](https://yorkoratory.com/contact)
