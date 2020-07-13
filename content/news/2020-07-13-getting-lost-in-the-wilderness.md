@@ -10,4 +10,4 @@ description: >-
 ---
 Watch this week’s episode by clicking in this link:
 
-[ https://m.youtube.com/watch?feature=youtu.be&v=qnlW5Hj306I](https://m.youtube.com/watch?feature=youtu.be&v=qnlW5Hj306I)
+<https://m.youtube.com/watch?v=qnlW5Hj306I&t>
