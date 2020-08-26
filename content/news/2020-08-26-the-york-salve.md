@@ -11,9 +11,9 @@ The York*Salve*is recorded in square-note notation in a late medieval manuscript
 
 [](https://www.joh.cam.ac.uk/library/special_collections/manuscripts/medieval_manuscripts/medman/D_27.htm)The text of the York Salve is worthy of note, differing from the text more commonly used these days. For example, observe the lack of the word mater at the very start. Usually we would expect *Salve, Regina, Mater misericordiæ*. In fact this is a more recent addition to the ancient text, the older version simply beginning *Salve Regina misericordiæ*i.e. “Hail, Queen of mercy”. The text is as follows:
 
-***Salve Regina miſericordie vita dulcedo et ſpeσ noſtra ſalve. Ad te clamamuσ exuleσ filii eve. Ad te ſuſpiramuσ gementeσ et flenteσ in hac lacrimarum valle. Eya ergo advocata noſtra illos tuoσ miſericordeσ oculoσ ad noσ converte. Et Jhm benedictum fructum ventriσ tui nobiσ poſt hoc exilium oſtende.***
+***Salve Regina miſericordie vita dulcedo et ſpeσ noſtra ſalve. Ad te clamamuσ exuleσ filii eve. Ad te ſuſpiramuσ gementeσ et flenteσ in hac lacrimarum valle. Eya ergo advocata noſtra illos tuoσ miſericordeσ oculoσ ad noσ converte. Et Jhm benedictum fructum ventriσ tui nobiσ poſt hoc exilium oſtende***
 
-In addition to the main text, the setting is troped with three lamentations: (Which we hope to here on another occasion)
+In addition to the main text, the setting is troped with three lamentations: (Which we hope to hear on another occasion)
 
 ***1) Virgo mater eccleſie eterne porta glorie eſto nobiσ refugium apud patrem et filium. O clemenσ.***\
 ***2) Virgo clemenσ virgo pia virgo dulciσ o matia exaudi preceσ omnium ad te pie clamantium. O pia.***\
