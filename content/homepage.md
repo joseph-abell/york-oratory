@@ -8,5 +8,9 @@ sundayMassTimes: >-
 
   Some Masses will continue to be be streamed on
   [YouTube](https://www.youtube.com/channel/UCEwsSz1_fhjFlJNOFEpRtfw) live.
+
+
+  This website is not updated. For the latest news go to
+  [stwilfridsyork.com](stwilfridsyork.com)
 ---
 
