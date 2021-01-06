@@ -3,11 +3,11 @@ title: Mass Times
 date: 2019-07-30T12:11:39.267Z
 description: Mass Times for St Joseph's and St Wilfrid's
 ---
-
-
 As from this Saturday (4th July), we will once again be able to celebrate public Masses in our churches.
 
 The temporary timetable will be as follows:
+
+# **Full information at [stwilfridsyork.org.uk](stwilfridsyork.org.uk)**
 
 # **AT ST WILFRID’S**
 
@@ -90,7 +90,6 @@ His Lordship the Bishop has given permission for public worship to be held at St
 ## ***PLEASE NOTE***
 
 * *Social distancing should still be followed in church. Please keep your distance from those who do not live in the same household, follow the one-way system around the church, sanitize your hands upon entering and leaving, and follow any instructions given by our volunteers.*
-* *For the time being, Holy Communion will not be given at Mass.*
 * *Congregational Singing is not permitted and so all Masses will be Low Masses for now.*
 * *The Shrine of St Margaret Clitherow remains closed at the moment.*
 * *Those Masses which are live-streamed will have only the sanctuary broadcast.*
